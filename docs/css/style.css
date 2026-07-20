@@ -121,24 +121,11 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
 .rail-lead {
   font-size: 14px;
-  font-weight: 700;
   line-height: 1.55;
-  color: #eae4d6;
-  word-break: keep-all;
-}
-.rail-body {
-  font-size: 13.5px;
-  line-height: 1.7;
   color: var(--white-dim);
   word-break: keep-all;
 }
-.rail-body b { color: #f2ecdd; font-weight: 700; }
-.rail-note {
-  font-size: 12px;
-  line-height: 1.65;
-  color: var(--white-faint);
-  word-break: keep-all;
-}
+.rail-lead b { color: #f2ecdd; font-weight: 700; }
 
 .rail-legend {
   margin-top: 2px;
@@ -579,8 +566,6 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   }
   .rail-title { font-size: 26px; }
   .rail-lead { font-size: 13px; }
-  .rail-body { font-size: 12.5px; }
-  .rail-note { display: none; } /* 좁은 화면에서는 은하를 덜 가린다 */
   .rail-legend { align-self: flex-start; }
 
   #panel {
