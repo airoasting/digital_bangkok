@@ -3,3 +3,6 @@
 
 # OS
 .DS_Store
+
+# macOS 동기화가 만드는 중복본 (예: "line 2.html")
+* [0-9].*
