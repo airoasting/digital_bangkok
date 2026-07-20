@@ -12,11 +12,14 @@ export const PARAMS = {
   BELT_IN: 48,        // 부록 도넛 안쪽 반지름
   BELT_OUT: 53,       // 부록 도넛 바깥 반지름
   BELT_H: 4.2,        // 부록 도넛 굵기
-  BELT_TILT: 0.26,    // 부록 도넛 기울기(rad)
+  BELT_TILT: 0.18,    // 부록 도넛 기울기(rad)
   ARM_SPREAD: 0.30,   // 팔 방향 각도 지터
-  // 팔마다 원반면에서 조금씩 기운다. 위에서 봐도 옆에서 봐도 서로 겹치지 않는다.
-  ARM_TILT: [-0.44, 0.26, -0.15, 0.41, -0.32],
-  WARP: 0.22,         // 바깥으로 갈수록 원반이 휘는 정도
+  // 팔마다 원반면에서 다른 높이에 앉는다. 강체로 기울이면 반지름에 비례해
+  // 바깥 끝이 가장 크게 내려가 꼬리가 생긴다. 그래서 안쪽에서 벌어지고
+  // 바깥에서는 평행해지도록, 거리에 따라 포화하는 오프셋을 쓴다.
+  ARM_LIFT: [-6.2, 3.8, -2.0, 5.4, -4.4],
+  LIFT_R: 15,         // 이 반지름쯤에서 팔 사이 높이차가 다 벌어진다
+  WARP: 0.09,         // 바깥으로 갈수록 원반이 휘는 정도
 };
 
 // 중심은 두껍고 바깥은 얇다. 실제 은하의 팽대부와 원반.
@@ -29,7 +32,12 @@ function bell(rand) {
   return (rand() + rand() + rand() - 1.5) / 1.5;
 }
 
-// x축 기준 회전. 팔을 원반면에서 기울일 때 쓴다.
+// 거리에 따라 포화하는 높이 오프셋. 안쪽에서 벌어지고 바깥에서는 평행해진다.
+function armLift(P, g, r) {
+  return P.ARM_LIFT[(g - 1) % P.ARM_LIFT.length] * Math.tanh(r / P.LIFT_R);
+}
+
+// x축 기준 회전. 부록 도넛을 기울일 때만 쓴다.
 function tiltX(p, a) {
   const c = Math.cos(a), s = Math.sin(a);
   return [p[0], p[1] * c - p[2] * s, p[1] * s + p[2] * c];
@@ -75,7 +83,6 @@ export function layoutConcepts(concepts, seed = 20260718) {
       .sort((a, b) => b.importance - a.importance || a.id.localeCompare(b.id));
     const N = Math.max(arm.length, 1);
     const thetaG = (g - 1) * (2 * Math.PI / 5);
-    const tilt = P.ARM_TILT[(g - 1) % P.ARM_TILT.length];
 
     arm.forEach((c, i) => {
       const s = starRadius(c.importance);
@@ -87,16 +94,17 @@ export function layoutConcepts(concepts, seed = 20260718) {
         const jR = (rand() - 0.5) * 2.5;
         const rr = Math.max(P.R_INNER * 0.9, r + jR);
         const theta = thetaG + P.ARM_WIND * Math.log(rr / P.R_INNER) + jTheta;
-        // 팽대부에서 두껍고 바깥에서 얇다. 여기에 바깥일수록 커지는 휨을 더한다.
+        // 팽대부에서 두껍고 바깥에서 얇다. 팔마다 앉는 높이가 다르고, 바깥은 살짝 휜다.
         const y = bell(rand) * thickness(P, t)
-          + P.WARP * rr * Math.pow(rr / P.R_OUTER, 2) * Math.sin(theta - 0.7) / 3;
-        const cand = tiltX([rr * Math.cos(theta), y, rr * Math.sin(theta)], tilt);
+          + armLift(P, g, rr)
+          + P.WARP * rr * Math.pow(rr / P.R_OUTER, 2) * Math.sin(theta - 0.7);
+        const cand = [rr * Math.cos(theta), y, rr * Math.sin(theta)];
         if (!collides(cand, s)) { pos = cand; break; }
         if (attempt === 9) r += P.MARGIN * 2; // 재샘플 실패 시 바깥으로 민다
       }
       if (!pos) { // 최후: 반지름을 키워 강제 배치
         const theta = thetaG + P.ARM_WIND * Math.log((r + 4) / P.R_INNER);
-        pos = tiltX([(r + 4) * Math.cos(theta), bell(rand) * thickness(P, t), (r + 4) * Math.sin(theta)], tilt);
+        pos = [(r + 4) * Math.cos(theta), bell(rand) * thickness(P, t) + armLift(P, g, r + 4), (r + 4) * Math.sin(theta)];
       }
       place(pos, s);
       out.set(c.id, pos.map(v => Math.round(v * 100) / 100));
