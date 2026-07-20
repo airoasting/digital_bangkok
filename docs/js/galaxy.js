@@ -131,7 +131,7 @@ export function createGalaxy({ canvas, data, onSelect }) {
         vec3 hot  = vec3(1.00, 0.95, 0.83);
         vec3 col = mix(cool, warm, smoothstep(0.16, 0.62, lum));
         col = mix(col, hot, smoothstep(0.74, 1.02, lum));
-        col *= (0.50 + 0.60 * lum) * (1.0 + 1.7 * uGlare);
+        col *= (0.50 + 0.60 * lum) * (1.0 + 0.9 * uGlare);
 
         // 채층: 원반 가장자리에 얇게 걸리는 붉은 테
         col += vec3(1.0, 0.30, 0.10) * smoothstep(0.26, 0.02, mu) * 0.42;
@@ -140,16 +140,24 @@ export function createGalaxy({ canvas, data, onSelect }) {
         gl_FragColor = vec4(col * a, a);
       }`,
   });
-  const sun = new THREE.Mesh(new THREE.SphereGeometry(3.1, 48, 32), sunMat);
+  const SUN_R = 1.9;
+  const sun = new THREE.Mesh(new THREE.SphereGeometry(SUN_R, 48, 32), sunMat);
   sun.renderOrder = 2;
+  sun.raycast = () => {};
   group.add(sun);
+  // 작아진 만큼 클릭 판정은 따로 넉넉히 둔다
+  const sunPicker = new THREE.Mesh(
+    new THREE.SphereGeometry(SUN_R * 2.9, 16, 12),
+    new THREE.MeshBasicMaterial({ colorWrite: false, depthWrite: false })
+  );
+  group.add(sunPicker);
   // 코로나: 별과 같은 해석적 프로필. 캔버스 텍스처는 알파 경계가 드러나 쓰지 않는다.
   const coronaMat = new THREE.ShaderMaterial({
     transparent: true, depthWrite: false, depthTest: false,
     blending: THREE.CustomBlending,
     blendSrc: THREE.OneFactor, blendDst: THREE.OneFactor,
     blendSrcAlpha: THREE.OneFactor, blendDstAlpha: THREE.OneFactor,
-    uniforms: { uTime: { value: 0 }, uSize: { value: 34 }, uGlare: { value: 1 } },
+    uniforms: { uTime: { value: 0 }, uSize: { value: 26 }, uGlare: { value: 1 } },
     vertexShader: `
       uniform float uSize;
       varying vec2 vP;
@@ -189,15 +197,15 @@ export function createGalaxy({ canvas, data, onSelect }) {
 
         // 코로나는 완전한 원이 아니다. 방향마다 다르게 뻗고 느리게 뒤척인다.
         vec2 dir = r > 0.001 ? vP / r : vec2(1.0, 0.0);
-        float streak = fbm(vec3(dir * 2.6, uTime * 0.035));
-        float plume = fbm(vec3(dir * 6.5, uTime * 0.05 + 11.0));
-        float rays = 0.55 + 0.95 * streak + 0.35 * plume;
+        float n = fbm(vec3(dir * 2.6, uTime * 0.035));
+        float rays = 0.55 + 0.9 * n;
 
-        float inner = 0.010 / (r * r + 0.010) * f;
-        float outer = pow(f, 2.2) * 0.20 * rays;
+        // 림에서 시작해 한 번에 사그라드는 감쇠. 항을 나누면 원반 밖에 고리가 뜬다.
+        float halo = 0.011 / (r * r + 0.008) * f * (0.88 + 0.24 * n);
+        float reach = pow(f, 3.0) * 0.13 * rays;
         // 광구가 차지한 안쪽에서는 코로나를 죽인다. 겹치면 원반이 하얗게 날아간다.
-        float occl = smoothstep(0.15, 0.26, r);
-        float e = (inner + outer) * occl * (1.0 + 0.7 * uGlare) * (1.0 + 0.05 * sin(uTime * 0.6));
+        float occl = smoothstep(0.08, 0.17, r);
+        float e = (halo + reach) * occl * (1.0 + 0.45 * uGlare) * (1.0 + 0.05 * sin(uTime * 0.6));
 
         vec3 hot = vec3(1.00, 0.87, 0.62);
         vec3 cool = vec3(0.85, 0.40, 0.12);
@@ -535,13 +543,16 @@ export function createGalaxy({ canvas, data, onSelect }) {
     downPos = null;
     if (moved > 6) return; // 드래그였다
     ray.setFromCamera(pointer, camera);
-    const sunHit = ray.intersectObject(sun, false);
-    const hit = ray.intersectObject(picker, false);
-    if (hit.length && (!sunHit.length || hit[0].distance < sunHit[0].distance)) {
-      const c = concepts[hit[0].instanceId];
-      if (visibleG.has(c.galaxy)) { onSelect(c.id); return; }
-    }
-    if (sunHit.length) onSelect('__sun__');
+    const hit = ray.intersectObject(picker, false).find(h => visibleG.has(concepts[h.instanceId].galaxy));
+
+    // 보이는 광구 안을 눌렀으면 언제나 태양이 이긴다.
+    // 별의 판정 구체는 보이는 것보다 넉넉하고, 홈 시점에서 세 개가 태양 앞을 지난다.
+    // 그대로 두면 책 자체를 누를 방법이 없어진다. 그 별들은 광구 바깥에서 여전히 눌린다.
+    const sunAt = group.localToWorld(new THREE.Vector3(0, 0, 0));
+    if (ray.ray.distanceToPoint(sunAt) < SUN_R * 1.15) { onSelect('__sun__'); return; }
+
+    if (hit) { onSelect(concepts[hit.instanceId].id); return; }
+    if (ray.intersectObject(sunPicker, false).length) onSelect('__sun__');
   });
 
   function doHover() {
@@ -589,8 +600,8 @@ export function createGalaxy({ canvas, data, onSelect }) {
     // 태양의 겉보기 반경(CSS px)으로 글레어 양을 정한다
     {
       const K = (0.5 * innerHeight) / Math.tan((camera.fov * Math.PI / 180) / 2);
-      const px = 3.1 * K / Math.max(camera.position.length(), 0.001);
-      const glare = 1 - Math.min(Math.max((px - 40) / 140, 0), 1);
+      const px = SUN_R * K / Math.max(camera.position.length(), 0.001);
+      const glare = 1 - Math.min(Math.max((px - 26) / 110, 0), 1);
       sunMat.uniforms.uGlare.value = glare;
       coronaMat.uniforms.uGlare.value = glare;
     }
