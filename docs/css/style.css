@@ -559,20 +559,6 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   pointer-events: none;
   transform: translateY(-20px);
 }
-.pulse-ring {
-  width: 30px; height: 30px;
-  border: 2px solid rgba(242, 236, 221, 0.85);
-  border-radius: 50%;
-  pointer-events: none;
-  animation: ringpulse 2.4s ease-out infinite;
-}
-.pulse-ring.static { animation: none; opacity: 0.6; }
-@keyframes ringpulse {
-  0% { transform: scale(0.5); opacity: 0.9; }
-  80% { transform: scale(1.5); opacity: 0; }
-  100% { opacity: 0; }
-}
-
 #toast {
   position: fixed;
   left: 50%; bottom: 70px;
@@ -657,7 +643,6 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .pulse-ring { animation: none; opacity: 0.6; }
   .brand-pulse { animation: none; opacity: 0.28; }
   #panel { transition: none; }
 }

@@ -82,7 +82,6 @@ async function boot() {
   function select(id, { fly = true, hash = true } = {}) {
     if (list.isOpen()) list.close();
     if (id !== '__sun__' && !byId.has(id)) return;
-    galaxy.clearPulse();
     galaxy.pauseRotation(true);
     galaxy.setSelected(id === '__sun__' ? null : id);
     galaxy.showEdgesFor(id === '__sun__' ? null : id);
@@ -144,20 +143,11 @@ async function boot() {
     localStorage.setItem(LS.motion, state.motion ? '1' : '0');
     galaxy.setMotion(state.motion);
     syncMotionButton();
-    refreshPulse();
     toast(state.motion ? '움직임을 켰습니다' : '움직임을 정지했습니다');
   });
 
-  // ── 시작 안내 펄스 (importance 5 상위 4개) ──
-  function refreshPulse() {
-    if (panel.isOpen()) return;
-    const starters = data.concepts
-      .filter(c => c.importance === 5)
-      .sort((a, b) => a.galaxy - b.galaxy)
-      .slice(0, 4)
-      .map(c => c.id);
-    galaxy.starterPulse(starters, !state.motion || prefersStatic);
-  }
+  // 시작 안내 펄스는 걷어냈다. 헤더 로고 뒤에서 퍼지는 고리가 그 역할을 하고,
+  // 별 위의 링은 헤더와 겹쳐 흰 원반처럼 보였다.
 
   // ── 키보드 ────────────────────────
   addEventListener('keydown', (e) => {
@@ -184,7 +174,6 @@ async function boot() {
     if (booted) return;   // 표지로 되돌아갔다 다시 들어와도 한 번만
     booted = true;
     if (!state.returning) localStorage.setItem(LS.seen, '1');
-    refreshPulse();
     if (validDeep) select(deepLink === 'about' ? '__sun__' : deepLink);
   }
 

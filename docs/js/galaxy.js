@@ -398,23 +398,6 @@ export function createGalaxy({ canvas, data, onSelect }) {
     labelObjs.push(obj);
   });
 
-  // 시작 안내 펄스 링 (importance 5 상위)
-  const ringObjs = [];
-  function starterPulse(ids, staticMode) {
-    ringObjs.forEach(o => group.remove(o));
-    ringObjs.length = 0;
-    ids.forEach(id => {
-      const c = concepts[idx.get(id)];
-      const div = document.createElement('div');
-      div.className = 'pulse-ring' + (staticMode ? ' static' : '');
-      const obj = new CSS2DObject(div);
-      obj.position.set(...c.position);
-      group.add(obj);
-      ringObjs.push(obj);
-    });
-  }
-  function clearPulse() { ringObjs.forEach(o => group.remove(o)); ringObjs.length = 0; }
-
   // 호버 라벨
   const hoverDiv = document.createElement('div');
   hoverDiv.className = 'hover-label';
@@ -668,7 +651,7 @@ export function createGalaxy({ canvas, data, onSelect }) {
 
   return {
     flyToStar, flyHome, showEdgesFor, setFilter, setVisited, setSelected,
-    starterPulse, clearPulse, playIntro, skipIntro, setIntroProgress,
+    playIntro, skipIntro, setIntroProgress,
     setMotion(v) { motion = v; starUniforms.uTwinkle.value = v ? 1 : 0; },
     pauseRotation(v) { rotationPaused = v; },
     avgFrame() { return deltas.length ? deltas.reduce((a, b) => a + b, 0) / deltas.length : 0; },
