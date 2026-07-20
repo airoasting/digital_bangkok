@@ -1,6 +1,8 @@
 # 개념 배정 재검증 (부·장)
 
-검증 2026-07-20. 대상은 `data/concepts.json`의 개념 202개다. 물음은 하나였다. **202개가 각 부에 맞게 잡혔는가.**
+검증 2026-07-20. 대상은 당시 `data/concepts.json`의 개념 202개였다. 물음은 하나였다. **202개가 각 부에 맞게 잡혔는가.**
+
+> **조치 완료 (2026-07-20).** 4절의 중복 10쌍을 병합하고 별칭 오염 6건을 정리했다(202 → 192). 그 뒤 미사용 후보 8개를 편입해 **최종 200개**가 됐다. 상세는 8절에 있다. 아래 1절부터 7절까지는 조치 전 시점의 검증 기록이며, 그대로 둔다.
 
 갱신 기준: `data/concepts.json`의 개념이 추가·삭제·이동될 때마다 `node tools/verify-assignment.mjs`를 다시 돌리고 이 문서의 3절과 4절을 갱신한다.
 
@@ -126,3 +128,69 @@ node tools/gate.mjs                # 형식 게이트
 - 원본 PDF를 직접 대조하지 않았다. 페이지 번호는 `page_map.json`과 extracted의 bookPage를 신뢰한 결과다.
 - 검사한 것은 배정과 중복이다. 나머지 199개의 summary와 body가 사실에 부합하는지, 숫자와 고유명사가 정확한지는 범위 밖이다. `QUALITY.md`가 기록한 대로 콘텐츠 검증은 여전히 52개 표본에 머물러 있다.
 - 책에는 있으나 `concepts.json`에 없는 개념, 즉 누락은 이 검증이 잡아내지 못한다. 중복 10쌍을 병합해 192개가 되면 그 빈자리를 채울 후보를 `data/curated/*.json`에서 다시 볼 여지가 있다.
+
+## 8. 조치 결과 (2026-07-20)
+
+`node tools/apply-merge.mjs`로 실행했다. 스크립트는 기록으로 남겨 둔다.
+
+### 8-1. 중복 10쌍 병합
+
+삭제되는 쪽에만 있던 실무 수치는 남는 개념의 body에 흡수시켰다. 삭제된 id를 가리키던 `related`는 남는 id로 돌렸다.
+
+| 남긴 것 | 지운 것 | 흡수한 내용 |
+|---|---|---|
+| `thailand-4-0` | `thailand-4-0-industrial-strategy` | 12대 육성 산업 전체 목록, First/New S-curve 구분, EEC 투자 유치 목표 |
+| `smart-visa` | `smart-visa-program` | S/E/I/T 네 유형과 유형별 요건(예금, 소득, 투자 기준) |
+| `ltr-visa` | `ltr-visa-program` | 대상별 소득 요건(연 8만 달러 등), 고용주 요건 |
+| `dtv-visa` | `destination-thailand-visa` | 계좌 잔액 50만 바트, 방문 목적 증명 등 서류 요건 |
+| `cloud-first-policy` | `cloud-first-gov-policy` | 220개 정부 부처 제공, 인프라 비용 30~50% 절감, 민간 파트너 |
+| `depa` | `digital-economy-promotion-agency` | D-startup 펀드 지원 대상과 8개 분야, 스마트 시티 엑셀러레이터 |
+| `kreng-jai` | `kreng-jai-culture` | 문화 리스크 해소 권고(소통 방식, 합의 기반 의사결정) |
+| `medical-tourism` | `thailand-medical-tourism` | 2024년 153.7억 달러, 2034년까지 CAGR 15.7%, 산업지수 순위 |
+| `bumrungrad-hospital` | `bumrungrad-international` | 한 문장뿐이라 첫 문단에 한 줄만 추가 |
+| `asean-digital-hub` | `asean-digital-heart` | 에필로그의 "아세안의 디지털 심장" 규정. 프롤로그에서 열려 에필로그에서 닫히는 구조 |
+
+### 8-2. 별칭 오염 6건 정리
+
+`true-corporation`에서 TrueMoveH 계열 3개, `dtac`에서 dtac accelerate, `tiktok-thailand-investment`에서 TikTok, `line-man-youtube-ad`에서 LINE MAN, `ascend-money`에서 트루머니 계열 2개, `techsauce`에서 Techsauce Global Summit을 뺐다. 개념 수는 변하지 않는다.
+
+### 8-3. 신규 개념 8개 편입
+
+`data/extracted/*.json`의 candidates 중 아직 별이 되지 못한 97개에서, 인용할 원문 문장이 실제로 있는 것만 골랐다.
+
+| id | 이름 | 부/장 |
+|---|---|---|
+| `dbd` | 상무부 기업개발국 | 부록 / a2 |
+| `us-thai-amity-treaty` | 미국-태국 우호통상조약 | 부록 / a2 |
+| `one-stop-service-center` | 원스톱 서비스 센터 | 부록 / a2 |
+| `sandbox-88` | 88 SANDBOX | 부록 / a3 |
+| `global-digital-talent-visa` | Global Digital Talent Visa | 부록 / a1 |
+| `thai-home-furnishing` | 태국 홈퍼니싱 시장 | 5부 / ch17 |
+| `mond-nissin-waffle-ad` | 몬드 닛신 보이즈 와플 광고 | 5부 / ch19 |
+| `bangkok-startup-ecosystem` | 방콕 스타트업 생태계 | 5부 / epilogue |
+
+후보로 올렸던 `KBTG Kampus`는 뺐다. 근거가 345쪽 표의 한 행뿐이고 facts에 인용할 문장이 없어, quote를 표에서 재구성해야 했기 때문이다. a3의 기존 개념 9개는 모두 quote가 원문과 정확히 일치하므로 그 규칙을 깨지 않기로 했다. 대신 실제 인용 문장이 있는 `one-stop-service-center`로 바꿨다.
+
+### 8-4. 결과
+
+| 부 | 병합 전 | 병합 후 | 신규 편입 후 |
+|---|---|---|---|
+| 1부 | 29 | 29 | 29 |
+| 2부 | 39 | 39 | 39 |
+| 3부 | 35 | 35 | 35 |
+| 4부 | 40 | 40 | 40 |
+| 5부 | 35 | 32 | 35 |
+| 부록 | 24 | 17 | 22 |
+| 합계 | 202 | 192 | **200** |
+
+검증 재실행 결과다.
+
+- `tools/verify-assignment.mjs`: 치명 0건, **중복 후보 15건 → 0건**
+- `tools/gate.mjs`: 20개 항목 전부 PASS. related 평균 5.33, 고아 0, 깨진 id 0, edges 540, OG 스텁 200
+- 신규 8개 전수 자체 검증: quote가 extracted facts 원문과 일치, 인용 페이지가 장 범위 안, related 전부 실재, 줄표 0
+
+### 8-5. 남은 것
+
+- **`fintech` 이동 미조치.** epilogue(5부)에서 ch07(2부)로 옮기고 본문을 다시 써야 한다. 3-1에 근거가 있다. 개념 수는 변하지 않는다.
+- **`seekster` 판단 보류.** ch14 유지와 ch11 이동 중 결정이 필요하다. 3-3 참조.
+- **병합된 개념의 bookPages는 남는 쪽 장 범위로 유지했다.** 흡수한 사실의 출처 페이지(부록 쪽)는 넣지 않았다. 장 범위 검사를 깨뜨리기 때문인데, 그만큼 body의 일부 수치는 bookPages가 가리키는 쪽에 없다. 출처 추적이 필요해지면 별도 필드를 두는 편이 낫다.
