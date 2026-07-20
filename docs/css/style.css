@@ -68,7 +68,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   top: 0; left: 0; right: 0;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end; /* 브랜드는 왼쪽 레일로 옮겼다 */
   gap: 16px;
   padding: 20px 24px 0;
   z-index: 30;
@@ -76,16 +76,37 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 }
 .topbar > * { pointer-events: auto; }
 
-.brand .eyebrow {
-  display: block;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.34em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 6px;
+/* ── 왼쪽 레일 (브랜드 + 소개 + 범례) ──── */
+
+.rail {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 25;
+  width: min(420px, 38vw);
+  max-height: 100vh;
+  padding: 22px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* 은하 위에 글자가 얹히므로 왼쪽 가장자리만 살짝 어둡게 깐다 */
+  background: linear-gradient(100deg, rgba(4, 5, 12, 0.82) 0%, rgba(4, 5, 12, 0.55) 55%, rgba(4, 5, 12, 0) 100%);
+  pointer-events: none;
 }
-.brand h1 {
+.rail::-webkit-scrollbar { display: none; }
+.rail > * { pointer-events: auto; }
+
+.rail-brand { display: flex; align-items: center; gap: 9px; }
+.rail-logo { width: 30px; height: 30px; border-radius: 50%; flex: none; }
+.rail-brandname {
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #f2ecdd;
+}
+
+.rail-title {
   font-family: var(--serif);
   font-weight: 900;
   font-size: clamp(30px, 3.6vw, 46px);
@@ -94,6 +115,47 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   word-break: keep-all; /* br이 지워져도 어절 중간에서 끊지 않게 */
   color: #f7f2e6;
   text-shadow: 0 2px 24px rgba(5, 6, 13, 0.6);
+  margin-top: 4px;
+}
+.rail-dot { color: var(--gold); }
+
+.rail-lead {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.55;
+  color: #eae4d6;
+  word-break: keep-all;
+}
+.rail-body {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--white-dim);
+  word-break: keep-all;
+}
+.rail-body b { color: #f2ecdd; font-weight: 700; }
+.rail-note {
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--white-faint);
+  word-break: keep-all;
+}
+
+.rail-legend {
+  margin-top: 2px;
+  padding: 11px 12px 9px;
+  border: 1px solid rgba(235, 240, 255, 0.14);
+  border-radius: 14px;
+  background: rgba(8, 10, 22, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.rail-legend-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--white-faint);
+  padding: 0 6px 7px;
 }
 
 .controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
@@ -167,20 +229,11 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
 /* ── 범례(은하팔 필터) ────────────────── */
 
+/* 레일 안에 놓인다. 박스와 라벨은 .rail-legend가 담당한다. */
 #legend {
-  position: fixed;
-  left: 24px;
-  bottom: 22px;
   display: flex;
   flex-direction: column;
   gap: 2px;
-  z-index: 25;
-  padding: 10px 12px;
-  border: 1px solid rgba(235, 240, 255, 0.14);
-  border-radius: 14px;
-  background: rgba(8, 10, 22, 0.5);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 .legend-chip {
   display: flex;
@@ -514,11 +567,21 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
 @media (max-width: 720px) {
   .topbar { padding: 14px 14px 0; }
-  .brand h1 { font-size: 26px; }
-  .brand .eyebrow { font-size: 9px; letter-spacing: 0.16em; margin-bottom: 4px; white-space: nowrap; }
   .search input { width: 150px; }
-  #legend { left: 12px; bottom: 14px; transform-origin: bottom left; transform: scale(0.92); }
   #progress { right: 14px; bottom: 16px; }
+
+  /* 레일은 화면 폭을 다 쓰되, 컨트롤과 겹치지 않게 위를 비운다 */
+  .rail {
+    width: 100%;
+    padding: 96px 16px 18px;
+    gap: 11px;
+    background: linear-gradient(180deg, rgba(4, 5, 12, 0.86) 0%, rgba(4, 5, 12, 0.6) 62%, rgba(4, 5, 12, 0) 100%);
+  }
+  .rail-title { font-size: 26px; }
+  .rail-lead { font-size: 13px; }
+  .rail-body { font-size: 12.5px; }
+  .rail-note { display: none; } /* 좁은 화면에서는 은하를 덜 가린다 */
+  .rail-legend { align-self: flex-start; }
 
   #panel {
     top: auto;
@@ -686,9 +749,10 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
 /* 인트로 동안 앱 크롬은 숨는다 */
 body.intro-on .topbar,
-body.intro-on #legend,
+body.intro-on .rail,
 body.intro-on #progress { opacity: 0; }
-.topbar, #legend, #progress { transition: opacity 0.6s ease; }
+body.intro-on .rail { pointer-events: none; }
+.topbar, .rail, #progress { transition: opacity 0.6s ease; }
 
 @media (max-width: 720px) {
   .cover { height: min(48vh, 420px); }

@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>디지털 방콕 인사이트 — 위키 브레인</title>
+<title>디지털 방콕 인사이트 | AI ROASTING</title>
 <meta name="description" content="책 '디지털 방콕 인사이트'의 개념들을 은하로 탐험하는 위키.">
-<meta property="og:title" content="디지털 방콕 인사이트 — 위키 브레인">
+<meta property="og:title" content="디지털 방콕 인사이트 | AI ROASTING">
 <meta property="og:description" content="태국 디지털 경제를 다룬 책 한 권이 별 200여 개의 은하가 됐습니다. 별을 클릭해 개념을 읽어보세요.">
 <meta property="og:image" content="__BASE_URL__/assets/og-image.png">
 <meta property="og:type" content="website">
@@ -13,7 +13,8 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="./css/style.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%23E8A33D'/%3E%3Ccircle cx='26' cy='9' r='2.4' fill='%236FC3E8'/%3E%3Ccircle cx='6' cy='23' r='1.8' fill='%23F08BA5'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/logos/favicon-32.png">
+<link rel="apple-touch-icon" href="./assets/logos/favicon-180.png">
 <script type="importmap">
 { "imports": { "three": "./vendor/three.module.js",
                "three/addons/": "./vendor/addons/" } }
@@ -24,10 +25,6 @@
 <canvas id="stage" aria-hidden="true"></canvas>
 
 <header class="topbar">
-  <div class="brand">
-    <span class="eyebrow">Knowledge Base · 위키 브레인</span>
-    <h1>디지털 방콕<br>인사이트</h1>
-  </div>
   <nav class="controls" aria-label="탐색 도구">
     <div class="search" role="combobox" aria-expanded="false" aria-haspopup="listbox">
       <input id="search-input" type="search" placeholder="개념 검색 (예: 프롬프트페이)"
@@ -42,7 +39,27 @@
   </nav>
 </header>
 
-<div id="legend" role="group" aria-label="은하팔 필터"></div>
+<aside class="rail" id="rail">
+  <div class="rail-brand">
+    <img class="rail-logo" src="./assets/logos/logo-mark.png" alt="" width="30" height="30" decoding="async">
+    <span class="rail-brandname">AI ROASTING</span>
+  </div>
+
+  <h1 class="rail-title">디지털 방콕<br>인사이트<span class="rail-dot">.</span></h1>
+
+  <p class="rail-lead">태국 디지털 경제를 다룬 책 한 권의 개념 지도.</p>
+
+  <p class="rail-body"><b>200개</b> 개념과 <b>540개</b> 연결, 프롤로그부터 부록까지.
+  태양이 책이고 나선팔 다섯이 1~5부입니다. <b>별을 클릭하면</b> 그 개념의 문서와 유관 개념이 열립니다.</p>
+
+  <p class="rail-note">173쪽 원본을 멀티 에이전트 파이프라인으로 추출하고,<br>
+  배정과 중복을 재검증해 정리했습니다.</p>
+
+  <div class="rail-legend">
+    <div class="rail-legend-label">부 · 클릭해서 켜고 끄기</div>
+    <div id="legend" role="group" aria-label="은하팔 필터"></div>
+  </div>
+</aside>
 
 <div id="progress" aria-live="off"></div>
 
