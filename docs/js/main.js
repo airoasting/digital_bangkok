@@ -5,6 +5,7 @@ import { createPanel } from './panel.js';
 import { createSearch, createLegend } from './search.js';
 import { createTour } from './tour.js';
 import { createList } from './list.js';
+import { createIntro } from './intro.js';
 
 const $ = (s) => document.querySelector(s);
 const LS = { visited: 'dbi-visited', seen: 'dbi-seen', motion: 'dbi-motion' };
@@ -33,8 +34,6 @@ async function boot() {
   const data = await res.json();
   const byId = new Map(data.concepts.map(c => [c.id, c]));
   const total = data.concepts.length;
-
-  $('#load-count').textContent = `별 ${total}개를 만드는 중`;
 
   const galaxy = createGalaxy({
     canvas: $('#stage'),
@@ -174,34 +173,34 @@ async function boot() {
     }
   });
 
-  // ── 부팅 시퀀스: 로딩 → 인트로(스킵 가능) → 코치마크 ──
-  const loading = $('#loading');
-  const skipBtn = $('#skip-intro');
+  // ── 부팅 시퀀스: 표지 → 스크롤 → 은하 ──
+  // 표지가 로딩 화면을 겸한다. 별이 준비되면 표지에 손잡이가 생긴다.
   const deepLink = location.hash.replace('#', '');
   const validDeep = deepLink && (byId.has(deepLink) || deepLink === 'about');
+  const stageEl = $('#stage');
 
   function finishBoot() {
-    loading.classList.add('done');
-    setTimeout(() => loading.remove(), 700);
     if (!state.returning) localStorage.setItem(LS.seen, '1');
     refreshPulse();
     if (validDeep) select(deepLink === 'about' ? '__sun__' : deepLink);
   }
 
-  const skipIntro = state.returning || validDeep || prefersStatic || !state.motion;
-  if (skipIntro) {
+  if (validDeep) {
+    // 특정 개념을 보러 온 사람에게 표지를 세우지 않는다
+    $('#intro').remove();
     galaxy.skipIntro();
     finishBoot();
   } else {
-    skipBtn.hidden = false;
-    let done = false;
-    const complete = () => { if (!done) { done = true; finishBoot(); } };
-    skipBtn.addEventListener('click', () => { galaxy.skipIntro(); complete(); });
-    $('#load-count').textContent = `별 ${total}개가 태어나는 중`;
-    loading.classList.add('done'); // 씬이 보이는 상태에서 인트로 재생
-    setTimeout(() => loading.remove(), 700);
-    galaxy.playIntro(() => complete());
-    setTimeout(complete, 4200); // 안전망
+    galaxy.setIntroProgress(0);
+    stageEl.style.opacity = '0';
+    const intro = createIntro({
+      onProgress: (p) => {
+        stageEl.style.opacity = String(Math.min(Math.max((p - 0.10) / 0.30, 0), 1));
+        galaxy.setIntroProgress(Math.min(Math.max((p - 0.30) / 0.70, 0), 1));
+      },
+      onDone: () => { stageEl.style.opacity = '1'; finishBoot(); },
+    });
+    intro.open(total);
   }
 
   addEventListener('hashchange', () => {
@@ -242,7 +241,11 @@ async function boot() {
 
 boot().catch(err => {
   console.error(err);
-  const l = $('#loading');
-  if (l) l.innerHTML = `<p class="load-title">은하를 여는 데 실패했습니다</p>
-    <p class="load-count">data/concepts.json을 불러오지 못했습니다. 로컬에서는 python3 -m http.server로 열어 주세요.</p>`;
+  const line = $('#intro-line');
+  const cue = $('#intro-cue');
+  if (line) line.textContent = '개념 데이터를 불러오지 못했습니다';
+  if (cue) {
+    cue.hidden = false;
+    cue.textContent = 'data/concepts.json이 필요합니다. 로컬이라면 docs 폴더에서 python3 -m http.server로 여세요.';
+  }
 });

@@ -429,30 +429,6 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
 /* ── 로딩과 코치마크 ─────────────────── */
 
-#loading {
-  position: fixed; inset: 0;
-  z-index: 100;
-  background: var(--space-bg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  transition: opacity 0.6s;
-}
-#loading.done { opacity: 0; pointer-events: none; }
-.load-sun {
-  width: 74px; height: 74px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 38% 35%, #ffe3ae, var(--gold) 58%, #b06f1a);
-  box-shadow: 0 0 60px rgba(232, 163, 61, 0.55), 0 0 140px rgba(232, 163, 61, 0.25);
-  animation: sunbreathe 2.2s ease-in-out infinite;
-}
-@keyframes sunbreathe { 50% { transform: scale(1.06); box-shadow: 0 0 80px rgba(232, 163, 61, 0.7), 0 0 180px rgba(232, 163, 61, 0.3); } }
-.load-title { font-family: var(--serif); font-weight: 900; font-size: 22px; color: #f2ecdd; }
-.load-count { font-size: 13px; color: var(--white-faint); letter-spacing: 0.08em; }
-#skip-intro { margin-top: 6px; }
-
 /* ── 별 라벨(CSS2D) ─────────────────── */
 
 .star-label {
@@ -559,7 +535,153 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .load-sun { animation: none; }
   .pulse-ring { animation: none; opacity: 0.6; }
   #panel { transition: none; }
+}
+
+/* ── 표지에서 은하로 (인트로) ──────────────
+   표지는 하프톤 망점으로 인쇄돼 있고, 은하는 점광원의 집합이다.
+   그래서 전환은 페이드가 아니라 잉크가 떨어져 나와 별이 되는 것이다.
+   색은 전부 표지에서 뽑았다. 새로 만든 색이 없다. */
+
+#intro {
+  --paper: #F5F1E8;
+  --cobalt: #013C96;
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  transition: opacity 0.5s ease;
+}
+/* 지면. 한가운데에서 바깥으로 뚫리며 뒤의 은하를 드러낸다 */
+.intro-paper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--paper);
+}
+#intro.done { opacity: 0; pointer-events: none; }
+
+.intro-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.cover {
+  position: relative;
+  height: min(56vh, 520px);
+  aspect-ratio: 810 / 1200;
+}
+.cover img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* 잉크가 지면을 벗어나 날아갈 수 있도록 화면 전체를 덮는다 */
+#cover-dots {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+/* 종이가 바닥에서 살짝 떠 있다. 지워지기 시작하면 그림자도 함께 걷힌다. */
+.cover img {
+  object-fit: cover;
+  box-shadow:
+    0 1px 0 rgba(1, 60, 150, 0.14),
+    0 34px 60px -26px rgba(1, 60, 150, 0.42);
+  transition: box-shadow 0.4s ease;
+}
+
+.intro-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.intro-eyebrow {
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(1, 60, 150, 0.55);
+}
+.intro-line {
+  font-weight: 900;
+  font-size: 19px;
+  letter-spacing: -0.02em;
+  color: var(--cobalt);
+}
+.intro-cue {
+  max-width: 34ch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: rgba(1, 60, 150, 0.5);
+}
+.intro-cue::after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  background: linear-gradient(rgba(1, 60, 150, 0.45), rgba(1, 60, 150, 0));
+  animation: cue-drop 2.4s ease-in-out infinite;
+}
+@keyframes cue-drop {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(6px); opacity: 1; }
+}
+
+/* 스크롤을 받는 층. 무대 위에 덮여 휠·터치·키보드를 모두 받는다 */
+.intro-scroll {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+}
+.intro-scroll::-webkit-scrollbar { display: none; }
+.intro-track { height: 280vh; }
+
+.intro-skip {
+  position: absolute;
+  z-index: 4;
+  right: 22px; bottom: 22px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: rgba(1, 60, 150, 0.6);
+  border: 1px solid rgba(1, 60, 150, 0.22);
+  border-radius: 999px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: color 0.15s, border-color 0.15s;
+}
+.intro-skip:hover { color: var(--cobalt); border-color: rgba(1, 60, 150, 0.5); }
+
+/* 인트로 동안 앱 크롬은 숨는다 */
+body.intro-on .topbar,
+body.intro-on #legend,
+body.intro-on #progress { opacity: 0; }
+.topbar, #legend, #progress { transition: opacity 0.6s ease; }
+
+@media (max-width: 720px) {
+  .cover { height: min(48vh, 420px); }
+  .intro-stage { gap: 26px; }
+  .intro-skip { right: 50%; transform: translateX(50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-cue::after { animation: none; }
 }

@@ -78,11 +78,21 @@
   </div>
 </div>
 
-<div id="loading">
-  <div class="load-sun" aria-hidden="true"></div>
-  <p class="load-title">디지털 방콕 인사이트</p>
-  <p class="load-count" id="load-count">은하를 여는 중</p>
-  <button class="pill quiet" id="skip-intro" hidden>건너뛰기</button>
+<div id="intro">
+  <div class="intro-paper" id="intro-paper" aria-hidden="true"></div>
+  <div class="intro-stage" id="intro-stage">
+    <figure class="cover">
+      <img id="cover-img" src="./assets/book01.jpeg" alt="디지털 방콕 인사이트 표지" decoding="async">
+    </figure>
+    <div class="intro-meta" id="intro-meta">
+      <span class="intro-eyebrow">Knowledge Base</span>
+      <p class="intro-line" id="intro-line">표지를 여는 중</p>
+      <p class="intro-cue" id="intro-cue" hidden>아래로 스크롤</p>
+    </div>
+  </div>
+  <canvas id="cover-dots" aria-hidden="true"></canvas>
+  <div class="intro-scroll" id="intro-scroll" tabindex="-1" aria-hidden="true"><div class="intro-track"></div></div>
+  <button class="intro-skip" id="intro-skip" hidden>바로 들어가기</button>
 </div>
 
 <div id="toast" role="status" aria-live="polite" hidden></div>

@@ -612,7 +612,7 @@ export function createGalaxy({ canvas, data, onSelect }) {
       camera.position.lerpVectors(tween.start, tween.end, e);
       controls.target.lerpVectors(tween.startT, tween.endT, e);
       if (k >= 1) { const cb = tween.onDone; tween = null; controls.enabled = true; cb && cb(); }
-    } else {
+    } else if (!introPlaying) {
       controls.update();
     }
 
@@ -632,6 +632,20 @@ export function createGalaxy({ canvas, data, onSelect }) {
     flyTo(new THREE.Vector3(0, 0, 0), 0, 3200, () => { introPlaying = false; onDone && onDone(); });
     tween.end = new THREE.Vector3(0, 0.6 * R_HOME, 1.8 * R_HOME);
   }
+  // 스크롤 진행도로 카메라를 태양 근처에서 홈까지 끌어낸다.
+  // 표지에서 빠져나오는 동작과 은하로 나오는 동작이 하나로 이어진다.
+  const INTRO_FROM = new THREE.Vector3(0, 1.4, 8.6);
+  const INTRO_TO = new THREE.Vector3(0, 0.6 * R_HOME, 1.8 * R_HOME);
+  function setIntroProgress(p) {
+    const k = Math.min(Math.max(p, 0), 1);
+    introPlaying = k < 1;
+    controls.enabled = !introPlaying;
+    controls.target.set(0, 0, 0);
+    camera.position.lerpVectors(INTRO_FROM, INTRO_TO, easeInOutCubic(k));
+    camera.lookAt(0, 0, 0);
+    if (!introPlaying) controls.update(); // 현재 위치를 컨트롤에 넘긴다
+  }
+
   function skipIntro() {
     if (tween) { tween = null; controls.enabled = true; }
     introPlaying = false;
@@ -654,7 +668,7 @@ export function createGalaxy({ canvas, data, onSelect }) {
 
   return {
     flyToStar, flyHome, showEdgesFor, setFilter, setVisited, setSelected,
-    starterPulse, clearPulse, playIntro, skipIntro,
+    starterPulse, clearPulse, playIntro, skipIntro, setIntroProgress,
     setMotion(v) { motion = v; starUniforms.uTwinkle.value = v ? 1 : 0; },
     pauseRotation(v) { rotationPaused = v; },
     avgFrame() { return deltas.length ? deltas.reduce((a, b) => a + b, 0) / deltas.length : 0; },
