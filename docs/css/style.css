@@ -78,18 +78,22 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
 .brand .eyebrow {
   display: block;
-  font-size: 10.5px;
-  letter-spacing: 0.22em;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.34em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 .brand h1 {
   font-family: var(--serif);
   font-weight: 900;
-  font-size: 21px;
-  letter-spacing: 0.01em;
-  color: #f2ecdd;
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.04;
+  letter-spacing: -0.022em;
+  word-break: keep-all; /* 좁은 화면에서 어절 중간이 아니라 띄어쓰기에서 끊는다 */
+  color: #f7f2e6;
+  text-shadow: 0 2px 24px rgba(5, 6, 13, 0.6);
 }
 
 .controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
@@ -169,8 +173,14 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   bottom: 22px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
   z-index: 25;
+  padding: 10px 12px;
+  border: 1px solid rgba(235, 240, 255, 0.14);
+  border-radius: 14px;
+  background: rgba(8, 10, 22, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .legend-chip {
   display: flex;
@@ -181,10 +191,10 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   font-size: 12px;
   color: var(--white-dim);
   border: 1px solid transparent;
-  transition: opacity 0.15s, border-color 0.15s;
+  transition: opacity 0.15s, border-color 0.15s, background-color 0.15s;
 }
 .legend-chip .dot { width: 9px; height: 9px; border-radius: 50%; box-shadow: 0 0 8px currentColor; }
-.legend-chip:hover { border-color: rgba(235, 240, 255, 0.2); }
+.legend-chip:hover { border-color: rgba(235, 240, 255, 0.2); background: rgba(235, 240, 255, 0.05); }
 .legend-chip[aria-pressed="false"] { opacity: 0.32; }
 .legend-chip .cnt { color: var(--white-faint); font-size: 11px; }
 
@@ -504,7 +514,8 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
 @media (max-width: 720px) {
   .topbar { padding: 14px 14px 0; }
-  .brand h1 { font-size: 17px; }
+  .brand h1 { font-size: 23px; }
+  .brand .eyebrow { font-size: 9px; letter-spacing: 0.16em; margin-bottom: 4px; white-space: nowrap; }
   .search input { width: 150px; }
   #legend { left: 12px; bottom: 14px; transform-origin: bottom left; transform: scale(0.92); }
   #progress { right: 14px; bottom: 16px; }
