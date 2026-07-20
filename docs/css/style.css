@@ -88,10 +88,10 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 .brand h1 {
   font-family: var(--serif);
   font-weight: 900;
-  font-size: clamp(28px, 3.4vw, 42px);
-  line-height: 1.04;
-  letter-spacing: -0.022em;
-  word-break: keep-all; /* 좁은 화면에서 어절 중간이 아니라 띄어쓰기에서 끊는다 */
+  font-size: clamp(30px, 3.6vw, 46px);
+  line-height: 0.98; /* 2행이 하나의 덩어리로 붙게 */
+  letter-spacing: -0.028em;
+  word-break: keep-all; /* br이 지워져도 어절 중간에서 끊지 않게 */
   color: #f7f2e6;
   text-shadow: 0 2px 24px rgba(5, 6, 13, 0.6);
 }
@@ -514,7 +514,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
 @media (max-width: 720px) {
   .topbar { padding: 14px 14px 0; }
-  .brand h1 { font-size: 23px; }
+  .brand h1 { font-size: 26px; }
   .brand .eyebrow { font-size: 9px; letter-spacing: 0.16em; margin-bottom: 4px; white-space: nowrap; }
   .search input { width: 150px; }
   #legend { left: 12px; bottom: 14px; transform-origin: bottom left; transform: scale(0.92); }
