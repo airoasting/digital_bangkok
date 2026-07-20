@@ -6,12 +6,34 @@ export const PARAMS = {
   R_INNER: 9,
   R_OUTER: 44,
   ARM_WIND: 2.2,      // θ = θg + ARM_WIND·ln(r/R_INNER), 팔 감김 정도
-  H: 3,               // 수직 두께
+  H_BULGE: 12,        // 중심 팽대부의 수직 두께
+  H_DISC: 3.6,        // 원반 바깥의 수직 두께
   MARGIN: 1.7,        // 별 간 최소 여백
   BELT_IN: 48,        // 부록 도넛 안쪽 반지름
   BELT_OUT: 53,       // 부록 도넛 바깥 반지름
+  BELT_H: 4.2,        // 부록 도넛 굵기
+  BELT_TILT: 0.26,    // 부록 도넛 기울기(rad)
   ARM_SPREAD: 0.30,   // 팔 방향 각도 지터
+  // 팔마다 원반면에서 조금씩 기운다. 위에서 봐도 옆에서 봐도 서로 겹치지 않는다.
+  ARM_TILT: [-0.44, 0.26, -0.15, 0.41, -0.32],
+  WARP: 0.22,         // 바깥으로 갈수록 원반이 휘는 정도
 };
+
+// 중심은 두껍고 바깥은 얇다. 실제 은하의 팽대부와 원반.
+function thickness(P, t) {
+  return P.H_DISC + (P.H_BULGE - P.H_DISC) * Math.pow(1 - t, 2.2);
+}
+
+// 균일 난수를 겹쳐 종 모양으로 만든다. 대부분 원반면 근처, 일부만 멀리.
+function bell(rand) {
+  return (rand() + rand() + rand() - 1.5) / 1.5;
+}
+
+// x축 기준 회전. 팔을 원반면에서 기울일 때 쓴다.
+function tiltX(p, a) {
+  const c = Math.cos(a), s = Math.sin(a);
+  return [p[0], p[1] * c - p[2] * s, p[1] * s + p[2] * c];
+}
 
 export function mulberry32(seed) {
   let a = seed >>> 0;
@@ -53,6 +75,7 @@ export function layoutConcepts(concepts, seed = 20260718) {
       .sort((a, b) => b.importance - a.importance || a.id.localeCompare(b.id));
     const N = Math.max(arm.length, 1);
     const thetaG = (g - 1) * (2 * Math.PI / 5);
+    const tilt = P.ARM_TILT[(g - 1) % P.ARM_TILT.length];
 
     arm.forEach((c, i) => {
       const s = starRadius(c.importance);
@@ -64,15 +87,16 @@ export function layoutConcepts(concepts, seed = 20260718) {
         const jR = (rand() - 0.5) * 2.5;
         const rr = Math.max(P.R_INNER * 0.9, r + jR);
         const theta = thetaG + P.ARM_WIND * Math.log(rr / P.R_INNER) + jTheta;
-        const falloff = 1 - 0.5 * t; // 외곽으로 갈수록 얇게
-        const y = (rand() - 0.5) * 2 * P.H * falloff;
-        const cand = [rr * Math.cos(theta), y, rr * Math.sin(theta)];
+        // 팽대부에서 두껍고 바깥에서 얇다. 여기에 바깥일수록 커지는 휨을 더한다.
+        const y = bell(rand) * thickness(P, t)
+          + P.WARP * rr * Math.pow(rr / P.R_OUTER, 2) * Math.sin(theta - 0.7) / 3;
+        const cand = tiltX([rr * Math.cos(theta), y, rr * Math.sin(theta)], tilt);
         if (!collides(cand, s)) { pos = cand; break; }
         if (attempt === 9) r += P.MARGIN * 2; // 재샘플 실패 시 바깥으로 민다
       }
       if (!pos) { // 최후: 반지름을 키워 강제 배치
         const theta = thetaG + P.ARM_WIND * Math.log((r + 4) / P.R_INNER);
-        pos = [(r + 4) * Math.cos(theta), (rand() - 0.5) * P.H, (r + 4) * Math.sin(theta)];
+        pos = tiltX([(r + 4) * Math.cos(theta), bell(rand) * thickness(P, t), (r + 4) * Math.sin(theta)], tilt);
       }
       place(pos, s);
       out.set(c.id, pos.map(v => Math.round(v * 100) / 100));
@@ -90,11 +114,11 @@ export function layoutConcepts(concepts, seed = 20260718) {
     for (let attempt = 0; attempt < 14; attempt++) {
       const theta = i * GOLDEN + (rand() - 0.5) * 0.25;
       const rr = P.BELT_IN + rand() * (P.BELT_OUT - P.BELT_IN);
-      const y = (rand() - 0.5) * 1.6;
-      const cand = [rr * Math.cos(theta), y, rr * Math.sin(theta)];
+      const y = bell(rand) * P.BELT_H;
+      const cand = tiltX([rr * Math.cos(theta), y, rr * Math.sin(theta)], P.BELT_TILT);
       if (!collides(cand, s)) { pos = cand; break; }
     }
-    if (!pos) pos = [(P.BELT_OUT + 2) * Math.cos(i * GOLDEN), 0, (P.BELT_OUT + 2) * Math.sin(i * GOLDEN)];
+    if (!pos) pos = tiltX([(P.BELT_OUT + 2) * Math.cos(i * GOLDEN), bell(rand) * P.BELT_H, (P.BELT_OUT + 2) * Math.sin(i * GOLDEN)], P.BELT_TILT);
     place(pos, s);
     out.set(c.id, pos.map(v => Math.round(v * 100) / 100));
   });

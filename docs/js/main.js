@@ -179,7 +179,10 @@ async function boot() {
   const validDeep = deepLink && (byId.has(deepLink) || deepLink === 'about');
   const stageEl = $('#stage');
 
+  let booted = false;
   function finishBoot() {
+    if (booted) return;   // 표지로 되돌아갔다 다시 들어와도 한 번만
+    booted = true;
     if (!state.returning) localStorage.setItem(LS.seen, '1');
     refreshPulse();
     if (validDeep) select(deepLink === 'about' ? '__sun__' : deepLink);

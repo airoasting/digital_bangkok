@@ -19,6 +19,14 @@ const SPRITES = 6;
 const PAPER = [245, 241, 232];
 const INK_DEEP = [1, 36, 92];   // 표지 코발트의 그늘
 const SPACE = [5, 6, 13];
+// 구멍이 아직 없으면 마스크를 걸지 않는다. 반지름 0짜리 그라디언트도 중심을 흐린다.
+function setMask(el, r, feather, tail) {
+  const v = r < 0 ? 'none'
+    : `radial-gradient(circle at 50% 50%, rgba(0,0,0,0) ${r - feather}%, rgba(0,0,0,1) ${r + tail}%)`;
+  el.style.webkitMaskImage = v;
+  el.style.maskImage = v;
+}
+
 const mix = (a, b, t) => [
   Math.round(a[0] + (b[0] - a[0]) * t),
   Math.round(a[1] + (b[1] - a[1]) * t),
@@ -79,6 +87,8 @@ function sampleInk(img, gx) {
   return dots;
 }
 
+const easeInOutCubic = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+
 export function createIntro({ onProgress, onDone }) {
   const root = document.getElementById('intro');
   const paper = document.getElementById('intro-paper');
@@ -101,6 +111,7 @@ export function createIntro({ onProgress, onDone }) {
   let view = { w: 0, h: 0 };
   let stageScale = 1;
   let lastP = 0;
+  let armed = false, doneAt = 0, upDelta = 0;
   let raf = 0, pending = false, finished = false;
 
   function resize() {
@@ -156,10 +167,9 @@ export function createIntro({ onProgress, onDone }) {
     // 종이가 우주로 식는다. 크림에서 검정으로 곧장 가면 중간이 회색으로 탁해지므로
     // 표지의 코발트를 경유한다. 지면이 제 잉크색으로 어두워진 뒤 우주가 된다.
     // 지면이 한가운데부터 뚫린다. 구멍 안에는 곧바로 진짜 우주가 있다.
-    const hole = seg(p, 0.11, 0.74) * 150;
-    const paperMask = `radial-gradient(circle at 50% 50%, rgba(0,0,0,0) ${hole - 14}%, rgba(0,0,0,1) ${hole + 20}%)`;
-    paper.style.webkitMaskImage = paperMask;
-    paper.style.maskImage = paperMask;
+    // 뚫리기 전에는 마스크를 아예 걸지 않는다. 걸어 두면 중심이 미리 비쳐 얼룩으로 보인다.
+    const hole = seg(p, 0.11, 0.74);
+    setMask(paper, hole > 0 ? hole * 150 : -1, 14, 20);
     // 지면은 끝까지 종이색으로 남는다. 중간에 식히면 화면 전체가 연한 청색으로 떠서
     // 표지도 망점도 대비를 잃는다. 마지막 테두리만 잉크의 그늘을 거쳐 우주로 넘긴다.
     const cool = seg(p, 0.52, 0.76);
@@ -171,10 +181,8 @@ export function createIntro({ onProgress, onDone }) {
     meta.style.opacity = String(1 - seg(p, 0.03, 0.20));
     // 인쇄면은 잉크가 떠난 자리부터, 한가운데에서 바깥으로 지워진다.
     // 통째로 흐려지면 반투명 직사각형이 떠 있어 전환이 둘로 갈라져 보인다.
-    const front = seg(p, 0.09, 0.44) * 108;
-    const mask = `radial-gradient(circle at 50% 50%, rgba(0,0,0,0) ${front - 10}%, rgba(0,0,0,1) ${front + 22}%)`;
-    img.style.webkitMaskImage = mask;
-    img.style.maskImage = mask;
+    const front = seg(p, 0.09, 0.44);
+    setMask(img, front > 0 ? front * 108 : -1, 10, 22);
     img.style.opacity = String(1 - seg(p, 0.46, 0.56));
     // 반쯤 먹힌 지면에 그림자가 남아 있으면 종이처럼 보이지 않는다
     img.style.boxShadow = seg(p, 0.04, 0.22) > 0.98 ? 'none' : '';
@@ -205,14 +213,46 @@ export function createIntro({ onProgress, onDone }) {
     document.body.classList.remove('intro-on');
     onProgress(1);
     onDone();
-    setTimeout(() => root.remove(), 600);
+    // 지우지 않는다. p=1이면 지면도 표지도 이미 없고, 위로 스크롤하면 돌아와야 한다.
+    doneAt = performance.now();
+    armed = true;
+    upDelta = 0;
+  }
+
+  // 브라우저의 smooth 스크롤은 길이를 정할 수 없고 너무 빠르다. 직접 굴린다.
+  let tween = 0;
+  function tweenTo(target, dur) {
+    cancelAnimationFrame(tween);
+    const from = scroller.scrollTop;
+    if (reduced || Math.abs(target - from) < 1) {
+      scroller.scrollTop = target;
+      apply(true);
+      return;
+    }
+    const t0 = performance.now();
+    const step = (now) => {
+      const k = Math.min((now - t0) / dur, 1);
+      scroller.scrollTop = from + (target - from) * easeInOutCubic(k);
+      apply(true);
+      if (k < 1) tween = requestAnimationFrame(step);
+    };
+    tween = requestAnimationFrame(step);
   }
 
   function enter() {
     if (finished) return;
-    const max = scroller.scrollHeight - scroller.clientHeight;
-    if (reduced) { scroller.scrollTop = max; apply(false); finish(); return; }
-    scroller.scrollTo({ top: max, behavior: 'smooth' });
+    tweenTo(scroller.scrollHeight - scroller.clientHeight, 3000);
+  }
+
+  // 은하에서 위로 스크롤하면 표지로 돌아온다. 같은 타임라인을 거꾸로 재생한다.
+  function reopen() {
+    if (!finished) return;
+    finished = false;
+    armed = false;
+    root.classList.remove('done');
+    document.body.classList.add('intro-on');
+    scroller.addEventListener('scroll', onScroll, { passive: true });
+    tweenTo(0, 2600);
   }
 
   document.body.classList.add('intro-on');
@@ -229,6 +269,19 @@ export function createIntro({ onProgress, onDone }) {
     if (finished) return;
     if (e.key === 'Escape' || e.key === 'Enter') { e.preventDefault(); enter(); }
   });
+
+  // 은하에 막 도착해 아직 아무것도 건드리지 않았다면, 위로 스크롤은 표지로 돌아간다.
+  // 한 번이라도 돌리거나 누르거나 줌아웃하면 휠은 본래대로 확대/축소로 돌아간다.
+  addEventListener('wheel', (e) => {
+    if (!finished || !armed) return;
+    if (performance.now() - doneAt < 500) return;   // 관성 스크롤의 여진
+    if (e.deltaY > 0) { armed = false; upDelta = 0; return; }
+    upDelta += -e.deltaY;
+    if (upDelta < 60) return;
+    e.preventDefault();
+    reopen();
+  }, { passive: false });
+  addEventListener('pointerdown', () => { if (finished) armed = false; });
 
   return {
     // 은하가 준비되면 표지에 손잡이를 준다

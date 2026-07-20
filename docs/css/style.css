@@ -559,7 +559,9 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   z-index: 0;
   background: var(--paper);
 }
-#intro.done { opacity: 0; pointer-events: none; }
+/* 끝나도 지우지 않는다. p=1이면 지면도 표지도 이미 없고, 되돌아올 수 있어야 한다. */
+#intro.done { pointer-events: none; }
+#intro.done .intro-scroll { pointer-events: none; }
 
 .intro-stage {
   position: absolute;
