@@ -20,8 +20,13 @@
   --line: #d8c9a8;
   --white-dim: rgba(235, 240, 255, 0.72);
   --white-faint: rgba(235, 240, 255, 0.38);
-  --serif: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", system-ui, sans-serif;
+  /* 활자는 두 세계로 나뉜다.
+     우주(어둠) = 고딕. 표지와 앱 크롬의 목소리.
+     종이(패널) = 명조. 책 본문의 목소리.
+     한국 책이 실제로 쓰는 문법이다. 표지와 제목은 고딕, 본문은 명조. */
+  --display: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", system-ui, sans-serif;
   --sans: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+  --book: "Hahmlet", "Apple SD Gothic Neo", serif;
   --panel-w: 424px;
 }
 
@@ -55,10 +60,16 @@ body::before {
 }
 
 button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+/* 금색은 책 자신을 가리킬 때만 쓴다(태양, 책 쪽 표시, 책의 인용, 읽은 별).
+   조작 장치는 금색을 쓰지 않는다. 그래야 금색이 보일 때 뜻이 생긴다. */
 button:focus-visible, input:focus-visible, a:focus-visible {
-  outline: 2px solid var(--gold);
+  outline: 2px solid #f2ecdd;
   outline-offset: 2px;
   border-radius: 4px;
+}
+/* 종이 위에서는 종이색 링이 보이지 않는다. 잉크색으로 뒤집는다 */
+#panel button:focus-visible, #panel a:focus-visible, #panel input:focus-visible {
+  outline-color: var(--ink);
 }
 
 /* ── 상단 바 ─────────────────────────── */
@@ -100,15 +111,14 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   gap: 14px;
   overflow-y: auto;
   scrollbar-width: none;
-  /* 은하 위에 글자가 얹히므로 왼쪽 가장자리만 살짝 어둡게 깐다 */
-  background: linear-gradient(100deg, rgba(4, 5, 12, 0.82) 0%, rgba(4, 5, 12, 0.55) 55%, rgba(4, 5, 12, 0) 100%);
+  /* 배경을 깔지 않는다. 가독성은 글자 자체의 그림자로만 만든다 */
   pointer-events: none;
 }
 .rail::-webkit-scrollbar { display: none; }
 .rail > * { pointer-events: auto; }
 
 .rail-title {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-weight: 900;
   font-size: clamp(38px, 4.8vw, 62px);
   line-height: 0.96; /* 2행이 하나의 덩어리로 붙게 */
@@ -155,16 +165,16 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 .pill {
   padding: 7px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(232, 163, 61, 0.35);
-  color: #ead9b8;
+  border: 1px solid rgba(235, 240, 255, 0.22);
+  color: var(--white-dim);
   font-size: 13px;
   letter-spacing: 0.02em;
   background: rgba(13, 21, 38, 0.6);
   backdrop-filter: blur(8px);
   transition: border-color 0.15s, background 0.15s, color 0.15s;
 }
-.pill:hover { border-color: var(--gold); color: var(--gold-2); }
-.pill[aria-pressed="true"] { background: rgba(232, 163, 61, 0.18); border-color: var(--gold); color: var(--gold-2); }
+.pill:hover { border-color: rgba(235, 240, 255, 0.5); color: #f2ecdd; }
+.pill[aria-pressed="true"] { background: rgba(235, 240, 255, 0.14); border-color: rgba(235, 240, 255, 0.55); color: #f7f2e6; }
 .pill.quiet { border-color: rgba(235, 240, 255, 0.18); color: var(--white-faint); }
 .pill.quiet:hover { color: var(--white-dim); }
 .pill.icon { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; }
@@ -192,7 +202,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   overflow-y: auto;
   list-style: none;
   background: rgba(13, 21, 38, 0.94);
-  border: 1px solid rgba(232, 163, 61, 0.28);
+  border: 1px solid rgba(235, 240, 255, 0.18);
   border-radius: 12px;
   padding: 6px;
   backdrop-filter: blur(12px);
@@ -215,7 +225,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   font-size: 13.5px;
   color: var(--white-dim);
 }
-#search-results li.active button, #search-results button:hover { background: rgba(232, 163, 61, 0.16); color: #f2ecdd; }
+#search-results li.active button, #search-results button:hover { background: rgba(235, 240, 255, 0.11); color: #f2ecdd; }
 #search-results .sr-dot { width: 8px; height: 8px; border-radius: 50%; flex: none; transform: translateY(-1px); }
 #search-results .sr-type { margin-left: auto; font-size: 11px; color: var(--white-faint); }
 
@@ -308,7 +318,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 .doc-eyebrow .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
 
 .doc-title {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-weight: 900;
   font-size: 27px;
   line-height: 1.25;
@@ -329,21 +339,39 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
 .doc-rule { border: 0; border-top: 2px solid var(--gold); width: 44px; margin: 14px 0 16px; }
 
+/* 인용은 책에서 그대로 옮겨 온 문장이다. 본문보다 한 급 크게, 같은 책 활자로 */
 .doc-quote {
-  font-family: var(--serif);
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 1.75;
+  font-family: var(--book);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.85;
   color: #4a3d2a;
   border-left: 3px solid var(--gold);
   padding: 2px 0 2px 14px;
-  margin: 0 0 18px;
+  margin: 0 0 20px;
 }
-.doc-quote cite { display: block; font-size: 11.5px; color: var(--ink-soft); font-style: normal; margin-top: 6px; }
+.doc-quote cite {
+  display: block;
+  font-family: var(--sans);
+  font-size: 11.5px;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  font-style: normal;
+  margin-top: 8px;
+}
 
-.doc-body { font-size: 14.5px; line-height: 1.85; color: #372e20; }
-.doc-body p { margin-bottom: 12px; }
-.doc-body strong { color: #211a10; }
+/* 종이 위의 본문은 책 활자로 짠다. 줄 사이를 책만큼 벌린다 */
+.doc-body { color: #372e20; }
+.doc-body p {
+  font-family: var(--book);
+  font-weight: 400;
+  font-size: 15.5px;
+  line-height: 1.95;
+  letter-spacing: -0.003em;
+  margin-bottom: 15px;
+}
+.doc-body p strong, .doc-body strong { font-weight: 700; color: #211a10; }
+.doc-body li { font-family: var(--book); font-size: 15px; line-height: 1.9; }
 .doc-body ul { margin: 0 0 12px 18px; }
 .doc-body li { margin-bottom: 4px; }
 .doc-body blockquote {
@@ -374,7 +402,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   background: rgba(255, 255, 255, 0.4);
   transition: border-color 0.15s, background 0.15s;
 }
-.chip:hover { border-color: var(--gold); background: #fff; }
+.chip:hover { border-color: #a89372; background: #fff; }
 .chip .dot { width: 7px; height: 7px; border-radius: 50%; }
 .chip.visited::after { content: "·읽음"; font-size: 10px; color: var(--ink-soft); }
 
@@ -385,17 +413,17 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   align-items: center;
   justify-content: space-between;
   padding: 12px 14px;
-  border: 1px solid var(--gold);
+  border: 1px solid var(--line);
   border-radius: 10px;
-  background: rgba(232, 163, 61, 0.1);
-  font-family: var(--serif);
+  background: rgba(255, 255, 255, 0.5);
+  font-family: var(--display);
   font-weight: 600;
   font-size: 15px;
   color: #211a10;
   transition: background 0.15s;
 }
-.next-btn:hover { background: rgba(232, 163, 61, 0.22); }
-.next-btn .arrow { color: var(--gold); font-size: 18px; }
+.next-btn:hover { background: #fff; border-color: #a89372; }
+.next-btn .arrow { color: var(--ink-soft); font-size: 18px; }
 
 .doc-foot {
   margin-top: 24px;
@@ -416,7 +444,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   border-radius: 999px;
   padding: 4px 12px;
 }
-.doc-foot .share-btn:hover { border-color: var(--gold); }
+.doc-foot .share-btn:hover { border-color: #a89372; }
 .doc-foot a { color: #7a5a1f; }
 
 /* ── 목록 보기 (3D 비의존 경로) ─────────── */
@@ -431,14 +459,14 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 }
 .list-frame { max-width: 860px; margin: 0 auto; }
 .list-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 18px; }
-.list-head h2 { font-family: var(--serif); font-weight: 900; font-size: 24px; color: #f2ecdd; }
+.list-head h2 { font-family: var(--display); font-weight: 900; font-size: 24px; color: #f2ecdd; }
 .list-part { margin-bottom: 26px; }
 .list-part > h3 {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 16px;
   font-weight: 600;
-  color: var(--gold-2);
-  border-bottom: 1px solid rgba(232, 163, 61, 0.25);
+  color: #f2ecdd;
+  border-bottom: 1px solid rgba(235, 240, 255, 0.16);
   padding-bottom: 6px;
   margin-bottom: 4px;
 }
@@ -469,7 +497,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   z-index: 45;
   width: min(520px, calc(100vw - 32px));
   background: rgba(13, 21, 38, 0.92);
-  border: 1px solid rgba(232, 163, 61, 0.35);
+  border: 1px solid rgba(235, 240, 255, 0.2);
   border-radius: 14px;
   backdrop-filter: blur(12px);
   padding: 14px 18px;
@@ -487,7 +515,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 /* ── 별 라벨(CSS2D) ─────────────────── */
 
 .star-label {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-weight: 600;
   font-size: 12px;
   color: rgba(242, 236, 221, 0.85);
@@ -497,12 +525,12 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   transform: translateY(-14px);
 }
 .hover-label {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-weight: 600;
   font-size: 13px;
   color: #fff;
   background: rgba(13, 21, 38, 0.85);
-  border: 1px solid rgba(232, 163, 61, 0.4);
+  border: 1px solid rgba(235, 240, 255, 0.28);
   padding: 3px 10px;
   border-radius: 999px;
   white-space: nowrap;
@@ -511,7 +539,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 }
 .pulse-ring {
   width: 30px; height: 30px;
-  border: 2px solid var(--gold-2);
+  border: 2px solid rgba(242, 236, 221, 0.85);
   border-radius: 50%;
   pointer-events: none;
   animation: ringpulse 2.4s ease-out infinite;
@@ -529,8 +557,8 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   transform: translateX(-50%);
   z-index: 90;
   background: rgba(13, 21, 38, 0.94);
-  color: var(--gold-2);
-  border: 1px solid rgba(232, 163, 61, 0.4);
+  color: #f2ecdd;
+  border: 1px solid rgba(235, 240, 255, 0.28);
   padding: 8px 18px;
   border-radius: 999px;
   font-size: 13px;
@@ -573,7 +601,6 @@ button:focus-visible, input:focus-visible, a:focus-visible {
     width: 100%;
     padding: 84px 16px 18px;
     gap: 11px;
-    background: linear-gradient(180deg, rgba(4, 5, 12, 0.86) 0%, rgba(4, 5, 12, 0.6) 62%, rgba(4, 5, 12, 0) 100%);
   }
   .rail-title { font-size: 34px; }
   .rail-lead { font-size: 13px; }
