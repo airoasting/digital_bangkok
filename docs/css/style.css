@@ -660,7 +660,8 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 .intro-skip {
   position: absolute;
   z-index: 4;
-  right: 22px; bottom: 22px;
+  left: 50%; bottom: 22px;
+  transform: translateX(-50%);
   font-size: 12px;
   letter-spacing: 0.04em;
   color: rgba(1, 60, 150, 0.6);
@@ -681,7 +682,6 @@ body.intro-on #progress { opacity: 0; }
 @media (max-width: 720px) {
   .cover { height: min(48vh, 420px); }
   .intro-stage { gap: 26px; }
-  .intro-skip { right: 50%; transform: translateX(50%); }
 }
 
 @media (prefers-reduced-motion: reduce) {
