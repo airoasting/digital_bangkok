@@ -372,11 +372,13 @@ export function createGalaxy({ canvas, data, onSelect }) {
 
 
   // 상시 라벨 (importance >= 4)
-  // 부(部)마다 대표 개념만 이름을 달고 있는다. 나머지는 가리켜야 이름을 준다.
-  // 라벨이 어중간하게 흩어지면 은하가 다이어그램처럼 보인다.
+  // 상시 라벨은 끈다. 이름은 가리켰을 때만 준다.
+  // 별 위에 글자가 붙어 있으면 은하가 아니라 다이어그램으로 읽힌다.
+  // 되살리려면 아래 등급 문턱을 5 같은 값으로 낮춘다(6이면 아무 별도 해당하지 않는다).
+  const LABEL_MIN_IMPORTANCE = 6;
   const labelObjs = [];
   concepts.forEach((c) => {
-    if (c.importance < 5) return;
+    if (c.importance < LABEL_MIN_IMPORTANCE) return;
     const div = document.createElement('div');
     div.className = 'star-label';
     div.textContent = c.name;
