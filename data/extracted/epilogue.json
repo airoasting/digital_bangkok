@@ -1,0 +1,41 @@
+{
+  "unit": "epilogue",
+  "title": "에필로그: 디지털 혁명과 태국 비즈니스의 미래",
+  "galaxy": 5,
+  "pdfPages": [149, 151],
+  "bookPages": [301, 306],
+  "summary": "에필로그는 방콕을 매 순간 변화를 꿈꾸며 살아 숨 쉬는 거대한 무대로 그리며 책 전체를 마무리한다. 라인, 핀테크, 스타트업이 일상을 바꾸고, 구글, 마이크로소프트, 아마존, 화웨이 같은 글로벌 빅테크가 방콕에 뿌리를 내리고 있지만, 방콕의 진짜 이야기는 그곳에 사는 사람들이 만들어간다고 강조한다. 방콕은 아세안의 디지털 심장으로 자리 잡았고 스마트 시티와 AI 허브로의 도약을 시작했으며, 독자를 구경꾼이 아닌 무대 위의 참여자로 초대하며 끝맺는다.",
+  "facts": [
+    { "text": "노을이 차오르는 방콕의 하늘은 마치 붉은 잉크를 풀어놓은 듯 찬란합니다.", "bookPage": 301, "kind": "인용" },
+    { "text": "방콕은 단순히 한 도시가 아닙니다. 그것은 매 순간 변화를 꿈꾸며 살아 숨 쉬는 거대한 무대입니다.", "bookPage": 301, "kind": "인용" },
+    { "text": "태국인의 스마트폰 속에서 라인은 사람들을 연결하고, 은행들은 핀테크 혁신으로 일상 속 금융의 한계를 허물고 있습니다.", "bookPage": 301, "kind": "고유명사" },
+    { "text": "이 모든 움직임을 가능하게 하는 것은 기술이 아니라, 그 기술을 현실로 바꾸는 사람들의 열정입니다.", "bookPage": 301, "kind": "인용" },
+    { "text": "이제 방콕은 단지 태국의 수도라는 한계를 넘어섰습니다. 이곳은 세계를 향한 관문이며, 창의력과 기술이 충돌하며 불꽃을 일으키는 실험실입니다.", "bookPage": 302, "kind": "인용" },
+    { "text": "구글, 마이크로소프트, 아마존, 화웨이 같은 거대 기업들이 방콕에 뿌리를 내리며 새로운 시대를 위한 발판을 마련하고 있습니다.", "bookPage": 302, "kind": "고유명사" },
+    { "text": "차오프라야 강변을 따라 펼쳐진 거리에서는 소셜 셀러들이 스마트폰 하나로 자신들의 브랜드를 만들어가고, 작은 카페 구석에서는 새로운 비즈니스 모델이 설계되고 있습니다.", "bookPage": 302, "kind": "고유명사" },
+    { "text": "이 도시는 아세안의 디지털 심장으로 자리 잡았고, 스마트 시티와 AI 허브로의 도약을 꿈꾸며 내일을 향한 첫걸음을 내디뎠습니다.", "bookPage": 302, "kind": "인용" },
+    { "text": "방콕은 단순히 꿈을 꾸는 곳이 아닙니다. 그것은 꿈을 현실로 바꾸는 무대입니다.", "bookPage": 303, "kind": "인용" },
+    { "text": "\"멈추지 말라. 더 나아가라. 더 도전하라.\" 이 도시는 단 한순간도 멈추지 않습니다.", "bookPage": 303, "kind": "인용" },
+    { "text": "이 도시는 당신을 구경꾼으로 남겨두지 않습니다. 방콕은 당신을 무대 위로 초대합니다.", "bookPage": 303, "kind": "인용" },
+    { "text": "이 도시는 아세안과 세계를 잇는 다리가 되었고, 이제는 그 다리를 넘어 더 큰 세상을 향해 나아가고 있습니다.", "bookPage": 303, "kind": "인용" },
+    { "text": "방콕의 이야기는 멈추지 않습니다. 그 이야기는 독자가 이 도시에 발을 디딜 때마다 새로운 장을 맞이할 것입니다.", "bookPage": 303, "kind": "인용" }
+  ],
+  "tables": [],
+  "candidates": [
+    { "name": "라인", "aliases": ["LINE"], "definition": "태국인의 스마트폰 속에서 사람들을 연결하는 메신저 플랫폼", "type": "기업", "bookPages": [301], "evidence": { "mentions": 1, "inChapterTitle": false } },
+    { "name": "핀테크", "aliases": ["FinTech"], "definition": "태국 은행들이 일상 속 금융의 한계를 허물고 있는 금융 기술 혁신", "type": "기술", "bookPages": [301], "evidence": { "mentions": 1, "inChapterTitle": false } },
+    { "name": "구글", "aliases": ["Google"], "definition": "방콕에 뿌리를 내리고 있는 글로벌 빅테크 기업", "type": "기업", "bookPages": [302], "evidence": { "mentions": 1, "inChapterTitle": false } },
+    { "name": "마이크로소프트", "aliases": ["Microsoft"], "definition": "방콕에 진출한 글로벌 빅테크 기업", "type": "기업", "bookPages": [302], "evidence": { "mentions": 1, "inChapterTitle": false } },
+    { "name": "아마존", "aliases": ["Amazon"], "definition": "방콕에 진출한 글로벌 빅테크 기업", "type": "기업", "bookPages": [302], "evidence": { "mentions": 1, "inChapterTitle": false } },
+    { "name": "화웨이", "aliases": ["Huawei"], "definition": "방콕에 진출한 중국계 글로벌 기술 기업", "type": "기업", "bookPages": [302], "evidence": { "mentions": 1, "inChapterTitle": false } },
+    { "name": "소셜 셀러", "aliases": ["Social Seller"], "definition": "스마트폰 하나로 자신의 브랜드를 만들어가는 소셜 커머스 판매자", "type": "현상", "bookPages": [302], "evidence": { "mentions": 1, "inChapterTitle": false } },
+    { "name": "차오프라야강", "aliases": ["Chao Phraya"], "definition": "방콕을 관통하는 강으로, 강변 거리에서 디지털 상거래가 펼쳐지는 배경", "type": "용어", "bookPages": [302], "evidence": { "mentions": 1, "inChapterTitle": false } },
+    { "name": "아세안 디지털 심장", "aliases": ["ASEAN digital heart"], "definition": "방콕이 아세안 디지털 경제의 중심으로 자리 잡았다는 책의 규정", "type": "현상", "bookPages": [302, 303], "evidence": { "mentions": 2, "inChapterTitle": false } },
+    { "name": "스마트 시티", "aliases": ["Smart City"], "definition": "방콕이 도약을 꿈꾸는 도시 발전 방향", "type": "정책", "bookPages": [302], "evidence": { "mentions": 1, "inChapterTitle": false } },
+    { "name": "AI 허브", "aliases": ["AI Hub"], "definition": "방콕이 지향하는 인공지능 중심지로의 도약 목표", "type": "현상", "bookPages": [302], "evidence": { "mentions": 1, "inChapterTitle": false } },
+    { "name": "방콕 스타트업 생태계", "aliases": ["Bangkok startup ecosystem"], "definition": "밤늦게까지 불이 꺼지지 않는 사무실과 카페에서 방콕의 내일을 설계하는 창업자들의 생태계", "type": "현상", "bookPages": [301, 302], "evidence": { "mentions": 3, "inChapterTitle": false } }
+  ],
+  "gaps": [
+    { "pdfPage": 151, "reason": "책 304~305쪽은 부록 간지(장 표지 장식면, '부록 01 신정부와 산업별 지원 정책, 02 성공적인 태국 비즈니스를 위한 완벽 가이드, 03 방콕 스타트업 진출 가이드, 04 태국 스타트업 120' 목차만 표시)로 본문 없음" }
+  ]
+}

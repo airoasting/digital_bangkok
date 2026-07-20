@@ -1,0 +1,348 @@
+{
+  "galaxy": 1,
+  "intro": "태국은 2023년 디지털 이코노미 규모 약 360억 달러로 아세안 2위의 경제 강국이며, 대홍수와 쿠데타로 4G 도입은 늦었지만 2020년 아세안 최초로 5G를 상용화하며 기술 혁신의 선두에 섰습니다. 라인이 국민 메신저로 자리 잡은 과정과 65개 주요 모바일 서비스에 담긴 태국인의 디지털 일상을 통해 스마트폰이 이끈 변화를 살펴봅니다.",
+  "candidates": [
+    {
+      "name": "라인",
+      "aliases": ["LINE", "라인 메신저"],
+      "type": "기업",
+      "definition": "2011년 일본에서 출발해 태국의 국민 메신저가 된 메시징 플랫폼으로, 월간 활성 사용자 약 5,500만 명(2023년 말)에 이른다",
+      "chapter": "ch03",
+      "bookPages": [33, 34, 37, 38, 39, 40, 49, 52, 53, 54],
+      "rank": 1
+    },
+    {
+      "name": "슈퍼앱",
+      "aliases": ["Super App"],
+      "type": "용어",
+      "definition": "메신저나 차량 공유 등 하나의 앱에서 결제, 커머스, 배달 등 일상 서비스를 통합 제공하는 앱",
+      "chapter": "ch03",
+      "bookPages": [39, 40, 41, 42, 44, 47],
+      "rank": 2
+    },
+    {
+      "name": "트루머니",
+      "aliases": ["TrueMoney", "트루머니월렛", "TrueMoney Wallet"],
+      "type": "기업",
+      "definition": "알리바바와 현지 통신사 트루의 합작으로 운영되는 태국 비은행 핀테크의 선두 주자로, 편의점과 농촌 지역까지 확산되며 금융 접근성을 높인 디지털 월렛 서비스",
+      "chapter": "ch04",
+      "bookPages": [23, 28, 52, 56, 57, 62],
+      "rank": 3
+    },
+    {
+      "name": "타일랜드 4.0",
+      "aliases": ["Thailand 4.0", "태국 4.0"],
+      "type": "정책",
+      "definition": "2016년 태국 정부가 디지털 산업을 제4차 산업으로 규정하며 발표한 국가 정책으로, 중소기업 디지털화 지원과 세금 혜택 등으로 디지털 이코노미 성장을 견인",
+      "chapter": "ch02",
+      "bookPages": [23, 28],
+      "rank": 4
+    },
+    {
+      "name": "그랩",
+      "aliases": ["Grab"],
+      "type": "기업",
+      "definition": "택시 호출로 시작해 아세안 400개 이상 도시로 확장한 슈퍼앱으로, 2014년 태국 진출 후 하루 평균 70만 건의 배달 주문을 처리한다",
+      "chapter": "ch03",
+      "bookPages": [39, 40, 41, 45, 46, 52, 59, 60, 62],
+      "rank": 5
+    },
+    {
+      "name": "위챗",
+      "aliases": ["WeChat", "웨이신"],
+      "type": "기업",
+      "definition": "텐센트의 중국 메신저로, 미니프로그램을 통해 슈퍼앱 성공 방정식을 제시한 서비스",
+      "chapter": "ch03",
+      "bookPages": [41, 42, 47, 48, 49],
+      "rank": 6
+    },
+    {
+      "name": "미니프로그램",
+      "aliases": ["샤오청쉬", "小程序", "Mini Program"],
+      "type": "기술",
+      "definition": "앱 설치 없이 위챗 안에서 결제·예약·주문 등을 처리하는 경량 앱 생태계로, 2020년 500만 개를 넘어섰다",
+      "chapter": "ch03",
+      "bookPages": [47, 48, 49],
+      "rank": 7
+    },
+    {
+      "name": "태국 5G 상용화",
+      "aliases": ["5G"],
+      "type": "기술",
+      "definition": "2020년 필리핀과 함께 아세안 최초로 시작된 태국의 5G 서비스, 2027년 가입률 38% 전망",
+      "chapter": "ch02",
+      "bookPages": [30, 31, 32],
+      "rank": 8
+    },
+    {
+      "name": "아세안 디지털 이코노미",
+      "aliases": ["e-Conomy SEA"],
+      "type": "현상",
+      "definition": "구글·테마섹·베인&컴퍼니가 집계하는 동남아 디지털 경제 규모로, 태국은 2023년 약 360억 달러로 아세안 2위",
+      "chapter": "ch01",
+      "bookPages": [22, 23, 24],
+      "rank": 9
+    },
+    {
+      "name": "AIS",
+      "aliases": ["Advanced Info Service"],
+      "type": "기업",
+      "definition": "2016년 태국에 4G를 처음 도입하고 5G에 약 2.4조 원을 투자한 태국 대표 통신사",
+      "chapter": "ch02",
+      "bookPages": [26, 30, 31],
+      "rank": 10
+    },
+    {
+      "name": "트루 코퍼레이션",
+      "aliases": ["True Corp", "트루무브", "TrueMoveH"],
+      "type": "기업",
+      "definition": "2023년 트루무브와 DTAC 합병으로 탄생한 가입자 5,500만 명의 태국 최대 통신 사업자",
+      "chapter": "ch02",
+      "bookPages": [30, 31],
+      "rank": 11
+    },
+    {
+      "name": "쇼피",
+      "aliases": ["Shopee"],
+      "type": "기업",
+      "definition": "싱가포르 SEA그룹이 운영하는 태국 최고 인기 쇼핑 애플리케이션으로, 2023년 11.11 세일에서 1,500만 개의 상품을 판매했다",
+      "chapter": "ch04",
+      "bookPages": [52, 57, 58, 62],
+      "rank": 12
+    },
+    {
+      "name": "라자다",
+      "aliases": ["Lazada"],
+      "type": "기업",
+      "definition": "중국 알리바바가 운영하며 태국 중소기업의 디지털 전환을 지원해 전자상거래 급성장을 이끈 대표 쇼핑 플랫폼으로, 쇼피와 양강 구도를 이룬다",
+      "chapter": "ch04",
+      "bookPages": [28, 52, 57, 58, 62],
+      "rank": 13
+    },
+    {
+      "name": "고젝",
+      "aliases": ["Gojek"],
+      "type": "기업",
+      "definition": "2010년 인도네시아에서 오토바이 호출로 출발해 고푸드·고페이 등으로 확장한 슈퍼앱으로, 태국에서는 별도 앱 'Get'을 출시했다",
+      "chapter": "ch03",
+      "bookPages": [39, 41, 45, 46, 47],
+      "rank": 14
+    },
+    {
+      "name": "4G 도입 지연",
+      "aliases": ["태국 4G"],
+      "type": "현상",
+      "definition": "대홍수와 쿠데타로 아세안 이웃국보다 늦은 2016년에야 이뤄진 태국의 4G 상용화",
+      "chapter": "ch02",
+      "bookPages": [26, 27],
+      "rank": 15
+    },
+    {
+      "name": "DTAC",
+      "aliases": ["dtac", "dtac accelerate"],
+      "type": "기업",
+      "definition": "2012년 태국 최초 엑셀러레이터 프로그램을 런칭한 통신사로, 2023년 트루무브와 합병했다",
+      "chapter": "ch02",
+      "bookPages": [27, 28, 30],
+      "rank": 16
+    },
+    {
+      "name": "페이스북",
+      "aliases": ["Facebook"],
+      "type": "기업",
+      "definition": "월간 활성 사용자 약 4,910만 명으로 태국에서 여전히 가장 많이 사용되는 소셜 미디어",
+      "chapter": "ch04",
+      "bookPages": [53, 54, 62],
+      "rank": 17
+    },
+    {
+      "name": "틱톡",
+      "aliases": ["TikTok"],
+      "type": "기업",
+      "definition": "숏폼 동영상과 쇼퍼테인먼트 트렌드를 이끄는 중국계 비디오 플랫폼",
+      "chapter": "ch04",
+      "bookPages": [55, 56, 62],
+      "rank": 18
+    },
+    {
+      "name": "유튜브",
+      "aliases": ["YouTube"],
+      "type": "기업",
+      "definition": "약 4,420만 명의 사용자를 보유한 태국 최고 인기 비디오 플랫폼으로, 2016년 국왕 서거를 계기로 급성장했다",
+      "chapter": "ch04",
+      "bookPages": [53, 54],
+      "rank": 19
+    },
+    {
+      "name": "모바일 퍼스트",
+      "aliases": ["Mobile First"],
+      "type": "현상",
+      "definition": "데스크톱보다 모바일을 통한 인터넷 접속이 지배적인 아세안의 환경 특성으로, 태국은 하루 평균 5시간 넘게 모바일 인터넷을 사용한다",
+      "chapter": "ch03",
+      "bookPages": [42, 43],
+      "rank": 20
+    },
+    {
+      "name": "태국 전기차 허브",
+      "aliases": ["EV Hub"],
+      "type": "현상",
+      "definition": "2030년까지 내연기관차 30% 전기차 전환 목표 아래 BYD·일본·한국 기업 투자가 몰리는 태국의 전기차 산업 전환",
+      "chapter": "ch01",
+      "bookPages": [20, 21],
+      "rank": 21
+    },
+    {
+      "name": "라인맨",
+      "aliases": ["LINE MAN", "라인맨 웡나이", "LINE MAN Wongnai"],
+      "type": "기업",
+      "definition": "태국 77개 주 전역에서 음식 배달과 온디맨드 서비스를 제공하는 현지 유니콘 플랫폼으로, 라이더 약 10만 명이 활동한다",
+      "chapter": "ch04",
+      "bookPages": [24, 40, 46, 52, 59, 60, 62],
+      "rank": 22
+    },
+    {
+      "name": "QR 결제",
+      "aliases": ["QR payment"],
+      "type": "기술",
+      "definition": "태국 중앙은행 주도로 전국에 확산된 디지털 결제 방식",
+      "chapter": "ch01",
+      "bookPages": [23],
+      "rank": 23
+    },
+    {
+      "name": "선불 통신 구조",
+      "aliases": ["Pre-paid"],
+      "type": "현상",
+      "definition": "태국 통신 시장의 주류를 이루는 선불 가입 구조로, 70% 가까운 태국인이 이용한다",
+      "chapter": "ch04",
+      "bookPages": [60, 61],
+      "rank": 24
+    },
+    {
+      "name": "쇼퍼테인먼트",
+      "aliases": ["shoppertainment"],
+      "type": "현상",
+      "definition": "틱톡이 이끄는, 콘텐츠와 쇼핑이 하나로 결합된 새로운 쇼핑 트렌드",
+      "chapter": "ch04",
+      "bookPages": [55],
+      "rank": 25
+    },
+    {
+      "name": "일본에 대한 호감",
+      "aliases": ["친일 정서"],
+      "type": "현상",
+      "definition": "1970년대부터 1위 투자국을 지켜온 일본과의 역사적·경제적·문화적 교류로 형성된 태국의 일본 브랜드 신뢰로, 라인 확산의 토대가 되었다",
+      "chapter": "ch03",
+      "bookPages": [34, 35, 37],
+      "rank": 26
+    },
+    {
+      "name": "1997년 외환 위기와 한일 금융의 갈림길",
+      "aliases": ["IMF 위기"],
+      "type": "현상",
+      "definition": "일본은 태국 지원, 한국 금융사는 철수를 택해 이후 태국 내 입지가 갈린 사건으로, 한국계 금융 기업은 15년간 재진출이 허용되지 않았다",
+      "chapter": "ch03",
+      "bookPages": [36],
+      "rank": 27
+    },
+    {
+      "name": "라인 크리에이터스 마켓",
+      "aliases": ["LINE Creators' Market"],
+      "type": "기술",
+      "definition": "누구나 스티커를 제작·판매할 수 있는 라인의 오픈 플랫폼으로, 2014년 태국 출시 5개월 만에 제작자 5만 명을 넘었다",
+      "chapter": "ch03",
+      "bookPages": [38, 41],
+      "rank": 28
+    },
+    {
+      "name": "2011년 태국 대홍수",
+      "aliases": ["태국 대홍수"],
+      "type": "현상",
+      "definition": "2011년 7~10월 태국 경제 성장률을 0.8%로 떨어뜨리고 4G 도입을 지연시킨 재해",
+      "chapter": "ch02",
+      "bookPages": [26],
+      "rank": 29
+    },
+    {
+      "name": "2014년 태국 쿠데타",
+      "aliases": ["군사 쿠데타"],
+      "type": "현상",
+      "definition": "잉락 친나왓 총리의 사면 발표로 촉발된 혼란 속에서 4G 주파수 경매를 연기시킨 정치 사건",
+      "chapter": "ch02",
+      "bookPages": [26],
+      "rank": 30
+    },
+    {
+      "name": "잉락 친나왓",
+      "aliases": ["Yingluck Shinawatra"],
+      "type": "인물",
+      "definition": "정치범 사면 발표로 2014년 쿠데타 국면의 대규모 시위를 촉발한 당시 태국 총리",
+      "chapter": "ch02",
+      "bookPages": [26],
+      "rank": 31
+    },
+    {
+      "name": "SEA그룹",
+      "aliases": ["SEA Group"],
+      "type": "기업",
+      "definition": "쇼피와 가레나를 운영하는 싱가포르 기반 기업으로, 텐센트가 18.7% 지분을 보유한다",
+      "chapter": "ch04",
+      "bookPages": [57, 62],
+      "rank": 32
+    },
+    {
+      "name": "가레나",
+      "aliases": ["Garena"],
+      "type": "기업",
+      "definition": "'액터 오브 발러', '프리 파이어'를 제공하며 태국 게임 시장의 중심에 있는 SEA그룹의 게임 회사",
+      "chapter": "ch04",
+      "bookPages": [62, 63],
+      "rank": 33
+    },
+    {
+      "name": "잘로",
+      "aliases": ["Zalo"],
+      "type": "기업",
+      "definition": "베트남 VNG 그룹의 국민 메신저로 슈퍼앱 경쟁에 뛰어든 서비스",
+      "chapter": "ch03",
+      "bookPages": [39, 40, 41],
+      "rank": 34
+    },
+    {
+      "name": "테크소스 글로벌 서밋",
+      "aliases": ["Techsauce Global Summit"],
+      "type": "현상",
+      "definition": "2017년 시작된 태국 최대 테크 컨퍼런스로, 태국 디지털 생태계의 새로운 상징이 된 행사",
+      "chapter": "ch02",
+      "bookPages": [28],
+      "rank": 35
+    },
+    {
+      "name": "태국 중앙은행",
+      "aliases": ["Bank of Thailand"],
+      "type": "기업",
+      "definition": "QR 결제 네트워크를 전국으로 확장하며 디지털 결제 혁신을 주도한 기관",
+      "chapter": "ch01",
+      "bookPages": [23],
+      "rank": 36
+    },
+    {
+      "name": "비야디",
+      "aliases": ["BYD"],
+      "type": "기업",
+      "definition": "태국에서 전기차를 생산해 아세안 전역으로 수출하는 중국 전기차 제조사",
+      "chapter": "ch01",
+      "bookPages": [20],
+      "rank": 37
+    },
+    {
+      "name": "IMD 세계 경쟁력 평가",
+      "aliases": ["World Competitiveness Ranking", "IMD 세계 경쟁력 센터"],
+      "type": "용어",
+      "definition": "국가 경쟁력 순위 평가로, 2024년 태국은 25위·아세안 2위를 기록했다",
+      "chapter": "ch01",
+      "bookPages": [18],
+      "rank": 38
+    }
+  ]
+}

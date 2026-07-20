@@ -1,0 +1,3582 @@
+{
+ "tour": [
+  "line",
+  "super-app",
+  "grab",
+  "line-man-wongnai",
+  "c-commerce",
+  "promptpay",
+  "truemoney",
+  "thailand-4-0",
+  "digital-nomad",
+  "huawei",
+  "bamboo-diplomacy",
+  "unicorn",
+  "flash-express",
+  "techsauce",
+  "korean-wave",
+  "lisa",
+  "digital-wallet-policy"
+ ],
+ "concepts": [
+  {
+   "id": "line",
+   "name": "라인",
+   "aliases": [
+    "LINE",
+    "라인 메신저"
+   ],
+   "type": "서비스",
+   "galaxy": 1,
+   "chapter": "ch03",
+   "importance": 5,
+   "definition": "2011년 일본에서 출발해 태국의 국민 메신저가 된 메시징 플랫폼으로, 월간 활성 사용자 약 5,500만 명(2023년 말)에 이른다",
+   "bookPages": [
+    33,
+    34,
+    37,
+    38,
+    39,
+    40,
+    49,
+    52,
+    53,
+    54
+   ]
+  },
+  {
+   "id": "super-app",
+   "name": "슈퍼앱",
+   "aliases": [
+    "Super App"
+   ],
+   "type": "용어",
+   "galaxy": 1,
+   "chapter": "ch03",
+   "importance": 5,
+   "definition": "메신저나 차량 공유 등 하나의 앱에서 결제, 커머스, 배달 등 일상 서비스를 통합 제공하는 앱",
+   "bookPages": [
+    39,
+    40,
+    41,
+    42,
+    44,
+    47
+   ]
+  },
+  {
+   "id": "wechat",
+   "name": "위챗",
+   "aliases": [
+    "WeChat",
+    "웨이신"
+   ],
+   "type": "서비스",
+   "galaxy": 1,
+   "chapter": "ch03",
+   "importance": 3,
+   "definition": "텐센트의 중국 메신저로, 미니프로그램을 통해 슈퍼앱 성공 방정식을 제시한 서비스",
+   "bookPages": [
+    41,
+    42,
+    47,
+    48,
+    49
+   ]
+  },
+  {
+   "id": "mini-program",
+   "name": "미니프로그램",
+   "aliases": [
+    "샤오청쉬",
+    "小程序",
+    "Mini Program"
+   ],
+   "type": "기술",
+   "galaxy": 1,
+   "chapter": "ch03",
+   "importance": 3,
+   "definition": "앱 설치 없이 위챗 안에서 결제·예약·주문 등을 처리하는 경량 앱 생태계로, 2020년 500만 개를 넘어섰다",
+   "bookPages": [
+    47,
+    48,
+    49
+   ]
+  },
+  {
+   "id": "thailand-5g",
+   "name": "태국 5G 상용화",
+   "aliases": [
+    "5G"
+   ],
+   "type": "기술",
+   "galaxy": 1,
+   "chapter": "ch02",
+   "importance": 3,
+   "definition": "2020년 필리핀과 함께 아세안 최초로 시작된 태국의 5G 서비스, 2027년 가입률 38% 전망",
+   "bookPages": [
+    30,
+    31,
+    32
+   ]
+  },
+  {
+   "id": "asean-digital-economy",
+   "name": "아세안 디지털 이코노미",
+   "aliases": [
+    "e-Conomy SEA"
+   ],
+   "type": "현상",
+   "galaxy": 1,
+   "chapter": "ch01",
+   "importance": 3,
+   "definition": "구글·테마섹·베인&컴퍼니가 집계하는 동남아 디지털 경제 규모로, 태국은 2023년 약 360억 달러로 아세안 2위",
+   "bookPages": [
+    22,
+    23,
+    24
+   ]
+  },
+  {
+   "id": "ais",
+   "name": "AIS",
+   "aliases": [
+    "Advanced Info Service"
+   ],
+   "type": "기업",
+   "galaxy": 1,
+   "chapter": "ch02",
+   "importance": 3,
+   "definition": "2016년 태국에 4G를 처음 도입하고 5G에 약 2.4조 원을 투자한 태국 대표 통신사",
+   "bookPages": [
+    26,
+    30,
+    31,
+    153,
+    154,
+    177
+   ]
+  },
+  {
+   "id": "true-corporation",
+   "name": "트루 코퍼레이션",
+   "aliases": [
+    "True Corp",
+    "트루무브",
+    "TrueMoveH",
+    "TrueMove H",
+    "트루무브 H"
+   ],
+   "type": "기업",
+   "galaxy": 1,
+   "chapter": "ch02",
+   "importance": 3,
+   "definition": "2023년 트루무브와 DTAC 합병으로 탄생한 가입자 5,500만 명의 태국 최대 통신 사업자",
+   "bookPages": [
+    30,
+    31,
+    277,
+    278
+   ]
+  },
+  {
+   "id": "gojek",
+   "name": "고젝",
+   "aliases": [
+    "Gojek"
+   ],
+   "type": "서비스",
+   "galaxy": 1,
+   "chapter": "ch03",
+   "importance": 3,
+   "definition": "2010년 인도네시아에서 오토바이 호출로 출발해 고푸드·고페이 등으로 확장한 슈퍼앱으로, 태국에서는 별도 앱 'Get'을 출시했다",
+   "bookPages": [
+    39,
+    41,
+    45,
+    46,
+    47,
+    69,
+    74
+   ]
+  },
+  {
+   "id": "thailand-4g-delay",
+   "name": "4G 도입 지연",
+   "aliases": [
+    "태국 4G"
+   ],
+   "type": "현상",
+   "galaxy": 1,
+   "chapter": "ch02",
+   "importance": 2,
+   "definition": "대홍수와 쿠데타로 아세안 이웃국보다 늦은 2016년에야 이뤄진 태국의 4G 상용화",
+   "bookPages": [
+    26,
+    27
+   ]
+  },
+  {
+   "id": "dtac",
+   "name": "DTAC",
+   "aliases": [
+    "dtac",
+    "dtac accelerate"
+   ],
+   "type": "기업",
+   "galaxy": 1,
+   "chapter": "ch02",
+   "importance": 2,
+   "definition": "2012년 태국 최초 엑셀러레이터 프로그램을 런칭한 통신사로, 2023년 트루무브와 합병했다",
+   "bookPages": [
+    27,
+    28,
+    30
+   ]
+  },
+  {
+   "id": "facebook",
+   "name": "페이스북",
+   "aliases": [
+    "Facebook"
+   ],
+   "type": "서비스",
+   "galaxy": 1,
+   "chapter": "ch04",
+   "importance": 3,
+   "definition": "월간 활성 사용자 약 4,910만 명으로 태국에서 여전히 가장 많이 사용되는 소셜 미디어",
+   "bookPages": [
+    53,
+    54,
+    62
+   ]
+  },
+  {
+   "id": "tiktok",
+   "name": "틱톡",
+   "aliases": [
+    "TikTok"
+   ],
+   "type": "서비스",
+   "galaxy": 1,
+   "chapter": "ch04",
+   "importance": 3,
+   "definition": "숏폼 동영상과 쇼퍼테인먼트 트렌드를 이끄는 중국계 비디오 플랫폼",
+   "bookPages": [
+    55,
+    56,
+    62
+   ]
+  },
+  {
+   "id": "youtube",
+   "name": "유튜브",
+   "aliases": [
+    "YouTube"
+   ],
+   "type": "서비스",
+   "galaxy": 1,
+   "chapter": "ch04",
+   "importance": 3,
+   "definition": "약 4,420만 명의 사용자를 보유한 태국 최고 인기 비디오 플랫폼으로, 2016년 국왕 서거를 계기로 급성장했다",
+   "bookPages": [
+    53,
+    54
+   ]
+  },
+  {
+   "id": "mobile-first",
+   "name": "모바일 퍼스트",
+   "aliases": [
+    "Mobile First"
+   ],
+   "type": "현상",
+   "galaxy": 1,
+   "chapter": "ch03",
+   "importance": 3,
+   "definition": "데스크톱보다 모바일을 통한 인터넷 접속이 지배적인 아세안의 환경 특성으로, 태국은 하루 평균 5시간 넘게 모바일 인터넷을 사용한다",
+   "bookPages": [
+    42,
+    43
+   ]
+  },
+  {
+   "id": "thailand-ev-hub",
+   "name": "태국 전기차 허브",
+   "aliases": [
+    "EV Hub"
+   ],
+   "type": "현상",
+   "galaxy": 1,
+   "chapter": "ch01",
+   "importance": 3,
+   "definition": "2030년까지 내연기관차 30% 전기차 전환 목표 아래 BYD·일본·한국 기업 투자가 몰리는 태국의 전기차 산업 전환",
+   "bookPages": [
+    20,
+    21
+   ]
+  },
+  {
+   "id": "prepaid-mobile",
+   "name": "선불 통신 구조",
+   "aliases": [
+    "Pre-paid"
+   ],
+   "type": "현상",
+   "galaxy": 1,
+   "chapter": "ch04",
+   "importance": 1,
+   "definition": "태국 통신 시장의 주류를 이루는 선불 가입 구조로, 70% 가까운 태국인이 이용한다",
+   "bookPages": [
+    60,
+    61
+   ]
+  },
+  {
+   "id": "shoppertainment",
+   "name": "쇼퍼테인먼트",
+   "aliases": [
+    "shoppertainment"
+   ],
+   "type": "현상",
+   "galaxy": 1,
+   "chapter": "ch04",
+   "importance": 2,
+   "definition": "틱톡이 이끄는, 콘텐츠와 쇼핑이 하나로 결합된 새로운 쇼핑 트렌드",
+   "bookPages": [
+    55
+   ]
+  },
+  {
+   "id": "japan-affinity",
+   "name": "일본에 대한 호감",
+   "aliases": [
+    "친일 정서"
+   ],
+   "type": "현상",
+   "galaxy": 1,
+   "chapter": "ch03",
+   "importance": 2,
+   "definition": "1970년대부터 1위 투자국을 지켜온 일본과의 역사적·경제적·문화적 교류로 형성된 태국의 일본 브랜드 신뢰로, 라인 확산의 토대가 되었다",
+   "bookPages": [
+    34,
+    35,
+    37
+   ]
+  },
+  {
+   "id": "1997-asian-financial-crisis",
+   "name": "1997년 외환 위기와 한일 금융의 갈림길",
+   "aliases": [
+    "IMF 위기"
+   ],
+   "type": "현상",
+   "galaxy": 1,
+   "chapter": "ch03",
+   "importance": 2,
+   "definition": "일본은 태국 지원, 한국 금융사는 철수를 택해 이후 태국 내 입지가 갈린 사건으로, 한국계 금융 기업은 15년간 재진출이 허용되지 않았다",
+   "bookPages": [
+    36
+   ]
+  },
+  {
+   "id": "line-creators-market",
+   "name": "라인 크리에이터스 마켓",
+   "aliases": [
+    "LINE Creators' Market"
+   ],
+   "type": "기술",
+   "galaxy": 1,
+   "chapter": "ch03",
+   "importance": 2,
+   "definition": "누구나 스티커를 제작·판매할 수 있는 라인의 오픈 플랫폼으로, 2014년 태국 출시 5개월 만에 제작자 5만 명을 넘었다",
+   "bookPages": [
+    38,
+    41
+   ]
+  },
+  {
+   "id": "2011-thailand-flood",
+   "name": "2011년 태국 대홍수",
+   "aliases": [
+    "태국 대홍수"
+   ],
+   "type": "현상",
+   "galaxy": 1,
+   "chapter": "ch02",
+   "importance": 2,
+   "definition": "2011년 7~10월 태국 경제 성장률을 0.8%로 떨어뜨리고 4G 도입을 지연시킨 재해",
+   "bookPages": [
+    26
+   ]
+  },
+  {
+   "id": "2014-thailand-coup",
+   "name": "2014년 태국 쿠데타",
+   "aliases": [
+    "군사 쿠데타"
+   ],
+   "type": "현상",
+   "galaxy": 1,
+   "chapter": "ch02",
+   "importance": 2,
+   "definition": "잉락 친나왓 총리의 사면 발표로 촉발된 혼란 속에서 4G 주파수 경매를 연기시킨 정치 사건",
+   "bookPages": [
+    26
+   ]
+  },
+  {
+   "id": "yingluck-shinawatra",
+   "name": "잉락 친나왓",
+   "aliases": [
+    "Yingluck Shinawatra"
+   ],
+   "type": "인물",
+   "galaxy": 1,
+   "chapter": "ch02",
+   "importance": 2,
+   "definition": "정치범 사면 발표로 2014년 쿠데타 국면의 대규모 시위를 촉발한 당시 태국 총리",
+   "bookPages": [
+    26
+   ]
+  },
+  {
+   "id": "sea-group",
+   "name": "SEA그룹",
+   "aliases": [
+    "SEA Group"
+   ],
+   "type": "기업",
+   "galaxy": 1,
+   "chapter": "ch04",
+   "importance": 2,
+   "definition": "쇼피와 가레나를 운영하는 싱가포르 기반 기업으로, 텐센트가 18.7% 지분을 보유한다",
+   "bookPages": [
+    57,
+    62
+   ]
+  },
+  {
+   "id": "garena",
+   "name": "가레나",
+   "aliases": [
+    "Garena"
+   ],
+   "type": "기업",
+   "galaxy": 1,
+   "chapter": "ch04",
+   "importance": 2,
+   "definition": "'액터 오브 발러', '프리 파이어'를 제공하며 태국 게임 시장의 중심에 있는 SEA그룹의 게임 회사",
+   "bookPages": [
+    62,
+    63
+   ]
+  },
+  {
+   "id": "zalo",
+   "name": "잘로",
+   "aliases": [
+    "Zalo"
+   ],
+   "type": "서비스",
+   "galaxy": 1,
+   "chapter": "ch03",
+   "importance": 1,
+   "definition": "베트남 VNG 그룹의 국민 메신저로 슈퍼앱 경쟁에 뛰어든 서비스",
+   "bookPages": [
+    39,
+    40,
+    41
+   ]
+  },
+  {
+   "id": "byd",
+   "name": "비야디",
+   "aliases": [
+    "BYD"
+   ],
+   "type": "기업",
+   "galaxy": 1,
+   "chapter": "ch01",
+   "importance": 2,
+   "definition": "태국에서 전기차를 생산해 아세안 전역으로 수출하는 중국 전기차 제조사",
+   "bookPages": [
+    20
+   ]
+  },
+  {
+   "id": "imd-competitiveness-ranking",
+   "name": "IMD 세계 경쟁력 평가",
+   "aliases": [
+    "World Competitiveness Ranking",
+    "IMD 세계 경쟁력 센터"
+   ],
+   "type": "용어",
+   "galaxy": 1,
+   "chapter": "ch01",
+   "importance": 1,
+   "definition": "국가 경쟁력 순위 평가로, 2024년 태국은 25위·아세안 2위를 기록했다",
+   "bookPages": [
+    18
+   ]
+  },
+  {
+   "id": "promptpay",
+   "name": "프롬프트페이",
+   "aliases": [
+    "PromptPay"
+   ],
+   "type": "기술",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 5,
+   "definition": "2017년 태국 중앙은행이 주요 은행들과 함께 도입한 계좌 이체 기반 간편 결제 서비스로, 2023년 거래액 약 47,450억 바트, 등록 계정 약 7,700만 개에 이른 태국 디지털 전환의 핵심 인프라",
+   "bookPages": [
+    93,
+    94,
+    96,
+    97,
+    99,
+    158
+   ]
+  },
+  {
+   "id": "line-man-wongnai",
+   "name": "라인맨 웡나이",
+   "aliases": [
+    "라인맨",
+    "LINE MAN",
+    "LINE MAN Wongnai"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch05",
+   "importance": 5,
+   "definition": "라인 메신저 기반으로 2017년 본격 성장해 웡나이 합병, 푸드 스토리·래빗 라인페이 인수 등 현지화 전략으로 2023년 태국 음식 배달 2위에 오른 서비스",
+   "bookPages": [
+    24,
+    40,
+    46,
+    52,
+    59,
+    60,
+    62,
+    67,
+    68,
+    69,
+    75,
+    78,
+    79,
+    137,
+    138,
+    225,
+    229,
+    232
+   ]
+  },
+  {
+   "id": "grab",
+   "name": "그랩",
+   "aliases": [
+    "Grab",
+    "그랩푸드",
+    "GrabFood"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch05",
+   "importance": 5,
+   "definition": "2018년 태국 음식 배달 시장에 진입해 점유율 46%로 1위를 지키며 2022년부터 흑자로 전환한 아세안 슈퍼앱",
+   "bookPages": [
+    39,
+    40,
+    41,
+    45,
+    46,
+    52,
+    59,
+    60,
+    62,
+    67,
+    69,
+    71,
+    74,
+    78,
+    79
+   ]
+  },
+  {
+   "id": "truemoney",
+   "name": "트루머니",
+   "aliases": [
+    "TrueMoney",
+    "True Money",
+    "트루머니월렛",
+    "TrueMoney Wallet"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 5,
+   "definition": "CP 그룹 산하에서 출발해 앤트 그룹 투자를 받아 성장한 태국 디지털 월렛 1위(점유율 52.6%) 사업자이자 태국 최초의 핀테크 유니콘",
+   "bookPages": [
+    23,
+    28,
+    52,
+    56,
+    57,
+    62,
+    96,
+    99,
+    100,
+    102,
+    103
+   ]
+  },
+  {
+   "id": "c-commerce",
+   "name": "C-커머스",
+   "aliases": [
+    "Conversational Commerce",
+    "대화형 커머스"
+   ],
+   "type": "현상",
+   "galaxy": 2,
+   "chapter": "ch06",
+   "importance": 4,
+   "definition": "판매자와 구매자가 실시간 대화로 상품을 확인하고 흥정하며 거래하는 태국 특유의 방식으로, 이커머스 거래액의 40% 이상이 소셜 미디어를 통해 이루어진다",
+   "bookPages": [
+    83,
+    84
+   ]
+  },
+  {
+   "id": "shopee",
+   "name": "쇼피",
+   "aliases": [
+    "Shopee"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch06",
+   "importance": 4,
+   "definition": "텐센트 지원을 받아 무료 배송과 할인 프로모션으로 태국 점유율 49%, 아세안 이커머스 1위를 차지한 플랫폼",
+   "bookPages": [
+    52,
+    57,
+    58,
+    62,
+    80,
+    81,
+    82,
+    85,
+    90
+   ]
+  },
+  {
+   "id": "qr-payment",
+   "name": "QR 코드 결제",
+   "aliases": [
+    "QR payment",
+    "QR 결제"
+   ],
+   "type": "기술",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 4,
+   "definition": "스캔만으로 즉시 계좌 이체·결제가 가능한 방식으로, 태국은 2021년 사용률 52%를 기록하며 아세안에서 가장 활발히 사용한다",
+   "bookPages": [
+    23,
+    94,
+    95,
+    96,
+    97,
+    99
+   ]
+  },
+  {
+   "id": "social-seller",
+   "name": "소셜 셀러",
+   "aliases": [
+    "social seller",
+    "Social Seller"
+   ],
+   "type": "현상",
+   "galaxy": 2,
+   "chapter": "ch06",
+   "importance": 3,
+   "definition": "라인, 페이스북, 인스타그램 같은 소셜 플랫폼에서 대화를 통해 상품을 판매하는 개인 판매자로, 다수가 본업 외 투잡으로 활동한다",
+   "bookPages": [
+    80,
+    88,
+    90,
+    302
+   ]
+  },
+  {
+   "id": "medical-tourism",
+   "name": "의료 관광",
+   "aliases": [
+    "Medical Tourism",
+    "웰니스 투어리즘",
+    "태국 의료 관광"
+   ],
+   "type": "현상",
+   "galaxy": 2,
+   "chapter": "ch08",
+   "importance": 4,
+   "definition": "치료와 관광을 결합한 산업으로, 태국은 매년 300만 명 이상의 국제 환자를 유치하며 2026년까지 수입 50억 달러 확대를 목표로 한다",
+   "bookPages": [
+    117,
+    120,
+    121,
+    122,
+    125,
+    261,
+    262
+   ]
+  },
+  {
+   "id": "siriraj-hospital",
+   "name": "시리랏병원",
+   "aliases": [
+    "Siriraj Hospital",
+    "시리랏 월드 클래스 5G 스마트 병원"
+   ],
+   "type": "기관",
+   "galaxy": 2,
+   "chapter": "ch08",
+   "importance": 3,
+   "definition": "1888년 쭐라롱꼰 대왕이 설립한 태국 최고(最古) 병원으로, 화웨이·NBTC와 협력해 아세안 최초의 5G 스마트 병원으로 전환했다",
+   "bookPages": [
+    114,
+    115,
+    116,
+    117,
+    123
+   ]
+  },
+  {
+   "id": "lazada",
+   "name": "라자다",
+   "aliases": [
+    "Lazada"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch06",
+   "importance": 4,
+   "definition": "알리바바의 기술력을 바탕으로 플랫폼 편의성과 다양성을 무기로 삼아 태국 이커머스 점유율 30%를 차지한 플랫폼",
+   "bookPages": [
+    28,
+    52,
+    57,
+    58,
+    62,
+    80,
+    81,
+    82,
+    90
+   ]
+  },
+  {
+   "id": "tiktok-shop",
+   "name": "틱톡 샵",
+   "aliases": [
+    "TikTok Shop",
+    "틱톡샵"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch06",
+   "importance": 3,
+   "definition": "바이트댄스의 틱톡에 결합된 커머스 기능으로, 라이브 방송 판매와 쇼피파이 파트너십으로 확장 중인 플랫폼",
+   "bookPages": [
+    80,
+    82,
+    85
+   ]
+  },
+  {
+   "id": "bank-of-thailand",
+   "name": "태국 중앙은행",
+   "aliases": [
+    "Bank of Thailand"
+   ],
+   "type": "기관",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 4,
+   "definition": "외국 간편 결제에 경고를 보내고 프롬프트페이 도입, 디지털 은행 인가, 암호 화폐 규제를 주도해 온 태국 핀테크 정책의 중심 기관",
+   "bookPages": [
+    23,
+    93,
+    96,
+    97,
+    105
+   ]
+  },
+  {
+   "id": "foodpanda",
+   "name": "푸드판다",
+   "aliases": [
+    "Foodpanda"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch05",
+   "importance": 3,
+   "definition": "2012년 태국에 진출한 글로벌 음식 배달 서비스로, 딜리버리 히어로 산하에서 구조 조정과 매각 논의를 겪으며 후퇴한 사업자",
+   "bookPages": [
+    67,
+    68,
+    74,
+    77,
+    78
+   ]
+  },
+  {
+   "id": "bumrungrad-hospital",
+   "name": "범룽랏국제병원",
+   "aliases": [
+    "Bumrungrad International Hospital",
+    "범룽랏병원",
+    "범룬그라드 국제 병원"
+   ],
+   "type": "기관",
+   "galaxy": 2,
+   "chapter": "ch08",
+   "importance": 3,
+   "definition": "1980년 개원해 아시아 최초로 JCI 인증을 받고 연간 70만 명의 해외 환자를 유치하는 태국 의료 관광의 상징적 국제병원",
+   "bookPages": [
+    116,
+    117,
+    119,
+    120,
+    123,
+    261
+   ]
+  },
+  {
+   "id": "line-bk",
+   "name": "라인 BK",
+   "aliases": [
+    "LINE BK"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 3,
+   "definition": "라인과 카시콘은행이 2020년 합작 설립한 메신저 기반 디지털 은행 서비스로, 출시 넉 달 만에 200만 사용자를 돌파했다",
+   "bookPages": [
+    105,
+    106,
+    107
+   ]
+  },
+  {
+   "id": "kasikornbank",
+   "name": "카시콘은행",
+   "aliases": [
+    "KASIKORNBANK",
+    "카시콘 은행"
+   ],
+   "type": "기업",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 3,
+   "definition": "라인 BK 합작과 사탄 코퍼레이션 가상 자산 거래소 인수 등 핀테크에 적극적인 태국 대형 은행",
+   "bookPages": [
+    95,
+    98,
+    105,
+    108
+   ]
+  },
+  {
+   "id": "ant-group",
+   "name": "앤트 그룹",
+   "aliases": [
+    "Ant Group",
+    "알리페이 생태계"
+   ],
+   "type": "기업",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 3,
+   "definition": "소수 지분 투자와 인수로 트루머니를 비롯한 아시아 각국 전자지갑에 진출해 온 알리바바의 핀테크 계열사",
+   "bookPages": [
+    100,
+    101,
+    104
+   ]
+  },
+  {
+   "id": "rabbit-line-pay",
+   "name": "래빗 라인페이",
+   "aliases": [
+    "Rabbit LINE Pay",
+    "라인페이"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 3,
+   "definition": "라인이 2016년 래빗 그룹과 합작 설립한 태국 2위(점유율 24.7%) 디지털 월렛으로, 2023년 라인맨이 인수해 자체 결제 시스템으로 운영한다",
+   "bookPages": [
+    69,
+    78,
+    102,
+    103
+   ]
+  },
+  {
+   "id": "meituan",
+   "name": "메이투안",
+   "aliases": [
+    "Meituan",
+    "메이투안-디엔핑"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch05",
+   "importance": 2,
+   "definition": "2015년 디엔핑 합병 후 시장 점유율 65%로 흑자 전환하며 배달 시장 1·2위 균형의 교훈을 남긴 중국 슈퍼앱",
+   "bookPages": [
+    76,
+    77
+   ]
+  },
+  {
+   "id": "scbx",
+   "name": "SCBX",
+   "aliases": [
+    "시암커머셜은행",
+    "SCB"
+   ],
+   "type": "기업",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 3,
+   "definition": "시암커머셜은행을 보유한 금융 지주사로, ICO 자회사 토큰엑스 설립 등 디지털 금융 확장을 추진하며 2024년 로빈후드를 매각했다",
+   "bookPages": [
+    98,
+    105,
+    107,
+    108
+   ]
+  },
+  {
+   "id": "virtual-bank",
+   "name": "디지털 가상 은행",
+   "aliases": [
+    "Virtual Bank",
+    "디지털 은행"
+   ],
+   "type": "정책",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 3,
+   "definition": "지점 없이 운영되는 은행 제도로, 태국은 2024년 인가 절차에 착수해 2025년 상반기 허가 업체를 발표할 예정이다",
+   "bookPages": [
+    104,
+    105,
+    159
+   ]
+  },
+  {
+   "id": "5g-smart-hospital",
+   "name": "5G 스마트 병원",
+   "aliases": [
+    "5G Smart Hospital"
+   ],
+   "type": "기술",
+   "galaxy": 2,
+   "chapter": "ch08",
+   "importance": 3,
+   "definition": "5G, 클라우드, AI를 결합해 자율주행 로봇 물류, AI 보조 진단, 원격 의료를 구현한 차세대 병원 모델",
+   "bookPages": [
+    115,
+    116,
+    117
+   ]
+  },
+  {
+   "id": "smart-healthcare-initiative",
+   "name": "스마트 헬스케어 이니셔티브",
+   "aliases": [
+    "Smart Healthcare Initiative",
+    "태국 헬스 데이터 스페이스 5G"
+   ],
+   "type": "정책",
+   "galaxy": 2,
+   "chapter": "ch08",
+   "importance": 2,
+   "definition": "2021년 태국 정부가 5G·AI·빅데이터 기반으로 의료 서비스 질과 접근성을 높이겠다고 선포한 국가 계획",
+   "bookPages": [
+    116,
+    117,
+    118,
+    125
+   ]
+  },
+  {
+   "id": "delivery-hero",
+   "name": "딜리버리 히어로",
+   "aliases": [
+    "Delivery Hero"
+   ],
+   "type": "기업",
+   "galaxy": 2,
+   "chapter": "ch05",
+   "importance": 2,
+   "definition": "푸드판다를 운영하며 배달의 민족을 인수한 독일계 글로벌 배달 기업으로, 라인맨 웡나이와의 푸드판다 매각 논의가 결렬되었다",
+   "bookPages": [
+    67,
+    77,
+    78
+   ]
+  },
+  {
+   "id": "robinhood",
+   "name": "로빈후드",
+   "aliases": [
+    "Robinhood"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch05",
+   "importance": 2,
+   "definition": "시암커머셜은행(SCB)이 런칭했다가 2024년 9월 약 20억 바트에 현지 IT 솔루션 회사에 매각된 태국 음식 배달 서비스",
+   "bookPages": [
+    69,
+    78
+   ]
+  },
+  {
+   "id": "delivery-subsidy-war",
+   "name": "출혈 경쟁과 보조금 구조",
+   "aliases": [
+    "할인과 보조금의 늪"
+   ],
+   "type": "현상",
+   "galaxy": 2,
+   "chapter": "ch05",
+   "importance": 2,
+   "definition": "낮은 수수료(15~20%)와 배달비 보조로 사업자 적자가 누적되는 음식 배달 시장의 수익 구조 문제",
+   "bookPages": [
+    73,
+    74
+   ]
+  },
+  {
+   "id": "live-social-commerce",
+   "name": "라이브 소셜 커머스",
+   "aliases": [
+    "인스턴트 소셜 커머스",
+    "라이브 커머스"
+   ],
+   "type": "현상",
+   "galaxy": 2,
+   "chapter": "ch06",
+   "importance": 3,
+   "definition": "라이브 방송으로 셀러의 표정과 목소리를 전달하고 질문에 즉각 답변하며 신뢰를 쌓는 판매 방식",
+   "bookPages": [
+    86,
+    87
+   ]
+  },
+  {
+   "id": "wongnai",
+   "name": "웡나이",
+   "aliases": [
+    "Wongnai"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch05",
+   "importance": 2,
+   "definition": "2020년 라인맨과 합병해 로컬 네트워크를 강화한 태국 레스토랑 정보 플랫폼",
+   "bookPages": [
+    69,
+    78
+   ]
+  },
+  {
+   "id": "gln",
+   "name": "글로벌 로열티 네트워크",
+   "aliases": [
+    "GLN"
+   ],
+   "type": "기술",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 1,
+   "definition": "KEB하나은행이 2019년 출시한 해외 QR 결제 서비스로, 0.3%의 낮은 수수료로 태국 현지 결제를 지원한다",
+   "bookPages": [
+    97,
+    98
+   ]
+  },
+  {
+   "id": "lunit",
+   "name": "루닛",
+   "aliases": [
+    "Lunit",
+    "루닛 인사이트 CXR",
+    "루닛 인사이트 MMG"
+   ],
+   "type": "기업",
+   "galaxy": 2,
+   "chapter": "ch08",
+   "importance": 2,
+   "definition": "2020년 시리랏병원, 2022년 범룽랏병원에 AI 영상 진단 솔루션을 공급한 한국 의료 AI 기업",
+   "bookPages": [
+    123
+   ]
+  },
+  {
+   "id": "telemedicine",
+   "name": "원격 의료",
+   "aliases": [
+    "Telemedicine",
+    "원격 중환자실",
+    "Tele ICU"
+   ],
+   "type": "기술",
+   "galaxy": 2,
+   "chapter": "ch08",
+   "importance": 2,
+   "definition": "5G 기반으로 농촌 환자를 방콕 전문 의료진과 연결하는 진료 방식으로, 태국 스마트 헬스케어 이니셔티브의 중심축",
+   "bookPages": [
+    117,
+    121,
+    123
+   ]
+  },
+  {
+   "id": "minor-food-group",
+   "name": "마이너 푸드 그룹",
+   "aliases": [
+    "Minor Food Group",
+    "1112Delivery"
+   ],
+   "type": "기업",
+   "galaxy": 2,
+   "chapter": "ch05",
+   "importance": 1,
+   "definition": "1989년 태국 최초의 음식 배달 서비스를 시작하고 2019년 1112Delivery 앱을 출시한 외식 기업",
+   "bookPages": [
+    68
+   ]
+  },
+  {
+   "id": "line-shopping",
+   "name": "라인 쇼핑",
+   "aliases": [
+    "LINE Shopping"
+   ],
+   "type": "서비스",
+   "galaxy": 2,
+   "chapter": "ch06",
+   "importance": 2,
+   "definition": "라인 오피셜 계정과 연동해 셀러와 소비자를 연결하고 주문 처리와 고객 응대를 지원하는 서비스",
+   "bookPages": [
+    85,
+    89
+   ]
+  },
+  {
+   "id": "kol",
+   "name": "KOL",
+   "aliases": [
+    "Key Opinion Leader",
+    "인플루언서"
+   ],
+   "type": "용어",
+   "galaxy": 2,
+   "chapter": "ch06",
+   "importance": 2,
+   "definition": "수많은 팔로워를 거느리고 브랜드의 얼굴이 되어 라이브 방송에서 제품을 소개하는 핵심 오피니언 리더",
+   "bookPages": [
+    87
+   ]
+  },
+  {
+   "id": "nft",
+   "name": "NFT",
+   "aliases": [
+    "Non-Fungible Token",
+    "대체 불가능 토큰"
+   ],
+   "type": "용어",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 2,
+   "definition": "블록체인 기반으로 원본 인증과 소유권 증명이 가능한 디지털 자산으로, 태국은 보유율 약 27%로 세계 상위권이다",
+   "bookPages": [
+    108,
+    111
+   ]
+  },
+  {
+   "id": "community-commerce",
+   "name": "커뮤니티형 커머스",
+   "aliases": [],
+   "type": "현상",
+   "galaxy": 2,
+   "chapter": "ch06",
+   "importance": 1,
+   "definition": "이웃과의 연결을 기반으로 셀러와 구매자가 직접 만나 거래하는, 당근마켓식 대면 거래형 소셜 커머스",
+   "bookPages": [
+    87
+   ]
+  },
+  {
+   "id": "king-chulalongkorn",
+   "name": "쭐라롱꼰 대왕",
+   "aliases": [
+    "Chulalongkorn",
+    "라마 5세"
+   ],
+   "type": "인물",
+   "galaxy": 2,
+   "chapter": "ch08",
+   "importance": 2,
+   "definition": "1888년 시리랏병원을 설립한 태국 국왕으로, 요절한 아들 시리랏 카쿠다반드 왕자의 이름을 병원에 붙였다",
+   "bookPages": [
+    114
+   ]
+  },
+  {
+   "id": "thailand-4-0",
+   "name": "타일랜드 4.0",
+   "aliases": [
+    "Thailand 4.0",
+    "태국 4.0"
+   ],
+   "type": "정책",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 5,
+   "definition": "제조업에 ICT를 접목한 스마트 제조와 디지털 경제 전환을 추진하는 태국 정부의 국가 경제 정책으로, 3부 투자 테마의 정책 프레임이다.",
+   "bookPages": [
+    13,
+    23,
+    28,
+    133,
+    156,
+    157,
+    173,
+    312,
+    317
+   ]
+  },
+  {
+   "id": "asean-digital-hub",
+   "name": "아세안 디지털 허브",
+   "aliases": [
+    "ASEAN Digital Hub",
+    "아세안 디지털 심장",
+    "ASEAN digital heart"
+   ],
+   "type": "현상",
+   "galaxy": 3,
+   "chapter": "prologue",
+   "importance": 4,
+   "definition": "방콕과 태국이 아세안의 디지털 중심지로 도약하고 있다는 이 책 3부의 핵심 개념.",
+   "bookPages": [
+    9,
+    10,
+    13,
+    182,
+    184,
+    302,
+    303
+   ]
+  },
+  {
+   "id": "bamboo-diplomacy",
+   "name": "대나무 외교",
+   "aliases": [
+    "Bamboo Diplomacy"
+   ],
+   "type": "현상",
+   "galaxy": 3,
+   "chapter": "ch12",
+   "importance": 4,
+   "definition": "강대국들 사이에서 유연하게 균형을 맞추며 자국의 이익과 자주성을 지키는 태국의 전통 외교 전략으로, 미중 디지털 패권 경쟁 속 투자 유치의 축이다.",
+   "bookPages": [
+    175,
+    176,
+    182,
+    184
+   ]
+  },
+  {
+   "id": "huawei",
+   "name": "화웨이",
+   "aliases": [
+    "Huawei"
+   ],
+   "type": "기업",
+   "galaxy": 3,
+   "chapter": "ch12",
+   "importance": 4,
+   "definition": "미국 제재 속에서도 태국의 5G, 클라우드, AI 인프라에 대규모 투자하고 디지털 밸리에 AI·클라우드 개발 센터 설립을 계획 중인 중국 통신장비 기업.",
+   "bookPages": [
+    115,
+    116,
+    117,
+    154,
+    155,
+    176,
+    177,
+    178,
+    179,
+    182
+   ]
+  },
+  {
+   "id": "asean-ai-hub",
+   "name": "아세안 AI 허브",
+   "aliases": [
+    "ASEAN AI Hub"
+   ],
+   "type": "정책",
+   "galaxy": 3,
+   "chapter": "ch12",
+   "importance": 3,
+   "definition": "2027년까지 480억 바트 규모 AI 산업 성장과 5만 명 AI 인력 양성으로 태국이 이루려는 국가 목표.",
+   "bookPages": [
+    177,
+    178,
+    182
+   ]
+  },
+  {
+   "id": "digital-valley-thailand",
+   "name": "디지털 밸리 타일랜드",
+   "aliases": [
+    "Digital Valley Thailand",
+    "태국의 실리콘 밸리",
+    "타일랜드 디지털 밸리",
+    "Thailand Digital Valley"
+   ],
+   "type": "정책",
+   "galaxy": 3,
+   "chapter": "ch10",
+   "importance": 3,
+   "definition": "촌부리 시라차에 조성 중인 태국판 실리콘 밸리로, 총 40억 바트 예산으로 2025년 완공과 2만 개 이상의 디지털 일자리 창출을 목표로 한다.",
+   "bookPages": [
+    148,
+    153,
+    154,
+    155,
+    210
+   ]
+  },
+  {
+   "id": "us-bigtech-datacenter",
+   "name": "미국 빅테크의 태국 데이터센터 투자",
+   "aliases": [
+    "Microsoft Azure 리전",
+    "AWS 태국 리전",
+    "Google 태국 데이터센터"
+   ],
+   "type": "현상",
+   "galaxy": 3,
+   "chapter": "ch12",
+   "importance": 3,
+   "definition": "2024년 마이크로소프트, AWS, 구글이 발표한 총 85억 달러 규모의 태국 데이터센터 및 클라우드 투자 흐름.",
+   "bookPages": [
+    182,
+    183
+   ]
+  },
+  {
+   "id": "digital-nomad",
+   "name": "디지털 노마드",
+   "aliases": [
+    "Digital Nomad"
+   ],
+   "type": "현상",
+   "galaxy": 3,
+   "chapter": "ch10",
+   "importance": 4,
+   "definition": "원격으로 일하며 세계를 이동하는 지식 노동자로, 방콕·치앙마이·푸켓의 핵심 유입 인구이자 태국 비자 정책의 주요 대상.",
+   "bookPages": [
+    10,
+    14,
+    148,
+    149,
+    150,
+    151,
+    152
+   ]
+  },
+  {
+   "id": "dtv-visa",
+   "name": "데스티네이션 타일랜드 비자",
+   "aliases": [
+    "Destination Thailand Visa",
+    "DTV",
+    "데스티네이션 태국 비자"
+   ],
+   "type": "정책",
+   "galaxy": 3,
+   "chapter": "ch10",
+   "importance": 3,
+   "definition": "2024년 도입된 디지털 노마드·장기 여행자용 5년 유효 복수 입국 비자로, 180일 체류 후 180일 연장이 가능하다.",
+   "bookPages": [
+    131,
+    150,
+    338
+   ]
+  },
+  {
+   "id": "eec",
+   "name": "동부경제회랑",
+   "aliases": [
+    "EEC",
+    "Eastern Economic Corridor"
+   ],
+   "type": "정책",
+   "galaxy": 3,
+   "chapter": "ch10",
+   "importance": 3,
+   "definition": "촌부리 등 태국 동부의 첨단 산업 경제 특구로, 디지털 밸리가 위치하고 화웨이가 클라우드 데이터센터를 구축한 지역.",
+   "bookPages": [
+    153,
+    178,
+    240,
+    242,
+    245,
+    246,
+    312,
+    316,
+    325
+   ]
+  },
+  {
+   "id": "tiktok-thailand-investment",
+   "name": "틱톡 태국 투자",
+   "aliases": [
+    "TikTok",
+    "ByteDance"
+   ],
+   "type": "현상",
+   "galaxy": 3,
+   "chapter": "ch12",
+   "importance": 2,
+   "definition": "2025년 1월 태국투자청이 승인한 틱톡의 38억 달러 규모 데이터 호스팅 서비스 투자.",
+   "bookPages": [
+    184
+   ]
+  },
+  {
+   "id": "chiang-mai",
+   "name": "치앙마이",
+   "aliases": [
+    "Chiang Mai"
+   ],
+   "type": "현상",
+   "galaxy": 3,
+   "chapter": "ch10",
+   "importance": 3,
+   "definition": "약 5,000명의 디지털 노마드가 활동하는 태국 북부 문화 중심지이자 세계 10대 디지털 노마드 도시.",
+   "bookPages": [
+    148,
+    149,
+    150,
+    152
+   ]
+  },
+  {
+   "id": "phuket",
+   "name": "푸켓",
+   "aliases": [
+    "Phuket"
+   ],
+   "type": "현상",
+   "galaxy": 3,
+   "chapter": "ch10",
+   "importance": 2,
+   "definition": "30개 해변을 가진 태국 최대 섬으로, 블루 존 프로젝트와 스마트 시티 예산으로 디지털 노마드를 끌어들이는 남부 거점.",
+   "bookPages": [
+    148,
+    151,
+    152
+   ]
+  },
+  {
+   "id": "smart-visa",
+   "name": "스마트 비자",
+   "aliases": [
+    "SMART Visa",
+    "스마트 S 비자",
+    "SMART 비자",
+    "SMART S/E/I/T"
+   ],
+   "type": "정책",
+   "galaxy": 3,
+   "chapter": "ch09",
+   "importance": 3,
+   "definition": "2018년 시행되어 과학기술 전문가·투자자·창업가에게 최대 4년 체류와 취업 허가 면제를 주는 태국 비자.",
+   "bookPages": [
+    131,
+    213,
+    239,
+    240,
+    338,
+    340
+   ]
+  },
+  {
+   "id": "ltr-visa",
+   "name": "장기 거주 비자",
+   "aliases": [
+    "LTR Visa",
+    "Long Term Resident Program",
+    "LTR 비자",
+    "Long-Term Resident Visa"
+   ],
+   "type": "정책",
+   "galaxy": 3,
+   "chapter": "ch09",
+   "importance": 2,
+   "definition": "2022년 도입되어 고잠재력 외국인에게 최대 10년 체류와 세금 혜택을 주는 태국 비자.",
+   "bookPages": [
+    131,
+    338
+   ]
+  },
+  {
+   "id": "innovation-one-fund",
+   "name": "이노베이션 원 펀드",
+   "aliases": [
+    "Innovation One Fund"
+   ],
+   "type": "정책",
+   "galaxy": 3,
+   "chapter": "ch09",
+   "importance": 2,
+   "definition": "2023년 출범한 10억 바트 규모의 펀드로, 기술 스타트업과 중소기업을 연결하며 스타트업당 최대 3,000만 바트를 투자한다.",
+   "bookPages": [
+    130
+   ]
+  },
+  {
+   "id": "set",
+   "name": "태국 증권거래소",
+   "aliases": [
+    "SET",
+    "The Stock Exchange of Thailand"
+   ],
+   "type": "기관",
+   "galaxy": 3,
+   "chapter": "ch09",
+   "importance": 2,
+   "definition": "아세안 대비 높은 주가수익비율과 거래량을 보이는 태국 주식 시장으로, 스타트업 IPO 엑시트의 통로.",
+   "bookPages": [
+    137,
+    140,
+    141
+   ]
+  },
+  {
+   "id": "mai",
+   "name": "MAI",
+   "aliases": [
+    "Market for Alternative Investment"
+   ],
+   "type": "기관",
+   "galaxy": 3,
+   "chapter": "ch09",
+   "importance": 2,
+   "definition": "한국 코스닥과 유사한, 중소기업·스타트업 대상 태국 대체 투자 시장.",
+   "bookPages": [
+    141,
+    142
+   ]
+  },
+  {
+   "id": "giztix",
+   "name": "기즈틱스",
+   "aliases": [
+    "Giztix"
+   ],
+   "type": "서비스",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 2,
+   "definition": "1,000개 이상의 기업 고객을 확보하고 물류 비용을 20% 이상 절감하는 AI 기반 물류 플랫폼 스타트업.",
+   "bookPages": [
+    134,
+    161,
+    162,
+    163
+   ]
+  },
+  {
+   "id": "ricult",
+   "name": "리컬트",
+   "aliases": [
+    "Ricult",
+    "Rikult"
+   ],
+   "type": "서비스",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 2,
+   "definition": "AI와 위성 이미지로 농작물 상태 모니터링과 수확량 예측을 제공하는 태국 스마트팜 스타트업으로, 10만 명 이상의 농부가 이용한다.",
+   "bookPages": [
+    133,
+    171,
+    172
+   ]
+  },
+  {
+   "id": "doctor-raksa",
+   "name": "닥터 락사",
+   "aliases": [
+    "Doctor Raksa"
+   ],
+   "type": "서비스",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 2,
+   "definition": "태국의 온라인 원격 진료 플랫폼 스타트업으로, 2021년 싱가포르의 닥터 애니웨어에 인수되었다.",
+   "bookPages": [
+    134,
+    168,
+    169,
+    170
+   ]
+  },
+  {
+   "id": "abacus-digital",
+   "name": "아바쿠스 디지털",
+   "aliases": [
+    "Abacus Digital"
+   ],
+   "type": "기업",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 2,
+   "definition": "태국 시암커머셜은행(SCB)의 스핀오프로 2017년 설립되어 AI 기반 맞춤형 대출 서비스를 제공하는 핀테크 스타트업.",
+   "bookPages": [
+    159,
+    160
+   ]
+  },
+  {
+   "id": "rabbit-care",
+   "name": "래빗 케어",
+   "aliases": [
+    "Rabbit Care"
+   ],
+   "type": "서비스",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 2,
+   "definition": "보험 및 금융 상품 비교 플랫폼으로, 삼성생명이 전략적 투자한 태국 인슈어테크 스타트업.",
+   "bookPages": [
+    159,
+    160
+   ]
+  },
+  {
+   "id": "finnomena",
+   "name": "피노메나",
+   "aliases": [
+    "Finnomena"
+   ],
+   "type": "서비스",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 2,
+   "definition": "25개 은행의 뮤추얼 펀드 수익률 비교 등 맞춤형 포트폴리오와 디지털 자산 관리를 제공하는 태국 핀테크.",
+   "bookPages": [
+    159,
+    160
+   ]
+  },
+  {
+   "id": "freshket",
+   "name": "프레시켓",
+   "aliases": [
+    "Freshket"
+   ],
+   "type": "서비스",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 2,
+   "definition": "태국의 농부, 식품 공급업체, 레스토랑을 연결하는 식자재 B2B 마켓플레이스 스타트업.",
+   "bookPages": [
+    164,
+    165
+   ]
+  },
+  {
+   "id": "builk",
+   "name": "빌크",
+   "aliases": [
+    "Builk"
+   ],
+   "type": "서비스",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 2,
+   "definition": "아세안 3만 개 이상의 건설회사가 이용하는 건설 비용 관리 소프트웨어 플랫폼.",
+   "bookPages": [
+    164,
+    165
+   ]
+  },
+  {
+   "id": "hd",
+   "name": "에이치디",
+   "aliases": [
+    "HD"
+   ],
+   "type": "서비스",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 2,
+   "definition": "시장가 대비 15~20% 저렴한 수술 서비스를 제공하는 병원·수술 예약 중개 마켓플레이스로, 500개 이상의 병원·클리닉과 협력한다.",
+   "bookPages": [
+    167,
+    168,
+    169
+   ]
+  },
+  {
+   "id": "amity",
+   "name": "아미티",
+   "aliases": [
+    "Amity"
+   ],
+   "type": "기업",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 2,
+   "definition": "AI 챗봇 등 기업형 협업 솔루션을 제공하며 일본, 미국, 유럽 등으로 진출 중인 태국 딥테크 스타트업.",
+   "bookPages": [
+    171,
+    172
+   ]
+  },
+  {
+   "id": "etran",
+   "name": "이트란",
+   "aliases": [
+    "ETRAN"
+   ],
+   "type": "기업",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 2,
+   "definition": "태국 최초의 전기 오토바이 마이라를 개발하고 방콕시와 소형 전기 쓰레기 수거 트럭을 만든 친환경 모빌리티 스타트업.",
+   "bookPages": [
+    171,
+    172,
+    173
+   ]
+  },
+  {
+   "id": "sea-lion",
+   "name": "시-라이언",
+   "aliases": [
+    "SEA-LION",
+    "Southeast Asian Languages In One Network"
+   ],
+   "type": "기술",
+   "galaxy": 3,
+   "chapter": "ch12",
+   "importance": 2,
+   "definition": "AI 싱가포르가 개발한, 훈련 데이터의 13%가 아세안 언어로 구성된 대형 언어 모델.",
+   "bookPages": [
+    181
+   ]
+  },
+  {
+   "id": "cloud-first-policy",
+   "name": "클라우드 퍼스트 정책",
+   "aliases": [
+    "Cloud First Policy",
+    "Cloud First 정책",
+    "클라우드 퍼스트"
+   ],
+   "type": "정책",
+   "galaxy": 3,
+   "chapter": "ch12",
+   "importance": 2,
+   "definition": "태국 정부가 화웨이와의 MOU 체결과 함께 발표한 클라우드 우선 국가 정책.",
+   "bookPages": [
+    177,
+    311
+   ]
+  },
+  {
+   "id": "deliveree",
+   "name": "딜리버리",
+   "aliases": [
+    "Deliveree"
+   ],
+   "type": "서비스",
+   "galaxy": 3,
+   "chapter": "ch11",
+   "importance": 2,
+   "definition": "태국·인도네시아·필리핀에서 3,000대 이상의 화물 트럭을 운영하며 연간 1억 건 이상의 배송을 처리하는 물류 스타트업.",
+   "bookPages": [
+    161,
+    162,
+    163
+   ]
+  },
+  {
+   "id": "unicorn",
+   "name": "유니콘",
+   "aliases": [
+    "Unicorn"
+   ],
+   "type": "용어",
+   "galaxy": 4,
+   "chapter": "ch15",
+   "importance": 5,
+   "definition": "기업 가치 10억 달러 이상으로 평가받는 비상장 스타트업으로, 태국은 2021년에야 첫 유니콘을 배출했다.",
+   "bookPages": [
+    218,
+    223,
+    224,
+    225,
+    232,
+    233
+   ]
+  },
+  {
+   "id": "flash-express",
+   "name": "플래시 익스프레스",
+   "aliases": [
+    "Flash Express"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch15",
+   "importance": 4,
+   "definition": "2018년 설립된 이커머스 물류 회사로, 2021년 6월 1억 5천만 달러 투자를 받아 태국 최초의 유니콘이 된 기업.",
+   "bookPages": [
+    161,
+    163,
+    225,
+    226,
+    227,
+    228,
+    231,
+    232
+   ]
+  },
+  {
+   "id": "bangkok-valley",
+   "name": "방콕 밸리",
+   "aliases": [
+    "Bangkok Valley"
+   ],
+   "type": "현상",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 3,
+   "definition": "실리콘밸리에 빗댄 방콕 스타트업 생태계의 별칭으로, 역사는 10여 년에 불과하지만 아세안에서 주목받는 시장으로 부상하고 있다.",
+   "bookPages": [
+    199,
+    200
+   ]
+  },
+  {
+   "id": "techsauce",
+   "name": "테크소스",
+   "aliases": [
+    "Techsauce",
+    "techsauce.co",
+    "Techsauce Global Summit",
+    "Techsauce Startup Directory"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 4,
+   "definition": "2014년 설립된 태국 스타트업 미디어·이벤트 기업으로, 테크소스 글로벌 서밋을 개최하고 태국 스타트업 생태계 보고서를 발간한다.",
+   "bookPages": [
+    190,
+    191,
+    192,
+    193,
+    205,
+    343,
+    344,
+    349
+   ]
+  },
+  {
+   "id": "boi",
+   "name": "태국투자청",
+   "aliases": [
+    "태국 투자청",
+    "BOI",
+    "Thailand Board of Investment",
+    "Board of Investment"
+   ],
+   "type": "기관",
+   "galaxy": 4,
+   "chapter": "ch14",
+   "importance": 4,
+   "definition": "1966년 설립된 정부 기관으로, 법인세 면제와 100% 외국인 소유 허용 등 외국 투자 유치 인센티브를 제공한다.",
+   "bookPages": [
+    130,
+    131,
+    182,
+    184,
+    212,
+    213,
+    239,
+    240,
+    242,
+    246,
+    247,
+    248,
+    316,
+    320,
+    322,
+    325,
+    335,
+    336,
+    338,
+    340
+   ]
+  },
+  {
+   "id": "ascend-money",
+   "name": "어센드 머니",
+   "aliases": [
+    "Ascend Money",
+    "트루머니",
+    "True Money Wallet"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch15",
+   "importance": 3,
+   "definition": "트루에서 분사해 태국 전자 지갑 1위 트루머니를 운영하는 기업으로, 2021년 태국의 두 번째 유니콘이 되었다.",
+   "bookPages": [
+    225,
+    228,
+    231,
+    232
+   ]
+  },
+  {
+   "id": "opn",
+   "name": "Opn",
+   "aliases": [
+    "Omise",
+    "오미세"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch15",
+   "importance": 3,
+   "definition": "2013년 준 하세가와와 에즈라 돈 하린수트가 창업한 결제 게이트웨이 핀테크로, 2022년 유니콘에 올랐다.",
+   "bookPages": [
+    225,
+    230,
+    232
+   ]
+  },
+  {
+   "id": "bitkub",
+   "name": "비트커브",
+   "aliases": [
+    "Bitkub"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch15",
+   "importance": 3,
+   "definition": "탑 지라윳이 창업한 태국 최대 가상 자산 거래소로, 2021년 SCB 10X의 지분 인수로 유니콘 반열에 올랐으나 이후 인수가 철회되었다.",
+   "bookPages": [
+    230,
+    231
+   ]
+  },
+  {
+   "id": "500-tuktuks",
+   "name": "500 툭툭",
+   "aliases": [
+    "500 TukTuks",
+    "500 Tuktuks"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 3,
+   "definition": "2015년 시작된 태국 최초의 벤처 캐피탈 펀드로, 태국·아세안 초기 단계 스타트업 50여 개에 투자했다.",
+   "bookPages": [
+    194,
+    195,
+    196
+   ]
+  },
+  {
+   "id": "hubba",
+   "name": "허바",
+   "aliases": [
+    "Hubba"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 3,
+   "definition": "2012년 설립된 태국 최초의 코워킹 스페이스로, 태국 스타트업 생태계의 시작점으로 꼽힌다.",
+   "bookPages": [
+    189,
+    190
+   ]
+  },
+  {
+   "id": "scale-up",
+   "name": "스케일업",
+   "aliases": [
+    "Scale-up"
+   ],
+   "type": "용어",
+   "galaxy": 4,
+   "chapter": "ch14",
+   "importance": 2,
+   "definition": "창업 초기 단계와 성장 단계 사이의 캐즘을 극복하고 본격적인 성장 가도에 진입한 스타트업.",
+   "bookPages": [
+    203
+   ]
+  },
+  {
+   "id": "cvc",
+   "name": "CVC",
+   "aliases": [
+    "Corporate Venture Capital",
+    "기업형 벤처 캐피탈",
+    "기업형 벤처캐피털"
+   ],
+   "type": "용어",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 3,
+   "definition": "대기업이 운영하는 벤처 캐피탈로, 2016년 무렵부터 태국 스타트업 생태계에 잇따라 생겨나며 새로운 전기를 마련했다.",
+   "bookPages": [
+    135,
+    136,
+    190,
+    197,
+    198,
+    334,
+    337
+   ]
+  },
+  {
+   "id": "depa",
+   "name": "디지털 경제 진흥 기구",
+   "aliases": [
+    "DEPA",
+    "Digital Economy Promotion Agency",
+    "D-startup",
+    "디지털경제진흥국"
+   ],
+   "type": "기관",
+   "galaxy": 4,
+   "chapter": "ch14",
+   "importance": 3,
+   "definition": "D-startup 펀드로 초기 스타트업에 최대 100만 바트를 지원하며 태국 디지털 스타트업 생태계 강화를 맡는 정부 기관.",
+   "bookPages": [
+    209,
+    210,
+    212,
+    247,
+    334,
+    335
+   ]
+  },
+  {
+   "id": "nia",
+   "name": "국가혁신청",
+   "aliases": [
+    "국가혁신원",
+    "NIA",
+    "National Innovation Agency"
+   ],
+   "type": "기관",
+   "galaxy": 4,
+   "chapter": "ch14",
+   "importance": 3,
+   "definition": "2003년 설립된 태국 공공기관으로, 육성-지원-성장-글로벌 전략과 Corporate Co-funding 스킴으로 혁신 생태계를 강화한다.",
+   "bookPages": [
+    130,
+    210,
+    211,
+    212,
+    247,
+    248,
+    335,
+    343
+   ]
+  },
+  {
+   "id": "ndid",
+   "name": "태국 디지털 ID",
+   "aliases": [
+    "NDID",
+    "National Digital ID"
+   ],
+   "type": "기술",
+   "galaxy": 4,
+   "chapter": "ch14",
+   "importance": 2,
+   "definition": "2018년 태국 정부가 시작한, 자기 주권 개념에 기반한 국가 본인 인증 프로젝트.",
+   "bookPages": [
+    213,
+    214
+   ]
+  },
+  {
+   "id": "krating-poonpol",
+   "name": "크라팅 푼폴",
+   "aliases": [
+    "Krating Poonpol"
+   ],
+   "type": "인물",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 3,
+   "definition": "500 툭툭 공동 설립자이자 카시콘 비즈니스 테크놀로지 그룹(KBTG) 의장으로, 1억 달러 규모 KXVC 펀드를 운영한다.",
+   "bookPages": [
+    195,
+    196
+   ]
+  },
+  {
+   "id": "amarit-charoenphan",
+   "name": "아마릿 차론판",
+   "aliases": [
+    "Amarit (Aim) Charoenphan",
+    "에임"
+   ],
+   "type": "인물",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 2,
+   "definition": "허바 창업자이자 테크소스 설립자로, 태국 스타트업 생태계에서 가장 자주 언급되는 인물 중 하나.",
+   "bookPages": [
+    190,
+    191
+   ]
+  },
+  {
+   "id": "ookbee",
+   "name": "욱비",
+   "aliases": [
+    "Ookbee"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 3,
+   "definition": "2010년 시작되어 태국 최초의 스타트업으로 불리는 콘텐츠 서비스 기업으로, 전자책·웹툰·웹소설 플랫폼을 운영한다.",
+   "bookPages": [
+    193,
+    194
+   ]
+  },
+  {
+   "id": "dtac-accelerate",
+   "name": "디텍 엑셀러레이트",
+   "aliases": [
+    "DTAC Accelerate"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 3,
+   "definition": "2012년 시작된 태국 최초의 엑셀러레이터로, 텔레노어의 태국 자회사 디텍이 운영하며 8년간 약 60개 이상의 스타트업을 육성했다.",
+   "bookPages": [
+    196,
+    197,
+    206
+   ]
+  },
+  {
+   "id": "paul-polapat-ark",
+   "name": "폴 폴라팟 아크",
+   "aliases": [
+    "Paul Polapat Ark"
+   ],
+   "type": "인물",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 2,
+   "definition": "시암커머셜은행 CVC '디지털 벤처스'를 이끈 태국 CVC의 선구자로, 현재 기후 초점 VC '래디컬 펀드' 파트너.",
+   "bookPages": [
+    197,
+    198,
+    199
+   ]
+  },
+  {
+   "id": "techsauce-global-summit",
+   "name": "테크소스 글로벌 서밋",
+   "aliases": [
+    "Techsauce Global Summit"
+   ],
+   "type": "현상",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 3,
+   "definition": "2017년부터 개최된 태국 최대 테크 콘퍼런스로, 아세안 지역 투자자들의 관심을 끌기 시작했다.",
+   "bookPages": [
+    28,
+    190,
+    191,
+    192
+   ]
+  },
+  {
+   "id": "china-capital-asean",
+   "name": "중국계 자본의 아세안 투자",
+   "aliases": [
+    "알리바바·텐센트 투자"
+   ],
+   "type": "현상",
+   "galaxy": 4,
+   "chapter": "ch15",
+   "importance": 3,
+   "definition": "알리바바, 텐센트 등 중국 자본이 라자다, 쇼피와 태국 유니콘들에 투자하며 아세안 이커머스·결제·물류 생태계를 주도하는 현상.",
+   "bookPages": [
+    225,
+    227,
+    231,
+    232
+   ]
+  },
+  {
+   "id": "sabai",
+   "name": "사바이",
+   "aliases": [
+    "สบาย",
+    "사바이 사바이"
+   ],
+   "type": "용어",
+   "galaxy": 4,
+   "chapter": "ch15",
+   "importance": 2,
+   "definition": "'편안하다'는 뜻의 태국어로, 문제가 생겨도 평안을 추구하는 태국인의 대처 방식을 상징하는 표현.",
+   "bookPages": [
+    219,
+    220
+   ]
+  },
+  {
+   "id": "tech-talent-shortage",
+   "name": "테크 탤런트 부족",
+   "aliases": [
+    "개발자 부족"
+   ],
+   "type": "현상",
+   "galaxy": 4,
+   "chapter": "ch15",
+   "importance": 3,
+   "definition": "태국의 개발자 수(약 5만 3천 명)가 인도네시아, 베트남에 크게 뒤지며 스타트업 생태계 발전을 저해한 구조적 문제.",
+   "bookPages": [
+    220,
+    221,
+    244
+   ]
+  },
+  {
+   "id": "krungsri-finnovate",
+   "name": "크룽스리 피노베이트",
+   "aliases": [
+    "Krungsri Finnovate"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch14",
+   "importance": 2,
+   "definition": "2016년 설립된 크룽스리은행의 CVC로, 1억 5천만 달러 규모 펀드를 운용하며 시드부터 프리 시리즈 A 단계에 투자한다.",
+   "bookPages": [
+    203,
+    204,
+    207
+   ]
+  },
+  {
+   "id": "scb-10x",
+   "name": "SCB 10X",
+   "aliases": [
+    "시암커머셜은행 CVC",
+    "Siam Commercial Bank CVC"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch15",
+   "importance": 3,
+   "definition": "시암커머셜은행의 기업 벤처캐피털로, 비트커브 지분 인수(이후 철회)를 진행한 투자사.",
+   "bookPages": [
+    227,
+    230,
+    231,
+    337
+   ]
+  },
+  {
+   "id": "chasm",
+   "name": "캐즘",
+   "aliases": [
+    "Chasm"
+   ],
+   "type": "용어",
+   "galaxy": 4,
+   "chapter": "ch14",
+   "importance": 1,
+   "definition": "사업이 꽃을 피우기 전에 겪는 상당 기간의 침체 기간으로, 스케일업이 넘어야 할 관문.",
+   "bookPages": [
+    203
+   ]
+  },
+  {
+   "id": "openspace",
+   "name": "오픈 스페이스",
+   "aliases": [
+    "Openspace"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch14",
+   "importance": 2,
+   "definition": "2014년 싱가포르에서 설립된 아세안 중심 벤처 캐피탈로, 고투 그룹 초기 투자자이며 태국에서 피노메나, 프레시캣 등에 투자했다.",
+   "bookPages": [
+    204,
+    205
+   ]
+  },
+  {
+   "id": "line-scaleup",
+   "name": "라인 스케일업",
+   "aliases": [
+    "LINE ScaleUp"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch14",
+   "importance": 2,
+   "definition": "라인 태국 오피스 최초의 엑셀러레이터 프로그램으로, 중국 위챗 미니프로그램을 벤치마킹해 여섯 개 태국 스타트업과 협업했다.",
+   "bookPages": [
+    207,
+    208
+   ]
+  },
+  {
+   "id": "pdpa",
+   "name": "개인 정보보호법",
+   "aliases": [
+    "PDPA"
+   ],
+   "type": "정책",
+   "galaxy": 4,
+   "chapter": "ch16",
+   "importance": 2,
+   "definition": "2022년 6월 1일 전면 시행된 태국의 개인정보 보호법으로, 기업 규모나 위치와 관계없이 법적 준수를 요구한다.",
+   "bookPages": [
+    252,
+    253
+   ]
+  },
+  {
+   "id": "mai-pen-rai",
+   "name": "마이뻰라이",
+   "aliases": [
+    "ไม่เป็นไร",
+    "mai pen rai"
+   ],
+   "type": "용어",
+   "galaxy": 4,
+   "chapter": "ch16",
+   "importance": 2,
+   "definition": "'괜찮다', '문제없다'를 뜻하는, 태국인의 평정심과 유연성을 나타내는 비즈니스 문화 개념.",
+   "bookPages": [
+    234,
+    250,
+    251
+   ]
+  },
+  {
+   "id": "kreng-jai",
+   "name": "끄랭짜이",
+   "aliases": [
+    "เกรงใจ",
+    "kreng jai",
+    "끄랭차이",
+    "크랭짜이",
+    "Kreng Jai"
+   ],
+   "type": "용어",
+   "galaxy": 4,
+   "chapter": "ch16",
+   "importance": 2,
+   "definition": "상대의 감정을 존중하고 불편함을 주지 않으려는 태국의 상호 존중과 배려 문화.",
+   "bookPages": [
+    234,
+    250,
+    251,
+    331
+   ]
+  },
+  {
+   "id": "open-government-data",
+   "name": "오픈 정부 데이터",
+   "aliases": [
+    "Open Government Data",
+    "data.go.th"
+   ],
+   "type": "정책",
+   "galaxy": 4,
+   "chapter": "ch14",
+   "importance": 2,
+   "definition": "2015년 첫 오픈 데이터 전략 이후 확대된 태국의 국가 오픈 데이터 이니셔티브로, data.go.th에 11,000개 이상의 데이터셋을 보유한다.",
+   "bookPages": [
+    215,
+    216
+   ]
+  },
+  {
+   "id": "natavudh-pungcharoenpong",
+   "name": "나타붓 풍차로엔퐁",
+   "aliases": [
+    "Natavudh (Moo) Pungcharoenpong",
+    "무"
+   ],
+   "type": "인물",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 2,
+   "definition": "욱비 창립자이자 CEO로, SIX Network 공동 창립자이며 500 툭툭을 함께 시작한 인물.",
+   "bookPages": [
+    193,
+    194,
+    195
+   ]
+  },
+  {
+   "id": "oranuch-lerdsuwankij",
+   "name": "오라눗 러드수완키지",
+   "aliases": [
+    "Oranuch (Mimee) Lerdsuwankij",
+    "미미"
+   ],
+   "type": "인물",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 2,
+   "definition": "테크소스 공동 창업자이자 대표로, 태국을 아세안의 디지털 허브로 성장시키겠다는 비전을 제시했다.",
+   "bookPages": [
+    191,
+    192
+   ]
+  },
+  {
+   "id": "sompoat-chansomboon",
+   "name": "솜폿 찬솜분",
+   "aliases": [
+    "Sompoat (Meng) Chansomboon",
+    "맹"
+   ],
+   "type": "인물",
+   "galaxy": 4,
+   "chapter": "ch13",
+   "importance": 2,
+   "definition": "디텍 엑셀러레이트를 7년간 이끈 매니징 디렉터로, 현재 쿠룽타이 은행 산하 KT 벤처 캐피탈 대표.",
+   "bookPages": [
+    196,
+    197
+   ]
+  },
+  {
+   "id": "korean-wave",
+   "name": "한류",
+   "aliases": [
+    "K-컬처",
+    "Korean Wave"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch20",
+   "importance": 5,
+   "definition": "2000년 드라마 <별은 내 가슴에> 방영으로 시작해 K-팝, 넷플릭스 드라마, 웹툰으로 확산되며 태국 대중문화의 중심이 된 한국 문화 흐름",
+   "bookPages": [
+    289,
+    290,
+    291
+   ]
+  },
+  {
+   "id": "lisa",
+   "name": "리사",
+   "aliases": [
+    "LISA",
+    "라리사",
+    "LALISA"
+   ],
+   "type": "인물",
+   "galaxy": 5,
+   "chapter": "ch20",
+   "importance": 4,
+   "definition": "태국 출신 블랙핑크 멤버로, 솔로 데뷔곡 <LALISA>가 공개 하루 만에 7,360만 조회수로 기네스북에 등재되었고 2023년 태국 내 가장 영향력 있는 인물 1위로 선정된 문화 아이콘",
+   "bookPages": [
+    287,
+    288,
+    289,
+    290
+   ]
+  },
+  {
+   "id": "solo-economy",
+   "name": "솔로 이코노미",
+   "aliases": [
+    "Solo Economy",
+    "1인 가구 경제"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch17",
+   "importance": 3,
+   "definition": "1인 가구 증가가 반려 동물, 1인 주거 임대, 외식, 여행, 홈퍼니싱 등 여러 산업에 걸쳐 일으키는 구조적 변화",
+   "bookPages": [
+    262,
+    263,
+    264
+   ]
+  },
+  {
+   "id": "bad-genius",
+   "name": "배드 지니어스",
+   "aliases": [
+    "Bad Genius"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch18",
+   "importance": 3,
+   "definition": "시험 부정행위를 소재로 태국 교육의 불평등과 자본주의적 폐해를 비판한 2017년 태국 스릴러 영화로, 2020년 12부작 드라마로도 제작",
+   "bookPages": [
+    266,
+    267,
+    268,
+    271,
+    273
+   ]
+  },
+  {
+   "id": "byungmat-humor",
+   "name": "병맛 유머",
+   "aliases": [],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch19",
+   "importance": 3,
+   "definition": "과장되고 어색한 상황으로 웃음을 유발하는, 감동·반전과 함께 태국 광고 창의성의 핵심을 이루는 유머 코드",
+   "bookPages": [
+    275,
+    280,
+    284
+   ]
+  },
+  {
+   "id": "k-beauty",
+   "name": "K-뷰티",
+   "aliases": [
+    "K-Beauty"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch20",
+   "importance": 3,
+   "definition": "2024년 1분기 태국 수입 화장품 시장 점유율 16.2%로 프랑스와 일본을 제치고 1위에 오른 한국 화장품 산업의 태국 확산",
+   "bookPages": [
+    292,
+    293,
+    294,
+    295
+   ]
+  },
+  {
+   "id": "thailand-pet-market",
+   "name": "태국 반려 동물 시장",
+   "aliases": [
+    "펫 이코노미"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch17",
+   "importance": 3,
+   "definition": "반려 동물 양육 가구 비율 37%로 한국(25.4%)보다 높은, 아세안에서 가장 큰 태국의 반려 동물 시장",
+   "bookPages": [
+    259,
+    260
+   ]
+  },
+  {
+   "id": "private-education-boom",
+   "name": "태국 사교육 열풍",
+   "aliases": [],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch18",
+   "importance": 3,
+   "definition": "공교육 불신과 복잡한 입시 제도로 학원과 온라인 교육 시장이 성장하는 태국의 교육 현상",
+   "bookPages": [
+    266,
+    271,
+    272,
+    273
+   ]
+  },
+  {
+   "id": "cannes-lions",
+   "name": "칸 라이언즈 국제광고제",
+   "aliases": [
+    "Cannes Lions International Festival of Creativity"
+   ],
+   "type": "용어",
+   "galaxy": 5,
+   "chapter": "ch19",
+   "importance": 2,
+   "definition": "태국이 아시아 상위권, 아세안 1위를 지속 유지하는 세계 최대 광고제",
+   "bookPages": [
+    276,
+    277,
+    281
+   ]
+  },
+  {
+   "id": "localization-autonomy",
+   "name": "현지화와 자율성",
+   "aliases": [],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch19",
+   "importance": 2,
+   "definition": "본사 간섭을 줄이고 현지 팀의 전문성을 신뢰해 충분한 자율권을 주는 것이 태국 사업 성공의 열쇠라는 원칙",
+   "bookPages": [
+    284,
+    285
+   ]
+  },
+  {
+   "id": "thailand-aging-society",
+   "name": "태국 고령화",
+   "aliases": [
+    "고령사회 진입"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch17",
+   "importance": 3,
+   "definition": "2023년 65세 이상 인구 비율 14.5%로 고령사회에 진입했고, UN이 2030년까지 아세안 국가 중 가장 높은 노인 비율을 전망하는 태국의 인구구조 변화",
+   "bookPages": [
+    261
+   ]
+  },
+  {
+   "id": "lisa-effect",
+   "name": "리사 효과",
+   "aliases": [
+    "Lisa Effect"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch20",
+   "importance": 2,
+   "definition": "리사의 한 마디나 방문이 특정 상품과 장소의 인기를 단숨에 끌어올리는 현상",
+   "bookPages": [
+    288,
+    290
+   ]
+  },
+  {
+   "id": "thacca",
+   "name": "태국콘텐츠진흥원",
+   "aliases": [
+    "THACCA"
+   ],
+   "type": "정책",
+   "galaxy": 5,
+   "chapter": "ch20",
+   "importance": 2,
+   "definition": "한국 콘텐츠진흥원을 모델로 태국 정부가 소프트파워 육성을 위해 설립을 추진하는 기관",
+   "bookPages": [
+    299
+   ]
+  },
+  {
+   "id": "tesf",
+   "name": "태국 e스포츠 연맹",
+   "aliases": [
+    "TESF"
+   ],
+   "type": "기관",
+   "galaxy": 5,
+   "chapter": "ch20",
+   "importance": 2,
+   "definition": "2013년 설립되어 2017년 태국 체육협회 공식 승인을 받은 태국 e스포츠 산업의 제도적 기반",
+   "bookPages": [
+    296
+   ]
+  },
+  {
+   "id": "edtech",
+   "name": "에듀테크",
+   "aliases": [
+    "EdTech"
+   ],
+   "type": "용어",
+   "galaxy": 5,
+   "chapter": "ch18",
+   "importance": 2,
+   "definition": "태국 교육의 구조적 모순을 사업 기회로 보는 기술 기반 교육 산업",
+   "bookPages": [
+    273
+   ]
+  },
+  {
+   "id": "chulalongkorn-university",
+   "name": "쭐라롱콘대학",
+   "aliases": [
+    "Chulalongkorn University"
+   ],
+   "type": "기관",
+   "galaxy": 5,
+   "chapter": "ch18",
+   "importance": 2,
+   "definition": "한국의 서울대에 비유되는 태국에서 가장 명망 있는 대학",
+   "bookPages": [
+    266,
+    269
+   ]
+  },
+  {
+   "id": "line-man-youtube-ad",
+   "name": "라인맨 유튜브 광고",
+   "aliases": [
+    "LINE MAN"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch19",
+   "importance": 2,
+   "definition": "태국 광고의 감동·병맛·반전 문법을 적용해 2019년 12월 출시 일주일 만에 조회수 천만을 돌파한 저자 관여 광고",
+   "bookPages": [
+    284,
+    285
+   ]
+  },
+  {
+   "id": "pet-food-market",
+   "name": "태국 펫푸드 시장",
+   "aliases": [
+    "Pet Food Market"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch17",
+   "importance": 2,
+   "definition": "2023년 약 489억 바트 규모로 전년 대비 11% 증가했고, 2029년까지 연평균 10% 이상 성장이 전망되는 태국 펫푸드 산업",
+   "bookPages": [
+    260
+   ]
+  },
+  {
+   "id": "megastudy",
+   "name": "메가스터디",
+   "aliases": [
+    "메가에듀테크"
+   ],
+   "type": "기업",
+   "galaxy": 5,
+   "chapter": "ch18",
+   "importance": 2,
+   "definition": "2019년 메가에듀테크 설립으로 태국에 진출하고 2022년 시암역 근처에 오프라인 학원을 연 한국 에듀테크 기업",
+   "bookPages": [
+    273
+   ]
+  },
+  {
+   "id": "mathpresso",
+   "name": "매스프레소",
+   "aliases": [
+    "콴다",
+    "QANDA"
+   ],
+   "type": "기업",
+   "galaxy": 5,
+   "chapter": "ch18",
+   "importance": 2,
+   "definition": "2021년 인공지능 교육 플랫폼 '콴다'로 태국에 진출해 출시 일주일 만에 구글 플레이스토어 교육 카테고리 1위에 오른 한국 기업",
+   "bookPages": [
+    273
+   ]
+  },
+  {
+   "id": "pisa",
+   "name": "PISA",
+   "aliases": [
+    "국제 학업 성취도 평가",
+    "Programme for International Student Assessment"
+   ],
+   "type": "용어",
+   "galaxy": 5,
+   "chapter": "ch18",
+   "importance": 2,
+   "definition": "OECD가 주관하는 국제 학업 성취도 평가로, 태국은 2022년 80개국 중 63위를 기록하며 모든 영역에서 점수가 하락 중",
+   "bookPages": [
+    271,
+    272
+   ]
+  },
+  {
+   "id": "15-year-free-education",
+   "name": "태국 15년 무상 교육",
+   "aliases": [
+    "15-Year Free Education Program"
+   ],
+   "type": "정책",
+   "galaxy": 5,
+   "chapter": "ch18",
+   "importance": 2,
+   "definition": "유치원 3년과 초·중·고를 포함해 15년간 무상 교육을 제공하는 태국의 6-3-3-4년 교육제도",
+   "bookPages": [
+    268
+   ]
+  },
+  {
+   "id": "cosmax",
+   "name": "코스맥스",
+   "aliases": [
+    "Cosmax"
+   ],
+   "type": "기업",
+   "galaxy": 5,
+   "chapter": "ch20",
+   "importance": 2,
+   "definition": "태국 두 번째 공장을 2026년 2분기 완공 목표로 건설 중이며 소용량 파우치 화장품 누적 생산량 8,000만 개를 돌파한 한국 화장품 ODM 기업",
+   "bookPages": [
+    293,
+    294
+   ]
+  },
+  {
+   "id": "kakao-webtoon",
+   "name": "카카오웹툰",
+   "aliases": [
+    "Kakao Webtoon"
+   ],
+   "type": "서비스",
+   "galaxy": 5,
+   "chapter": "ch20",
+   "importance": 2,
+   "definition": "2021년 태국 진출 첫 해 300만 다운로드를 기록한 한국 웹툰 플랫폼",
+   "bookPages": [
+    291
+   ]
+  },
+  {
+   "id": "naver-webtoon",
+   "name": "네이버웹툰",
+   "aliases": [
+    "Naver Webtoon"
+   ],
+   "type": "서비스",
+   "galaxy": 5,
+   "chapter": "ch20",
+   "importance": 2,
+   "definition": "2014년 태국 진출 이후 현지 독자들의 사랑을 받는 한국 웹툰 플랫폼",
+   "bookPages": [
+    291
+   ]
+  },
+  {
+   "id": "sunsilk-bethatgirl",
+   "name": "유니레버 선실크 #BeThatGirl",
+   "aliases": [
+    "Sunsilk",
+    "#BeThatGirl"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch19",
+   "importance": 2,
+   "definition": "2017년 미스 티파니 대회 실화를 바탕으로 태국 트랜스젠더의 삶을 조명한 2018년 유니레버 샴푸 광고 캠페인",
+   "bookPages": [
+    278,
+    279
+   ]
+  },
+  {
+   "id": "netflix-narcos-ad",
+   "name": "넷플릭스 나르코스 센서십 광고",
+   "aliases": [
+    "Netflix",
+    "Narcos"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch19",
+   "importance": 2,
+   "definition": "2019년 태국의 엄격한 센서십 규정을 해학적으로 풀어내 큰 반향을 일으킨 넷플릭스 광고",
+   "bookPages": [
+    282,
+    283
+   ]
+  },
+  {
+   "id": "ondemand-academy",
+   "name": "온디맨드",
+   "aliases": [
+    "OnDemand"
+   ],
+   "type": "기업",
+   "galaxy": 5,
+   "chapter": "ch18",
+   "importance": 1,
+   "definition": "엔컨셉, 하이시티, 브레인플러스와 함께 태국 사교육의 중심에 있는 대형 학원",
+   "bookPages": [
+    271
+   ]
+  },
+  {
+   "id": "co-living",
+   "name": "코리빙",
+   "aliases": [
+    "co-living"
+   ],
+   "type": "용어",
+   "galaxy": 5,
+   "chapter": "ch17",
+   "importance": 1,
+   "definition": "독립 생활과 사회적 교류를 함께 충족하는 1인 가구용 주거 형태로, SC Asset이 2024년까지 두 배 확장을 발표",
+   "bookPages": [
+    262
+   ]
+  },
+  {
+   "id": "solo-dining",
+   "name": "혼밥 트렌드",
+   "aliases": [
+    "1인 외식"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch17",
+   "importance": 1,
+   "definition": "그레이하운드 카페, Bar B Q Plaza 등 태국 외식업계 전반으로 확산된 1인 식사 문화",
+   "bookPages": [
+    263
+   ]
+  },
+  {
+   "id": "fintech",
+   "name": "핀테크",
+   "aliases": [
+    "FinTech"
+   ],
+   "type": "기술",
+   "galaxy": 5,
+   "chapter": "epilogue",
+   "importance": 1,
+   "definition": "태국 은행들이 일상 속 금융의 한계를 허물고 있는 금융 기술 혁신",
+   "bookPages": [
+    301
+   ]
+  },
+  {
+   "id": "digital-wallet-policy",
+   "name": "디지털지갑 정책",
+   "aliases": [
+    "디지털 지갑",
+    "10,000바트 정책",
+    "Digital Wallet"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a1",
+   "importance": 4,
+   "definition": "16세 이상 태국 국민 약 4,500만 명에게 1인당 10,000바트를 디지털 화폐로 지급하는 총 4,500억 바트(GDP의 2.7%) 규모의 경제 활성화 정책",
+   "bookPages": [
+    307,
+    308,
+    309,
+    310,
+    312
+   ]
+  },
+  {
+   "id": "foreign-business-act",
+   "name": "외국인사업법",
+   "aliases": [
+    "Foreign Business Act",
+    "FBA"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a2",
+   "importance": 3,
+   "definition": "외국인의 태국 내 사업 참여를 목록 1~3으로 나눠 지분 소유를 원칙적으로 49%까지 제한하는 법률",
+   "bookPages": [
+    318,
+    319,
+    320,
+    321
+   ]
+  },
+  {
+   "id": "foreign-business-license",
+   "name": "외국인 사업 허가",
+   "aliases": [
+    "Foreign Business License",
+    "FBL"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a2",
+   "importance": 2,
+   "definition": "제한 업종에서 외국인이 100% 투자하기 위해 외국인사업위원회 승인을 거쳐 상무부로부터 취득해야 하는 허가",
+   "bookPages": [
+    319,
+    320,
+    322,
+    339
+   ]
+  },
+  {
+   "id": "phaethongtarn-shinawatra",
+   "name": "패통탄 친나왓",
+   "aliases": [
+    "Phaetongtarn Shinawatra",
+    "패통탄"
+   ],
+   "type": "인물",
+   "galaxy": 6,
+   "chapter": "a1",
+   "importance": 3,
+   "definition": "2024년 8월 선출된 태국 역대 최연소이자 두 번째 여성 총리로, 탁신 친나왓 전 총리의 막내딸",
+   "bookPages": [
+    308
+   ]
+  },
+  {
+   "id": "ev-3-5-program",
+   "name": "EV 3.5 프로그램",
+   "aliases": [
+    "EV 3.5 이니셔티브"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a1",
+   "importance": 2,
+   "definition": "2027년까지 전기차 생산 비중 30% 달성을 목표로 보조금과 세금 감면을 제공하는 태국 전기차 보급·생산 촉진 정책",
+   "bookPages": [
+    312,
+    313
+   ]
+  },
+  {
+   "id": "vat",
+   "name": "부가가치세",
+   "aliases": [
+    "VAT"
+   ],
+   "type": "용어",
+   "galaxy": 6,
+   "chapter": "a2",
+   "importance": 1,
+   "definition": "기본 세율 10%이나 2024년 9월 30일까지 7%가 적용되며 연간 매출 180만 바트 초과 시 등록 의무가 있는 태국의 소비세",
+   "bookPages": [
+    323,
+    324
+   ]
+  },
+  {
+   "id": "nstda",
+   "name": "국가과학기술개발청",
+   "aliases": [
+    "NSTDA"
+   ],
+   "type": "기관",
+   "galaxy": 6,
+   "chapter": "a3",
+   "importance": 2,
+   "definition": "R&D 비용의 300% 세액 공제와 태국 혁신 목록을 운영하는 태국 과학기술 개발 기관",
+   "bookPages": [
+    336
+   ]
+  },
+  {
+   "id": "work-permit",
+   "name": "외국인 노동 허가증",
+   "aliases": [
+    "Work Permit",
+    "WP.3"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a2",
+   "importance": 2,
+   "definition": "외국인이 태국에서 취업하기 위해 노동부로부터 발급받는 최대 1년 유효 허가증으로, 외국인 1명당 태국인 4명 고용이 요구됨",
+   "bookPages": [
+    328
+   ]
+  },
+  {
+   "id": "pheu-thai-party",
+   "name": "프아타이당",
+   "aliases": [
+    "Pheu Thai Party"
+   ],
+   "type": "기관",
+   "galaxy": 6,
+   "chapter": "a1",
+   "importance": 2,
+   "definition": "패통탄 친나왓 총리가 대표를 맡은 태국 집권당으로 디지털 지갑 등 10대 경제 정책을 추진",
+   "bookPages": [
+    308
+   ]
+  },
+  {
+   "id": "thai-llm",
+   "name": "Thai LLM",
+   "aliases": [],
+   "type": "기술",
+   "galaxy": 6,
+   "chapter": "a1",
+   "importance": 2,
+   "definition": "태국 국가 AI 전략(2022~2027)의 일환으로 개발되는 태국어 대규모 언어모델",
+   "bookPages": [
+    311
+   ]
+  },
+  {
+   "id": "true-digital-park",
+   "name": "True Digital Park",
+   "aliases": [],
+   "type": "기관",
+   "galaxy": 6,
+   "chapter": "a3",
+   "importance": 2,
+   "definition": "BTS Punnawithi 근처에 위치해 대기업, 스타트업, 투자자, 정부 기관이 집결하는 태국 최대 규모의 스타트업 허브",
+   "bookPages": [
+    341
+   ]
+  },
+  {
+   "id": "bcg-policy",
+   "name": "BCG 육성 정책",
+   "aliases": [
+    "Bio-Circular-Green"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a2",
+   "importance": 2,
+   "definition": "바이오(Bio), 순환(Circular), 녹색경제(Green) 세 축으로 구성된 태국의 경제 육성 정책",
+   "bookPages": [
+    317
+   ]
+  },
+  {
+   "id": "ibc",
+   "name": "국제비즈니스센터",
+   "aliases": [
+    "IBC",
+    "International Business Center"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a2",
+   "importance": 1,
+   "definition": "15년간 법인세 감면과 관계사 배당금 비과세 등 혜택을 받는 태국의 지역본부형 법인 제도",
+   "bookPages": [
+    316,
+    325
+   ]
+  },
+  {
+   "id": "thai-startups-120",
+   "name": "태국 스타트업 120",
+   "aliases": [
+    "Thai Startups 120"
+   ],
+   "type": "용어",
+   "galaxy": 6,
+   "chapter": "a4",
+   "importance": 2,
+   "definition": "태국 스타트업 120개사를 12개 섹터와 투자 단계별로 정리한 부록 목록으로, 2025년 1월 기준 Techsauce Startup Directory가 출처",
+   "bookPages": [
+    347,
+    348,
+    349
+   ]
+  },
+  {
+   "id": "coworking-space",
+   "name": "코워킹 스페이스",
+   "aliases": [
+    "Coworking Space"
+   ],
+   "type": "현상",
+   "galaxy": 6,
+   "chapter": "a3",
+   "importance": 2,
+   "definition": "WeWork, Hubba, True Digital Park 등 방콕 스타트업이 활용하는 공유 업무 공간",
+   "bookPages": [
+    341,
+    342
+   ]
+  },
+  {
+   "id": "thailand-medical-tourism",
+   "name": "태국 의료 관광",
+   "aliases": [
+    "Medical Tourism"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "ch17",
+   "importance": 2,
+   "definition": "2024년 153.7억 달러 규모로 추산되며 정부 지원 속에 2034년까지 연평균 15.7% 성장이 전망되는 태국의 의료 관광 산업",
+   "bookPages": [
+    261,
+    262
+   ]
+  },
+  {
+   "id": "truemove-h",
+   "name": "TrueMove H",
+   "aliases": [
+    "트루무브 H"
+   ],
+   "type": "기업",
+   "galaxy": 5,
+   "chapter": "ch19",
+   "importance": 1,
+   "definition": "2013년 'Giving is the best communication' 감성 브랜드 광고로 시장 점유율을 올린 태국 통신 회사",
+   "bookPages": [
+    277,
+    278
+   ]
+  },
+  {
+   "id": "bumrungrad-international",
+   "name": "범룬그라드 국제 병원",
+   "aliases": [
+    "Bumrungrad International Hospital"
+   ],
+   "type": "기업",
+   "galaxy": 5,
+   "chapter": "ch17",
+   "importance": 1,
+   "definition": "전 세계 환자들이 찾는 방콕의 대표 의료 시설로, 태국 헬스케어 산업의 상징",
+   "bookPages": [
+    261
+   ]
+  },
+  {
+   "id": "asean-digital-heart",
+   "name": "아세안 디지털 심장",
+   "aliases": [
+    "ASEAN digital heart"
+   ],
+   "type": "현상",
+   "galaxy": 5,
+   "chapter": "epilogue",
+   "importance": 2,
+   "definition": "방콕이 아세안 디지털 경제의 중심으로 자리 잡았고 스마트 시티와 AI 허브로의 도약을 시작했다는 책의 규정",
+   "bookPages": [
+    302,
+    303
+   ]
+  },
+  {
+   "id": "thailand-4-0-industrial-strategy",
+   "name": "태국 4.0",
+   "aliases": [
+    "Thailand 4.0"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a2",
+   "importance": 1,
+   "definition": "First S-curve와 New S-curve를 합쳐 12대 미래 산업을 육성하는 태국의 국가 산업 전략",
+   "bookPages": [
+    312,
+    317
+   ]
+  },
+  {
+   "id": "smart-visa-program",
+   "name": "SMART 비자",
+   "aliases": [
+    "SMART Visa",
+    "SMART S/E/I/T"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a3",
+   "importance": 1,
+   "definition": "기술 스타트업 창업자, 투자자, 임원, 고급 인력에게 최대 4년 체류를 허용하는 태국의 특별 비자 제도",
+   "bookPages": [
+    338,
+    340
+   ]
+  },
+  {
+   "id": "digital-economy-promotion-agency",
+   "name": "디지털경제진흥국",
+   "aliases": [
+    "DEPA",
+    "Digital Economy Promotion Agency"
+   ],
+   "type": "기업",
+   "galaxy": 6,
+   "chapter": "a3",
+   "importance": 1,
+   "definition": "DEPA Digital Startup Fund와 Smart City Accelerator를 운영하는 태국 디지털 경제 진흥 기관",
+   "bookPages": [
+    334,
+    335
+   ]
+  },
+  {
+   "id": "cloud-first-gov-policy",
+   "name": "Cloud First 정책",
+   "aliases": [
+    "클라우드 퍼스트"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a1",
+   "importance": 1,
+   "definition": "태국을 동남아시아의 클라우드 허브로 육성하기 위해 2024년부터 220개 정부 부처에 클라우드 서비스를 제공하는 정책",
+   "bookPages": [
+    311
+   ]
+  },
+  {
+   "id": "ltr-visa-program",
+   "name": "LTR 비자",
+   "aliases": [
+    "Long-Term Resident Visa"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a3",
+   "importance": 1,
+   "definition": "연간 소득 8만 달러 이상의 고소득 전문가, 투자자, 은퇴자에게 10년 체류를 허용하는 태국 장기 거주 비자",
+   "bookPages": [
+    338
+   ]
+  },
+  {
+   "id": "destination-thailand-visa",
+   "name": "Destination Thailand Visa",
+   "aliases": [
+    "DTV"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a3",
+   "importance": 1,
+   "definition": "원격 근무자, 프리랜서, 장기 관광객을 대상으로 5년(180일 체류, 180일 연장 가능) 체류를 허용하는 태국 비자",
+   "bookPages": [
+    338
+   ]
+  },
+  {
+   "id": "kreng-jai-culture",
+   "name": "크랭짜이",
+   "aliases": [
+    "เกรงใจ",
+    "Kreng Jai"
+   ],
+   "type": "현상",
+   "galaxy": 6,
+   "chapter": "a2",
+   "importance": 1,
+   "definition": "상대를 배려해 폐를 끼치지 않으려는 태국의 체면 문화로, 진출 기업이 이해해야 할 문화 리스크 요인",
+   "bookPages": [
+    331
+   ]
+  },
+  {
+   "id": "pi-nong",
+   "name": "피넝",
+   "aliases": [
+    "พี่น้อง",
+    "pi nong"
+   ],
+   "type": "용어",
+   "galaxy": 4,
+   "chapter": "ch16",
+   "importance": 2,
+   "definition": "연장자와 상급자를 존중하는 위계질서 중심의 태국 사회적 유대·계층 문화로, 마이뻰라이·끄랭짜이와 함께 외국인 창업자가 이해해야 할 비즈니스 문화 개념",
+   "bookPages": [
+    250,
+    251
+   ]
+  },
+  {
+   "id": "ais-evolution-experience-center",
+   "name": "AIS Evolution Experience Center",
+   "aliases": [
+    "AIS EEC"
+   ],
+   "type": "기관",
+   "galaxy": 3,
+   "chapter": "ch10",
+   "importance": 2,
+   "definition": "2024년 6월 태국 촌부리 주에 공식 개관한 AIS의 5G 기술 교육 및 디지털 생태계 거점",
+   "bookPages": [
+    153,
+    154
+   ]
+  },
+  {
+   "id": "blue-zone-project",
+   "name": "블루 존 프로젝트",
+   "aliases": [
+    "Blue Zone"
+   ],
+   "type": "정책",
+   "galaxy": 3,
+   "chapter": "ch10",
+   "importance": 1,
+   "definition": "푸켓을 세계에서 가장 건강한 장수 지역 중 하나로 만들기 위한 계획",
+   "bookPages": [
+    151,
+    152
+   ]
+  },
+  {
+   "id": "startup-thailand",
+   "name": "Startup Thailand",
+   "aliases": [
+    "스타트업 타일랜드"
+   ],
+   "type": "현상",
+   "galaxy": 3,
+   "chapter": "ch10",
+   "importance": 1,
+   "definition": "매년 수천 명의 기업가와 투자자를 불러모으는 태국의 대표 스타트업 행사",
+   "bookPages": [
+    150
+   ]
+  },
+  {
+   "id": "cp-group",
+   "name": "CP 그룹",
+   "aliases": [
+    "CP Group"
+   ],
+   "type": "기업",
+   "galaxy": 2,
+   "chapter": "ch07",
+   "importance": 2,
+   "definition": "태국 재계 상위 3대 기업 중 하나로 꼽히는 대기업 그룹으로, 산하 트루 통신 회사에서 트루머니가 출발했다.",
+   "bookPages": [
+    100
+   ]
+  },
+  {
+   "id": "seekster",
+   "name": "시크스터",
+   "aliases": [
+    "Seekster"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch14",
+   "importance": 1,
+   "definition": "라인 메신저를 통해 청소와 수리 서비스 예약 기능을 제공하고 B2B 시장으로 확장한 태국 스타트업으로, 라인 스케일업의 대표 협업 사례다.",
+   "bookPages": [
+    166,
+    208
+   ]
+  },
+  {
+   "id": "silom-sathorn",
+   "name": "실롬-사톤",
+   "aliases": [
+    "Silom-Sathorn",
+    "실롬 사톤"
+   ],
+   "type": "현상",
+   "galaxy": 4,
+   "chapter": "ch16",
+   "importance": 1,
+   "definition": "다국적 기업과 금융 기관이 밀집한 방콕의 전통적인 비즈니스 중심지(CBD)로, 외국인 창업자의 오피스 입지 후보로 꼽히는 지역.",
+   "bookPages": [
+    243
+   ]
+  },
+  {
+   "id": "pomelo",
+   "name": "포멜로",
+   "aliases": [
+    "Pomelo"
+   ],
+   "type": "기업",
+   "galaxy": 4,
+   "chapter": "ch16",
+   "importance": 1,
+   "definition": "로컬 인플루언서와 협업한 소셜 미디어 마케팅으로 소비자 신뢰를 구축하고 매출을 크게 늘린 태국 패션 브랜드.",
+   "bookPages": [
+    237
+   ]
+  },
+  {
+   "id": "corporate-co-funding",
+   "name": "Corporate Co-funding",
+   "aliases": [
+    "NIA Corporate Co-funding"
+   ],
+   "type": "정책",
+   "galaxy": 6,
+   "chapter": "a3",
+   "importance": 2,
+   "definition": "국가혁신청(NIA)이 9개 투자 파트너와 함께 시드부터 프리 시리즈 A 단계 스타트업에 최대 1,000만 바트를 투자하는 공동 펀딩 스킴으로, 5년 내 상환 조건이 붙는다.",
+   "bookPages": [
+    248,
+    335
+   ]
+  },
+  {
+   "id": "wow-summit",
+   "name": "Wow Summit",
+   "aliases": [
+    "와우 서밋"
+   ],
+   "type": "현상",
+   "galaxy": 6,
+   "chapter": "a3",
+   "importance": 1,
+   "definition": "11월에 개최되는 블록체인·Web3·AI·NFT 분야 기술 행사로, 150명 이상의 연사와 30개국 이상에서 7,000명 이상의 참가자가 모인다.",
+   "bookPages": [
+    343
+   ]
+  }
+ ]
+}

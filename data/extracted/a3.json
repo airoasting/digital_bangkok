@@ -1,0 +1,242 @@
+{
+  "unit": "a3",
+  "title": "부록 03 방콕 스타트업 진출 가이드: 성공을 위한 핵심 Q&A",
+  "galaxy": 6,
+  "pdfPages": [165, 172],
+  "bookPages": [333, 346],
+  "summary": "방콕 진출 스타트업을 위한 Q&A형 실무 가이드다. 1부 엑셀러레이터 및 펀딩 지원에서는 Bangkok Bank InnoHub, True Incube 등 15개 현지 엑셀러레이터, NIA·BOI·DEPA의 펀딩 프로그램, NSTDA·국세청의 R&D 세액 공제, AIS The Startup부터 SCB 10X까지 14개 주요 CVC를 표로 정리한다. 2부 비자 및 법적 요건에서는 Non-Immigrant B, DTV, LTR, SMART 비자 등 비자 종류, 법인 설립 절차(최소 자본금 2백만 바트 등), BOI 승인 스타트업의 최대 8년 법인세 면제 같은 세금 혜택을 다룬다. 3부에서는 WeWork, True Digital Park 등 코워킹 스페이스, Techsauce Global Summit 등 컨퍼런스, 스타트업 미디어, 대학 협력 기회를 소개한다.",
+  "facts": [
+    {"text": "Bangkok Bank InnoHub는 초기 단계, 핀테크·IoT 중점, 3개월 프로그램으로 방콕 은행과의 협업 기회를 제공한다.", "bookPage": 334, "kind": "고유명사"},
+    {"text": "depa Smart City Accelerator는 6개월 프로그램으로 5개 스마트 시티에서 현장 솔루션 개발 기회를 제공한다.", "bookPage": 334, "kind": "수치"},
+    {"text": "TechGrind Incubator는 $50K-$2M 자금 지원, 10% 내외 지분 취득 조건이다.", "bookPage": 334, "kind": "수치"},
+    {"text": "국가혁신청(NIA)의 Corporate Co-funding은 시드 단계부터 프리 시리즈 A 단계 스타트업 대상으로 최대 1천만 바트를 투자하며, 5년 내 NIA에 자금 상환이 필요하고 9개 투자 파트너와 공동 투자한다.", "bookPage": 335, "kind": "수치"},
+    {"text": "태국투자청(BOI)의 Matching Fund는 연간 10억 바트 규모로 13개 목표 산업의 고성장 잠재력 스타트업 대상이며, 각 스타트업당 2천만-5천만 바트를 투자하고 과거 최소 1,500만 바트 투자 유치 이력이 필요하다.", "bookPage": 335, "kind": "수치"},
+    {"text": "디지털경제진흥국(DEPA)의 DEPA Digital Startup Fund는 최대 100만 바트를 지원하며 15개 초기 단계 프로젝트를 대상으로 한다.", "bookPage": 335, "kind": "수치"},
+    {"text": "국가과학기술개발청(NSTDA)은 R&D 비용의 300%에 대해 세금 공제 혜택을 제공하며, 2017년부터 RDIMS 시스템 도입으로 300만 바트 이하 프로젝트는 자체 신고가 가능하다.", "bookPage": 336, "kind": "수치"},
+    {"text": "국세청은 R&D 비용의 200%에 대해 세금 공제 혜택을 제공하며, 기업 소득에 따라 공제 한도 차등 적용(최대 60%)한다.", "bookPage": 336, "kind": "수치"},
+    {"text": "Siam Commercial Bank의 SCB 10X는 2016년 설립, 핀테크·블록체인·디지털 자산·Web 3.0 분야에 집중하며 글로벌 CVC 랭킹 8위, 핀테크 스타트업 투자 2위다.", "bookPage": 337, "kind": "수치"},
+    {"text": "AIS The Startup은 2011년 설립되어 50개 이상의 포트폴리오와 60개 이상의 국내외 AIS 관련 조직과 협력 중이다.", "bookPage": 337, "kind": "수치"},
+    {"text": "PTT Oil and Retail의 Orzon Ventures는 2021년 설립, 에너지 관련 스타트업 투자에 집중하며 500 TukTuks와 협업한다.", "bookPage": 337, "kind": "고유명사"},
+    {"text": "Destination Thailand Visa(DTV)는 원격 근무자, 프리랜서, 장기 관광객 대상으로 계좌 잔액 500,000바트 이상이 요구되며 체류 기간은 5년(180일 체류, 180일 연장 가능)이다.", "bookPage": 338, "kind": "수치"},
+    {"text": "LTR 비자는 고소득 전문가, 투자자, 은퇴자 대상으로 연간 소득 $80,000 이상(지난 2년간)이 요구되며 체류 기간은 10년(갱신 가능)이다.", "bookPage": 338, "kind": "수치"},
+    {"text": "SMART \"S\"(Startup) 비자는 기술 스타트업 창업자 대상으로, 2년 비자는 인증된 스타트업 회사 설립, 25% 이상 지분 또는 이사직, 60만 바트 예금, 건강보험이 요구된다.", "bookPage": 338, "kind": "수치"},
+    {"text": "최소 자본금은 일반적으로 2백만 바트(약 60,000 USD)이며, Foreign Business License 필요 시 3백만 바트 또는 3년 평균 예상 비용의 25% 중 높은 금액이다.", "bookPage": 339, "kind": "수치"},
+    {"text": "외국인은 일반적으로 49%까지만 회사 소유가 가능하며, 100% 소유를 위해서는 Foreign Business License, BOI 승인, 또는 미국-태국 우호통상조약이 필요하다.", "bookPage": 339, "kind": "수치"},
+    {"text": "외국인 1명 고용 시 태국인 4명 고용이 필요하다.", "bookPage": 339, "kind": "수치"},
+    {"text": "BOI 승인 스타트업은 최대 8년간 법인세 면제를 받으며, 기술, 생명공학, 창조산업 등 특정 산업이 대상이다.", "bookPage": 340, "kind": "수치"},
+    {"text": "연간 매출 180만 바트 미만 스타트업은 VAT 면제를 받는다.", "bookPage": 340, "kind": "수치"},
+    {"text": "엔젤 투자자는 투자액의 최대 50%(연간 500만 바트 한도) 세금 공제, 벤처캐피털은 투자액의 최대 100%(연간 1,000만 바트 한도) 세금 공제를 받으며 2032년 6월 30일까지 유효하다.", "bookPage": 340, "kind": "날짜"},
+    {"text": "True Digital Park는 태국 최대 규모의 스타트업 허브로, 대기업, 스타트업, 투자자, 정부 기관이 한 곳에 집결하며 BTS Punnawithi 근처에 위치한다.", "bookPage": 341, "kind": "인용"},
+    {"text": "Hubba는 태국 최초의 코워킹 스페이스로 Ekkamai, Sathorn 등 4개 지점을 운영하며 스타트업 생태계를 지원한다.", "bookPage": 341, "kind": "인용"},
+    {"text": "Techsauce Global Summit은 8월에 개최되는 동남아시아 최대 규모의 테크 이벤트로, 200개 이상의 전시회와 130개 이상의 세션이 열린다.", "bookPage": 343, "kind": "인용"},
+    {"text": "Wow Summit은 11월 개최로 블록체인, Web3, AI, NFT 등 다양한 기술 분야를 다루며 150명 이상의 연사와 30개국 이상에서 7,000명 이상의 참가자가 모인다.", "bookPage": 343, "kind": "수치"},
+    {"text": "Thammasat University의 88 SANDBOX는 88개 비즈니스 파트너와 협력하여 스타트업 생태계를 지원한다.", "bookPage": 345, "kind": "수치"},
+    {"text": "Thailand Science Park(TSP)는 한국 충북대학교와 기술 및 과학 자원 협력을 하고 있으며 태국-한국 기업 간 혁신 비즈니스를 강화한다.", "bookPage": 345, "kind": "인용"},
+    {"text": "구체적인 지원 조건과 절차는 각 프로그램별로 다를 수 있으며, 최신 정보는 관련 기관의 공식 웹사이트를 통해 확인 필요.", "bookPage": 334, "kind": "인용"}
+  ],
+  "tables": [
+    {
+      "bookPage": 334,
+      "title": "현지 엑셀러레이터 프로그램",
+      "columns": ["프로그램", "단계", "중점 분야", "기간", "특징"],
+      "rows": [
+        ["Bangkok Bank InnoHub", "초기", "핀테크, IoT", "3개월", "방콕 은행과의 협업 기회"],
+        ["depa Smart City Accelerator", "초기", "스마트 시티", "6개월", "5개 스마트 시티에서 현장 솔루션 개발 기회"],
+        ["Stormbreaker EdTech Accelerator", "시드-시리즈 A", "에듀테크", "10개월", ""],
+        ["Plug and Play Thailand", "초기-성장", "스마트 시티, 푸드테크", "3개월", "지분 요구 없음"],
+        ["SPRINT Accelerator Program", "초기", "딥테크", "4개월", ""],
+        ["True Incube", "초기", "다양한 분야", "10주", ""],
+        ["SPACE-F", "성장", "푸드테크", "3개월", ""],
+        ["AIS The Startup", "초기", "통신, 디지털 서비스", "", "AIS(통신사)와의 협력 기회"],
+        ["Krungsri Finnovate", "시드-프리 시리즈 A", "핀테크, 딥테크 등", "4개월", "크룽시 은행의 CVC 프로그램"],
+        ["TechGrind Incubator", "초기", "딥테크", "몇 개월", "$50K-$2M 자금 지원, 10% 내외 지분 취득"],
+        ["Disrupt", "성장", "에듀테크", "10개월", "리더십 개발 및 네트워킹 기회 제공"],
+        ["HUBBA Accelerator", "초기", "컨슈머테크", "2개월", "지분 요구 없음"],
+        ["SPARK Thailand", "프리 시리즈 A-시리즈 A", "다양한 기술 분야", "3개월", ""],
+        ["Thai Incubator Dot Com", "초기", "IT, 전자상거래", "-", "자금, 관리 조언, 사무 공간, IT 솔루션 제공"]
+      ]
+    },
+    {
+      "bookPage": 335,
+      "title": "정부기관 펀딩 프로그램",
+      "columns": ["기관", "프로그램명", "세부 내용"],
+      "rows": [
+        ["국가혁신청(NIA)", "Corporate Co-funding", "시드 단계부터 프리 시리즈 A 단계 스타트업 대상; 최대 1천만 바트 투자; 5년 내 NIA에 자금 상환 필요; 9개 투자 파트너와 공동 투자"],
+        ["국가혁신청(NIA)", "Recoverable Fund", "5천만 바트 규모; 초기 및 프리 시리즈 A 단계 스타트업 대상; 최대 1천만 바트, 5년 이내 투자; 사업 확장 및 시장 규모 확대 목적"],
+        ["국가혁신청(NIA)", "Private Equity Trust", "10억 바트 규모 계획 중; 시리즈 A 이상 단계의 스타트업 및 혁신기업 대상; 8년간 투자 예정"],
+        ["태국투자청(BOI)", "Matching Fund", "연간 10억 바트 규모; 13개 목표 산업의 고성장 잠재력 스타트업 대상; 각 스타트업당 2천만-5천만 바트 투자; 과거 최소 1,500만 바트 투자 유치 이력 필요"],
+        ["디지털경제진흥국(DEPA)", "DEPA Digital Startup Fund", "최대 100만 바트 지원; 15개 초기 단계 프로젝트 대상; 주요 분야: 공공 서비스, 의료, 관광, 농업, 교육, 서비스, 금융, 스마트 시티; 3년 이내 등록된 개인 또는 기업 대상"]
+      ]
+    },
+    {
+      "bookPage": 336,
+      "title": "연구개발(R&D) 지원금 프로그램",
+      "columns": ["기관", "프로그램", "세부 내용"],
+      "rows": [
+        ["국가과학기술개발청(NSTDA)", "300% R&D 비용 세금 공제", "R&D 비용의 300%에 대해 세금 공제 혜택; 2017년부터 RDIMS 시스템 도입으로 자체 신고 가능(300만 바트 이하 프로젝트); 기존 사전 승인 방식과 병행 운영"],
+        ["국가과학기술개발청(NSTDA)", "태국 혁신 목록", "정부 조달 과정에서 현지 혁신 제품/서비스 우대; NSTDA가 R&D 수행 여부 및 품질 평가; 최대 8년간 목록에 등재"],
+        ["태국투자청(BOI)", "R&D 투자 촉진 정책", "R&D 투자/지출이 2억 바트 또는 매출의 1% 이상인 프로젝트에 대해 최대 13년간 법인세 면제; 투자/지출 규모에 따라 추가 세금 혜택 부여"],
+        ["태국투자청(BOI)", "인력 개발 지원", "견습 프로그램 참여 또는 첨단 기술 교육에 투자하는 기업에 추가 세금 혜택"],
+        ["태국투자청(BOI)", "반도체 산업 투자 촉진", "웨이퍼 제조 등 전방 공정에 10년간 세금 면제; 후방 공정 투자에 대해 5-8년간 세금 면제(투자 규모에 따라 차등)"],
+        ["태국투자청(BOI)", "디지털 산업 지원", "소프트웨어, 디지털 서비스 플랫폼 또는 디지털 콘텐츠 개발 분야 투자에 8년간 세금 면제; 태국 IT 인력 고용, 교육, 국제 인증 취득 비용에 따라 혜택 상한 결정"],
+        ["태국투자청(BOI)", "스마트 패키징 산업 지원", "스마트 패키징 및 친환경 패키징 생산에 대한 투자 인센티브 강화"],
+        ["국세청", "200% R&D 비용 세금 공제", "R&D 비용의 200%에 대해 세금 공제 혜택; 기업 소득에 따라 공제 한도 차등 적용(최대 60%); NSTDA가 R&D 프로젝트 평가 및 인증"]
+      ]
+    },
+    {
+      "bookPage": 337,
+      "title": "현지 주요 CVC",
+      "columns": ["기업명", "CVC명", "설립", "특징"],
+      "rows": [
+        ["AIS", "AIS The Startup", "2011", "통신, IT, 디지털 서비스 분야 중점; 50개 이상의 포트폴리오와 60개 이상의 국내외 AIS 관련 조직과 협력 중"],
+        ["Intouch Holdings", "InVent", "2012", "태국 초기 스타트업에 활발하게 투자; AIS의 모회사"],
+        ["True Corporation", "True Incube", "2013", "통신, IT, 디지털 서비스 분야 중점; 3개월 가속화 프로그램 운영"],
+        ["Siam Commercial Bank", "SCB 10X", "2016", "핀테크, 블록체인, 디지털 자산, Web 3.0 분야 집중; 글로벌 CVC 랭킹 8위, 핀테크 스타트업 투자 2위; 40개 이상의 글로벌 투자"],
+        ["PTT Public Company", "GC Ventures", "2017", "에너지 관련 스타트업 중점; 미국 기반 CVC 운영"],
+        ["Kasikorn Bank", "Beacon Venture Capital", "2017", "핀테크, 소비자 인터넷, 기업 기술 분야 집중; 시리즈 A부터 C까지 투자"],
+        ["Bank of Ayudhya (Krungsri)", "Krungsri Finnovate", "2017", "핀테크, 농업기술, 교육기술 등 다양한 분야 투자; 시드부터 시리즈 C까지 폭넓은 단계 지원; 4개월 가속화 프로그램 운영"],
+        ["Bangkok Bank", "Bualuang Ventures", "2017", "핀테크 및 IoT 분야 집중; 3개월 가속화 프로그램 운영"],
+        ["Sansiri", "Siri Ventures", "2017", "프롭테크 분야 집중; 3년간 15억 바트 투자 계획"],
+        ["Muang Thai Life Assurance", "Fuchsia VC", "2017", "인슈어테크, Wellness에 중점"],
+        ["Singha Corporation", "Singha Ventures", "2018", "소비자, 유통(공급망), 기업 분야 투자; 시리즈 A부터 C까지 투자"],
+        ["Thai Union Group", "Thai Union CVC Fund", "2019", "대체 단백질, 기능성 영양, 바이오테크놀로지 분야 집중"],
+        ["PTT Oil and Retail", "Orzon Ventures", "2021", "에너지 관련 스타트업 투자에 집중; 500 TukTuks와 협업"]
+      ]
+    },
+    {
+      "bookPage": 338,
+      "title": "외국인 창업자가 이용할 수 있는 비자 종류 (자료: 태국 투자청 Board of Investment)",
+      "columns": ["비자 종류", "주요 특징", "요구사항", "체류 기간"],
+      "rows": [
+        ["Non-Immigrant B 비자", "사업 수행 및 취업 목적", "유효한 여권; 최근 여권용 사진; 회사 초청장; 비자 신청서; 재정 증명; 사업 관련 서류", "90일 (1년까지 연장 가능)"],
+        ["Destination Thailand Visa (DTV)", "원격 근무자, 프리랜서, 장기 관광객 대상", "계좌 잔액 500,000바트 이상; 방문 목적 증명; 표준 서류(여권, 사진, 신청서)", "5년 (180일 체류, 180일 연장 가능)"],
+        ["Investment 비자", "외국인 투자자", "1000만 바트 이상 투자; 비이민 비자 소지; 태국 투자청(BOI) 확인서", "1년 (갱신 가능)"],
+        ["LTR 비자", "고소득 전문가, 투자자, 은퇴자 대상", "연간 소득 $80,000 이상(지난 2년간); 또는 소득 $40,000와 석사 학위, 지적 재산권, 시리즈 A 투자 중 하나 보유; 고용주는 지난 3년간 연 수익 $1.5억 이상", "10년 (갱신 가능)"],
+        ["SMART \"E\" (Executive) 비자", "기술 기반 기업 고위 임원", "월 소득 20만 바트 이상; 학사 학위 이상; 10년 이상 관련 경력", "4년 (갱신 가능)"],
+        ["SMART \"I\" (Investor) 비자", "기술 기반 사업 투자자", "기술 기업에 2000만 바트 이상 투자 또는 스타트업에 500만 바트 이상 투자; 관련 기관의 인증", "4년 (갱신 가능)"],
+        ["SMART \"S\" (Startup) 비자", "기술 스타트업 창업자 대상", "6개월 비자: 승인된 스타트업 계획 또는 활동 참여, 건강보험; 1년 비자: 인큐베이터/엑셀러레이터 프로그램 참여, 60만 바트 예금, 건강보험; 2년 비자: 인증된 스타트업 회사 설립, 25% 이상 지분 또는 이사직, 60만 바트 예금, 건강보험", "6개월, 1년, 또는 2년 (갱신 가능)"],
+        ["SMART \"T\" (Talent) 비자", "고급 기술 인력", "월 소득 10만 바트 이상(특정 전문가는 5만 바트); 1년 이상 고용 계약; 과학기술 분야 전문성", "4년 (갱신 가능)"]
+      ]
+    },
+    {
+      "bookPage": 339,
+      "title": "법인 설립을 위한 필수 요건과 절차 (자료: 태국 상무부 기업개발국)",
+      "columns": ["요건/절차", "설명"],
+      "rows": [
+        ["회사 유형 선택", "대부분의 경우 Private Limited Company 선택; 외국인은 일반적으로 49%까지만 소유 가능; 100% 소유를 위해서는 Foreign Business License, BOI 승인, 또는 미국-태국 우호통상조약 필요"],
+        ["최소 자본금", "일반적으로 2백만 바트(약 60,000 USD); Foreign Business License 필요 시 3백만 바트 또는 3년 평균 예상 비용의 25% 중 높은 금액"],
+        ["회사명 등록", "상무부 기업개발국(DBD)에 3개의 회사명 제안; 승인된 회사명은 30일간 유효"],
+        ["설립 서류 준비", "정관(Memorandum of Association); 주주 명부; 이사 서명 양식; 사업 운영 선언서; 사무소 및 지점 정보"],
+        ["법정 회의 개최", "회사 정관 채택; 이사 및 감사 임명; 사업 활동 비준; 주식 설립"],
+        ["회사 등록", "지역 사업자 등록 사무소에 신청; 등록 완료까지 보통 1주일 소요(공개 회사의 경우 1개월)"],
+        ["세금 등록", "법인세 ID 카드 신청(설립 후 60일 이내); 연간 매출 1.8백만 바트 이상 시 VAT 등록(30일 이내)"],
+        ["외국인 고용 요건", "외국인 1명 고용 시 태국인 4명 고용 필요"],
+        ["BOI 신청 (해당 시)", "등록 자본금 및 투자 계획; 프로젝트 세부 정보; 경영진 정보; 3년간 예상 수익 및 비용; 직원 정보 제출"]
+      ]
+    },
+    {
+      "bookPage": 340,
+      "title": "스타트업을 위한 세금 혜택과 재정적 인센티브 (자료: 태국 투자청 Board of Investment)",
+      "columns": ["혜택/인센티브", "설명"],
+      "rows": [
+        ["법인세 면제", "BOI 승인 스타트업은 최대 8년간 법인세 면제; 기술, 생명공학, 창조산업 등 특정 산업 대상"],
+        ["R&D 비용 이중 공제", "R&D 비용에 대해 200% 세금 공제; 신제품 개발을 위한 R&D 활동에 적용"],
+        ["로열티 원천징수세 감면", "지적재산권 로열티에 대한 원천징수세 10%로 감면"],
+        ["고급 인력 소득세 감면", "월 20만 바트 이상 고소득 근로자에 대해 15% 감면된 개인소득세율 적용"],
+        ["VAT 면제", "연간 매출 180만 바트 미만 스타트업은 VAT 면제"],
+        ["투자자 세금 혜택", "엔젤 투자자: 투자액의 최대 50%(연간 500만 바트 한도) 세금 공제; 벤처캐피털: 투자액의 최대 100%(연간 1,000만 바트 한도) 세금 공제; 2032년 6월 30일까지 유효"],
+        ["주식 양도 차익 면세", "스타트업 주식 보유 24개월 이상 시 양도 차익에 대한 개인소득세 또는 법인세 면제"],
+        ["BOI 매칭 펀드", "20~50백만 바트 규모의 매칭 펀드 지원; 벤처캐피털 투자금의 최대 50%까지 지원; 프리시리즈 A에서 시리즈 A 단계 스타트업 대상"],
+        ["스마트 비자", "스타트업 창업자, 투자자, 고급 인력 대상 4년 비자 발급"]
+      ]
+    },
+    {
+      "bookPage": 341,
+      "title": "주요 코워킹 스페이스 (1)",
+      "columns": ["이름", "위치", "설명"],
+      "rows": [
+        ["WeWork", "2개 지점 (The Met Sathorn, T-One 빌딩 등)", "고급스럽고 기능적인 디자인; 24/7 접근 가능; 네트워킹 이벤트 및 커뮤니티 활동"],
+        ["JustCo", "6개 지점 (AIA Sathorn Tower, Capital Tower 등)", "현대적이고 세련된 인테리어; 네트워킹 이벤트 및 워크샵 개최; 고속 인터넷 및 프린팅 서비스 제공; 전화 부스 및 회의실 구비"],
+        ["The Hive", "2개 지점 (Thonglor, Prakanong 등)", "옥상 바와 레스토랑 보유; 다양한 네트워킹 이벤트 및 워크샵 개최"],
+        ["Spaces", "태국 전역 28개 지점", "세련되고 유연한 작업 공간; 다양한 편의시설 제공; 고속 인터넷, 편안한 가구, 인쇄 서비스 등 구비; 이벤트 및 워크샵 주최"],
+        ["Hubba", "4개 지점 (Ekkamai, Sathorn 등)", "태국 최초의 코워킹 스페이스; 스타트업 생태계 지원; 비즈니스 도구 및 교육 세션 제공; 유니크한 온실 보드룸 보유"],
+        ["The Great Room", "Gaysorn Tower", "호텔급 고급 인테리어와 서비스; 다양한 워크스페이스 옵션; 정기적인 네트워킹 이벤트; 비즈니스 클래스 회의실 제공; 프리미엄 커피 및 티 서비스"],
+        ["Glowfish", "Sathon", "다양한 분위기의 회의실 제공; 기술 전문가와 스타트업 창업자들이 선호; 정기적인 커뮤니티 이벤트 개최"],
+        ["True Digital Park", "BTS Punnawithi 근처", "태국 최대 규모의 스타트업 허브; 대기업, 스타트업, 투자자, 정부 기관이 한 곳에 집결; 최첨단 시설 및 장비 제공; 다양한 이벤트 및 프로그램 운영"]
+      ]
+    },
+    {
+      "bookPage": 342,
+      "title": "주요 코워킹 스페이스 (2)",
+      "columns": ["이름", "위치", "설명"],
+      "rows": [
+        ["Launchpad", "Silom", "2,000㎡ 규모의 넓은 공간; 100개 이상의 맞춤형 데스크; 실리콘밸리 스타일의 혁신적 환경"],
+        ["Common Ground", "3개 지점 (CentralWorld, G Tower, Ploenchit)", "G Tower 지점은 1,000석 이상 제공; 파노라마 도시 전망; 스타벅스 카페 내장; 150명 수용 가능한 이벤트 공간"],
+        ["The Work Loft", "Silom", "루프탑 바 보유; 다양한 작업 공간 제공; 정기적인 네트워킹 이벤트 개최"],
+        ["Open House", "Central Embassy 6층", "고급 쇼핑몰 내 위치; 디자인 중심의 환경; 주스 바와 희귀 도서 전문 서점 보유"],
+        ["Union SPACE Bangkok", "Thong Lor", "고속 WiFi, 편안한 라운지, 무료 음료 제공; 전문성 개발 및 네트워킹을 위한 이벤트 및 워크샵 개최; 전용 사진 스튜디오 보유"],
+        ["Cocon", "Phaya Thai", "편안한 데스크와 밝고 초대적인 장식; 고속 WiFi 제공; 현장 카페 운영; 탁구대 및 휴식 공간 보유"]
+      ]
+    },
+    {
+      "bookPage": 343,
+      "title": "주요 스타트업 컨퍼런스",
+      "columns": ["컨퍼런스명", "개최시기", "주최", "설명"],
+      "rows": [
+        ["Techsauce Global Summit", "8월", "Techsauce", "동남아시아 최대 규모의 테크 이벤트; 다양한 분야의 전문가들이 모여 네트워킹 및 비즈니스 기회 창출; 1대1 비즈니스 매칭 세션 제공; 30개 이상의 인터랙티브 워크샵 진행; 200개 이상의 전시회; 130개 이상의 세션"],
+        ["Corporate Innovation Summit", "9월", "RISE", "아시아 최대 규모의 체험형 컨퍼런스; 기업 리더, 혁신가, 기업가, 투자자, 스타트업 창업자들이 참여; 체험형 워크샵, 영감을 주는 기조연설, 네트워킹 기회 제공; 60개 이상의 체험형 워크샵과 40개 이상의 기조연설 및 패널 토론 진행"],
+        ["Startup Thailand x Innovation Thailand Expo", "7월", "National Innovation Agency (NIA)", "태국의 주요 스타트업 행사; 정부 지원 및 미디어 노출 기회 제공; 업계 리더들과의 네트워킹 기회"],
+        ["Wow Summit", "11월", "Wow Summit", "블록체인, Web3, AI, NFT 등 다양한 기술 분야를 다룸; 150명 이상의 연사와 30개국 이상에서 7,000명 이상의 참가자"]
+      ]
+    },
+    {
+      "bookPage": 344,
+      "title": "스타트업 미디어",
+      "columns": ["미디어명", "설명", "웹사이트 주소"],
+      "rows": [
+        ["Techsauce", "태국 최대의 테크 및 스타트업 미디어 플랫폼; Techsauce Global Summit 주최", "https://techsauce.co"],
+        ["Tech in Asia", "아시아 전역의 스타트업 및 기술 트렌드", "https://www.techinasia.com"],
+        ["e27", "동남아 스타트업 생태계 소식", "https://e27.co"],
+        ["DealStreetAsia", "아시아 금융, 비즈니스, 벤처캐피털 뉴스 제공", "https://www.dealstreetasia.com"],
+        ["KrASIA", "아시아 지역 스타트업 트렌드", "https://kr-asia.com"],
+        ["Thailand Business News", "태국의 비즈니스 및 재무 관점의 종합 뉴스 서비스; 주간 1회 포스팅", "https://www.thailand-business-news.com"],
+        ["The Nation Thailand", "태국 및 ASEAN 지역의 비즈니스 뉴스 제공; 일일 10회 포스팅", "https://www.nationthailand.com/business"],
+        ["StartUp in Thailand Blog", "태국에서의 비즈니스 창업 및 확장에 대한 정보 제공; 월 3회 포스팅", "https://startupinthailand.com"],
+        ["Thaiger", "태국 뉴스 및 정보 포털; 비즈니스 섹션에서 스타트업 관련 뉴스 제공", "https://thethaiger.com/business"],
+        ["Bangkok Post", "태국 및 ASEAN 지역의 최신 금융, 시장, 경제 뉴스 제공", "https://www.bangkokpost.com/business"],
+        ["Prachachat News", "태국어 뉴스 웹사이트로 경제, 비즈니스 뉴스 제공", "https://www.prachachat.net"]
+      ]
+    },
+    {
+      "bookPage": 345,
+      "title": "대학 및 연구기관과의 기술 협력 기회",
+      "columns": ["기관/프로그램", "협력 내용"],
+      "rows": [
+        ["Thammasat University, 88 SANDBOX", "88개 비즈니스 파트너와 협력하여 스타트업 생태계 지원; Skill Space, Expo, Hackathon 등 다양한 활동 통해 스타트업 육성; 멘토링 및 투자 기회 제공"],
+        ["KMUTT (King Mongkut's University of Technology Thonburi), KX Knowledge Xchange", "기업 및 기업가와 KMUTT 간 기술 솔루션 연결; 지식, 기술, 혁신 교류 촉진; 학생들에게 실제 산업 문제 해결 경험 제공"],
+        ["KBTG Kampus (KASIKORN Business-Technology Group Kampus)", "KMITL(King Mongkut's Institute of Technology Ladkrabang), Mahidol University, Thammasat University와 협력하여 대학원 수준 프로그램 제공; 데이터 분석, AI, 사이버 보안 등 첨단 기술 분야 중점; 학부생 대상 Apprentice 프로그램 운영; 산업계 문제 해결 중심의 연구 및 학습"],
+        ["Thailand Science Park (TSP)", "한국 충북대학교와 기술 및 과학 자원 협력; R&D 시설 방문 및 비즈니스 매칭 기회 제공; 태국-한국 기업 간 혁신 비즈니스 강화"],
+        ["Chiang Mai University와 Science and Technology Park (STeP)", "EAC(Entrepreneur Advisory Center)와 협력하여 스타트업과 중소기업의 성장 지원; 글로벌 확장을 위한 협력 진행; 기술 기반 비즈니스 스타트업 육성"],
+        ["Suranaree University of Technology", "영국 대학들과 창업 및 비즈니스 디자인 분야의 공동 학위 프로그램 개발 추진; 과학기술 졸업생 대상 창업 스킬 및 혁신 아이디어 교육"]
+      ]
+    }
+  ],
+  "candidates": [
+    {"name": "태국투자청", "aliases": ["BOI", "Board of Investment"], "definition": "외국인 투자 승인, 매칭 펀드, 세금 인센티브, 스마트 비자를 관장하는 태국 투자 진흥 기관", "type": "기업", "bookPages": [335, 336, 338, 340], "evidence": {"mentions": 6, "inChapterTitle": false}},
+    {"name": "국가혁신청", "aliases": ["NIA", "National Innovation Agency"], "definition": "Corporate Co-funding, Recoverable Fund 등 스타트업 펀딩 프로그램과 Startup Thailand 행사를 운영하는 태국 정부기관", "type": "기업", "bookPages": [335, 343], "evidence": {"mentions": 3, "inChapterTitle": false}},
+    {"name": "디지털경제진흥국", "aliases": ["DEPA", "Digital Economy Promotion Agency"], "definition": "DEPA Digital Startup Fund와 Smart City Accelerator를 운영하는 태국 디지털 경제 진흥 기관", "type": "기업", "bookPages": [334, 335], "evidence": {"mentions": 3, "inChapterTitle": false}},
+    {"name": "국가과학기술개발청", "aliases": ["NSTDA"], "definition": "300% R&D 세액 공제와 태국 혁신 목록을 운영하는 태국 과학기술 개발 기관", "type": "기업", "bookPages": [336], "evidence": {"mentions": 3, "inChapterTitle": false}},
+    {"name": "SCB 10X", "aliases": ["Siam Commercial Bank CVC"], "definition": "시암상업은행의 CVC로 핀테크·블록체인·Web 3.0에 집중하며 글로벌 CVC 랭킹 8위", "type": "기업", "bookPages": [337], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "SMART 비자", "aliases": ["SMART Visa", "SMART S/E/I/T"], "definition": "기술 스타트업 창업자, 투자자, 임원, 고급 인력을 위한 태국의 특별 비자 제도", "type": "정책", "bookPages": [338, 340], "evidence": {"mentions": 5, "inChapterTitle": false}},
+    {"name": "LTR 비자", "aliases": ["Long-Term Resident Visa"], "definition": "고소득 전문가, 투자자, 은퇴자에게 10년 체류를 허용하는 태국 장기 거주 비자", "type": "정책", "bookPages": [338], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "Destination Thailand Visa", "aliases": ["DTV"], "definition": "원격 근무자, 프리랜서, 장기 관광객을 위한 5년 체류 비자", "type": "정책", "bookPages": [338], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "Foreign Business License", "aliases": ["외국인 사업 허가"], "definition": "외국인이 태국 회사를 49% 초과 소유하기 위해 필요한 허가 제도", "type": "정책", "bookPages": [339], "evidence": {"mentions": 2, "inChapterTitle": false}},
+    {"name": "True Digital Park", "aliases": [], "definition": "BTS Punnawithi 근처에 위치한 태국 최대 규모의 스타트업 허브", "type": "기업", "bookPages": [341], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "Techsauce", "aliases": ["Techsauce Global Summit"], "definition": "태국 최대 테크·스타트업 미디어 플랫폼이자 동남아시아 최대 테크 이벤트 주최사", "type": "기업", "bookPages": [343, 344], "evidence": {"mentions": 3, "inChapterTitle": false}},
+    {"name": "코워킹 스페이스", "aliases": ["Coworking Space"], "definition": "WeWork, Hubba, True Digital Park 등 방콕 스타트업이 활용하는 공유 업무 공간", "type": "현상", "bookPages": [341, 342], "evidence": {"mentions": 2, "inChapterTitle": false}},
+    {"name": "CVC", "aliases": ["Corporate Venture Capital", "기업형 벤처캐피털"], "definition": "AIS, SCB 등 태국 대기업이 스타트업에 투자하기 위해 운영하는 기업형 벤처캐피털", "type": "용어", "bookPages": [334, 337], "evidence": {"mentions": 4, "inChapterTitle": false}},
+    {"name": "88 SANDBOX", "aliases": ["Thammasat University 88 SANDBOX"], "definition": "탐마삿대학교가 88개 비즈니스 파트너와 운영하는 스타트업 육성 프로그램", "type": "정책", "bookPages": [345], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "KBTG Kampus", "aliases": ["KASIKORN Business-Technology Group Kampus"], "definition": "카시콘은행 기술그룹이 태국 주요 대학과 협력해 AI·데이터 분야 인재를 양성하는 교육 프로그램", "type": "정책", "bookPages": [345], "evidence": {"mentions": 1, "inChapterTitle": false}}
+  ],
+  "gaps": []
+}

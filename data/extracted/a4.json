@@ -1,0 +1,76 @@
+{
+  "unit": "a4",
+  "title": "부록 04 태국 스타트업 120",
+  "galaxy": 6,
+  "pdfPages": [172, 173],
+  "bookPages": [347, 349],
+  "summary": "부록 04는 태국 스타트업 120개사를 섹터와 투자 단계(Seed, Series A, Series B, Series C+)로 정리한 매트릭스 표다. 347쪽은 '04 태국 스타트업 120' 간지이고, 348~349쪽에 Fintech, Logistics, FoodTech, B2B Marketplace, HealthCare, Deep Tech & Agri Tech, e-Commerce, B2B Services, HRTech, MarTech, Beauty & Fashion, Others의 12개 섹터별 기업명이 나열된다. Series C+ 단계에는 Ascend Money, Opn, Flash Express, LINE MAN Wongnai, Deliveree, aCommerce, Amity 등이 포함된다. 기준 시점은 2025년 1월, 출처는 Techsauce Startup Directory다.",
+  "facts": [
+    {"text": "부록 04의 제목은 '태국 스타트업 120'이다.", "bookPage": 347, "kind": "고유명사"},
+    {"text": "※ 2025년 1월 기준", "bookPage": 349, "kind": "날짜"},
+    {"text": "자료: Techsauce Startup Directory", "bookPage": 349, "kind": "인용"},
+    {"text": "표는 태국 스타트업을 Sector와 Seed, Series A, Series B, Series C+의 투자 단계로 분류한다.", "bookPage": 348, "kind": "인용"},
+    {"text": "표의 섹터는 Fintech, Logistics, FoodTech, B2B Marketplace, HealthCare, Deep Tech & Agri Tech, e-Commerce, B2B Services, HRTech, MarTech, Beauty & Fashion, Others의 12개다.", "bookPage": 348, "kind": "수치"},
+    {"text": "Fintech 섹터의 Series C+ 기업으로 Ascend Money, Opn, Rabbit Care, Xspring Capitals, Lightnet이 나열된다.", "bookPage": 348, "kind": "고유명사"},
+    {"text": "Fintech 섹터의 Seed 단계 기업은 Jitta, Forward, Snapshot, INIT, Contribution DAO, MoneyTable, Stock Radars다.", "bookPage": 348, "kind": "고유명사"},
+    {"text": "Logistics 섹터의 Series C+ 기업으로 Flash Express와 Deliveree가 나열된다.", "bookPage": 348, "kind": "고유명사"},
+    {"text": "FoodTech 섹터의 Series B 단계에 LINE MAN Wongnai와 eatigo가 나열된다.", "bookPage": 348, "kind": "고유명사"},
+    {"text": "HealthCare 섹터의 Series C+ 기업으로 GenePlus가 나열된다.", "bookPage": 348, "kind": "고유명사"},
+    {"text": "Deep Tech & Agri Tech 섹터의 Series C+ 기업으로 Amity가 나열된다.", "bookPage": 348, "kind": "고유명사"},
+    {"text": "e-Commerce 섹터의 Series C+ 기업으로 aCommerce가 나열된다.", "bookPage": 349, "kind": "고유명사"},
+    {"text": "e-Commerce 섹터의 Series B 기업은 Priceza와 My Cloud다.", "bookPage": 349, "kind": "고유명사"},
+    {"text": "B2B Services 섹터의 Seed 기업은 Flow Account, Auto Pair, ESP tech., WYZauto, Eazy Digital이다.", "bookPage": 349, "kind": "고유명사"},
+    {"text": "HRTech 섹터의 Series B 기업으로 Eko가 나열된다.", "bookPage": 349, "kind": "고유명사"},
+    {"text": "MarTech 섹터의 Series C+ 기업으로 ChocoCRM이 나열된다.", "bookPage": 349, "kind": "고유명사"},
+    {"text": "Beauty & Fashion 섹터의 Series C+ 기업으로 Pomelo가 나열된다.", "bookPage": 349, "kind": "고유명사"},
+    {"text": "Others 섹터의 Series C+ 기업으로 Aviasales가 나열된다.", "bookPage": 349, "kind": "고유명사"},
+    {"text": "이 부록은 태국 스타트업 120개사를 2025년 1월 기준으로 정리한 목록이며, 출처는 Techsauce Startup Directory다.", "bookPage": 349, "kind": "인용"}
+  ],
+  "tables": [
+    {
+      "bookPage": 348,
+      "title": "태국 스타트업 120 (섹터별·투자 단계별, 348쪽)",
+      "columns": ["Sector", "Seed", "Series A", "Series B", "Series C+"],
+      "rows": [
+        ["Fintech", "Jitta, Forward, Snapshot, INIT, Contribution DAO, MoneyTable, Stock Radars", "Velvo, Pi Securities, EvryNet, GettGo, T2P, DeepPocket, Crytomind, Masii, Claim Di, Chom CHOM", "Sunday, Abacus Digital, Finnomena, Monix, Roojai, Digio", "Ascend Money, Opn, Rabbit Care, Xspring Capitals, Lightnet"],
+        ["Logistics", "APX, Scoota, Beefast, Pombai", "", "Giztix, MyCloud Fulfillment", "Flash Express, Deliveree"],
+        ["FoodTech", "Chokdee, Zodio, UniFAHS, IncreBio, Kinkao, Cookly, Yindii", "QueQ, Hungry Hub", "LINE MAN Wongnai, eatigo", ""],
+        ["B2B Marketplace", "Seekster, OneStock Home, Horganice", "", "Freshket, BUILK", ""],
+        ["HealthCare", "Doctor AtoZ, ZeekDoc", "Ooca, Doctor Raksa", "HD", "GenePlus"],
+        ["Deep Tech & Agri Tech", "SERTIS, Gree Energy, Rikult, EasyRice, Progressus, FlyLabFeed", "ETRAN, Things on Net", "", "Amity"]
+      ]
+    },
+    {
+      "bookPage": 349,
+      "title": "태국 스타트업 120 (섹터별·투자 단계별, 349쪽)",
+      "columns": ["Sector", "Seed", "Series A", "Series B", "Series C+"],
+      "rows": [
+        ["e-Commerce", "Beam, Checkout, Page365, SiamCar Deal, Dealcha, NATBAY", "Mercular, Property Scout, Drivehub, FazWaz, N-Squared", "Priceza, My Cloud", "aCommerce"],
+        ["B2B Services", "Flow Account, Auto Pair, ESP tech., WYZauto, Eazy Digital", "Appman, B-Concept, Stampede, Anywhere 2 go, SiamSquare Tech", "Ecartstudio", ""],
+        ["HRTech", "Mantal, Salary Hero", "GetLinks, Fastwork, Workventure, Concicle", "Eko", ""],
+        ["MarTech", "Geddit, ReverseAds", "Zanroo, Ads Chaophraya, YDM Thailand, Flare", "Crea, WiseInsight", "ChocoCRM"],
+        ["Beauty & Fashion", "Gowabi, Shopspot", "Konvy, Nyscps", "", "Pomelo"],
+        ["Others", "Lazudi, Z Home, Property Flow", "Drivemate, Globish", "Tourkrub", "Aviasales"]
+      ]
+    }
+  ],
+  "candidates": [
+    {"name": "테크소스 스타트업 디렉토리", "aliases": ["Techsauce Startup Directory"], "definition": "이 부록의 태국 스타트업 120 목록의 출처인 태국 스타트업 정보 디렉토리", "type": "기업", "bookPages": [349], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "어센드 머니", "aliases": ["Ascend Money"], "definition": "Fintech 섹터 Series C+ 단계로 분류된 태국 핀테크 기업", "type": "기업", "bookPages": [348], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "오픈", "aliases": ["Opn"], "definition": "Fintech 섹터 Series C+ 단계로 분류된 태국 결제 기업", "type": "기업", "bookPages": [348], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "플래시 익스프레스", "aliases": ["Flash Express"], "definition": "Logistics 섹터 Series C+ 단계로 분류된 태국 물류 기업", "type": "기업", "bookPages": [348], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "딜리버리", "aliases": ["Deliveree"], "definition": "Logistics 섹터 Series C+ 단계로 분류된 물류 기업", "type": "기업", "bookPages": [348], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "라인맨 웡나이", "aliases": ["LINE MAN Wongnai"], "definition": "FoodTech 섹터 Series B 단계로 분류된 태국 음식 배달·리뷰 플랫폼", "type": "기업", "bookPages": [348], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "어커머스", "aliases": ["aCommerce"], "definition": "e-Commerce 섹터 Series C+ 단계로 분류된 이커머스 지원 기업", "type": "기업", "bookPages": [349], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "애미티", "aliases": ["Amity"], "definition": "Deep Tech & Agri Tech 섹터 Series C+ 단계로 분류된 태국 테크 기업", "type": "기업", "bookPages": [348], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "포멜로", "aliases": ["Pomelo"], "definition": "Beauty & Fashion 섹터 Series C+ 단계로 분류된 패션 이커머스 기업", "type": "기업", "bookPages": [349], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "지타", "aliases": ["Jitta"], "definition": "Fintech 섹터 Seed 단계로 분류된 태국 투자 분석 스타트업", "type": "기업", "bookPages": [348], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "피노메나", "aliases": ["Finnomena"], "definition": "Fintech 섹터 Series B 단계로 분류된 태국 자산관리 스타트업", "type": "기업", "bookPages": [348], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "래빗 케어", "aliases": ["Rabbit Care"], "definition": "Fintech 섹터 Series C+ 단계로 분류된 보험·금융 비교 플랫폼", "type": "기업", "bookPages": [348], "evidence": {"mentions": 1, "inChapterTitle": false}},
+    {"name": "시리즈 C+", "aliases": ["Series C+"], "definition": "표에서 후기 투자 단계를 묶어 표기한 분류 용어", "type": "용어", "bookPages": [348, 349], "evidence": {"mentions": 2, "inChapterTitle": false}},
+    {"name": "태국 스타트업 120", "aliases": ["Thai Startups 120"], "definition": "태국 스타트업 120개사를 섹터·투자 단계별로 정리한 부록 목록", "type": "용어", "bookPages": [347, 348, 349], "evidence": {"mentions": 1, "inChapterTitle": true}}
+  ],
+  "gaps": [
+    {"pdfPage": 172, "reason": "왼쪽 면(책 346쪽)은 백면, 오른쪽 면(347쪽)은 '04 태국 스타트업 120' 간지로 본문 없음"}
+  ]
+}

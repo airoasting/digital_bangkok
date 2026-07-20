@@ -1,0 +1,366 @@
+{
+  "galaxy": 3,
+  "intro": "3부는 태국이 아세안의 디지털 중심지로 성장하는 과정을 살펴봅니다. 정부의 스타트업 지원 정책과 비자 제도, 타일랜드 4.0을 선도하는 5대 투자 테마, 그리고 미중 빅테크의 투자를 균형 있게 유치하며 아세안 AI 허브로 도약하는 전략을 다룹니다.",
+  "candidates": [
+    {
+      "name": "타일랜드 4.0",
+      "aliases": ["Thailand 4.0", "태국 4.0"],
+      "type": "정책",
+      "definition": "제조업에 ICT를 접목한 스마트 제조와 디지털 경제 전환을 추진하는 태국 정부의 국가 경제 정책으로, 3부 투자 테마의 정책 프레임이다.",
+      "chapter": "ch11",
+      "bookPages": [13, 133, 156, 157, 173],
+      "rank": 1
+    },
+    {
+      "name": "아세안 디지털 허브",
+      "aliases": ["ASEAN Digital Hub"],
+      "type": "현상",
+      "definition": "방콕과 태국이 아세안의 디지털 중심지로 도약하고 있다는 이 책 3부의 핵심 개념.",
+      "chapter": "prologue",
+      "bookPages": [9, 10, 13, 182, 184],
+      "rank": 2
+    },
+    {
+      "name": "대나무 외교",
+      "aliases": ["Bamboo Diplomacy"],
+      "type": "현상",
+      "definition": "강대국들 사이에서 유연하게 균형을 맞추며 자국의 이익과 자주성을 지키는 태국의 전통 외교 전략으로, 미중 디지털 패권 경쟁 속 투자 유치의 축이다.",
+      "chapter": "ch12",
+      "bookPages": [175, 176, 182, 184],
+      "rank": 3
+    },
+    {
+      "name": "화웨이",
+      "aliases": ["Huawei"],
+      "type": "기업",
+      "definition": "미국 제재 속에서도 태국의 5G, 클라우드, AI 인프라에 대규모 투자하고 디지털 밸리에 AI·클라우드 개발 센터 설립을 계획 중인 중국 통신장비 기업.",
+      "chapter": "ch12",
+      "bookPages": [154, 155, 176, 177, 178, 179, 182],
+      "rank": 4
+    },
+    {
+      "name": "아세안 AI 허브",
+      "aliases": ["ASEAN AI Hub"],
+      "type": "정책",
+      "definition": "2027년까지 480억 바트 규모 AI 산업 성장과 5만 명 AI 인력 양성으로 태국이 이루려는 국가 목표.",
+      "chapter": "ch12",
+      "bookPages": [177, 178, 182],
+      "rank": 5
+    },
+    {
+      "name": "디지털 밸리 타일랜드",
+      "aliases": ["Digital Valley Thailand", "태국의 실리콘 밸리"],
+      "type": "정책",
+      "definition": "촌부리 시라차에 조성 중인 태국판 실리콘 밸리로, 총 40억 바트 예산으로 2025년 완공과 2만 개 이상의 디지털 일자리 창출을 목표로 한다.",
+      "chapter": "ch10",
+      "bookPages": [148, 153, 154, 155],
+      "rank": 6
+    },
+    {
+      "name": "미국 빅테크의 태국 데이터센터 투자",
+      "aliases": ["Microsoft Azure 리전", "AWS 태국 리전", "Google 태국 데이터센터"],
+      "type": "현상",
+      "definition": "2024년 마이크로소프트, AWS, 구글이 발표한 총 85억 달러 규모의 태국 데이터센터 및 클라우드 투자 흐름.",
+      "chapter": "ch12",
+      "bookPages": [182, 183],
+      "rank": 7
+    },
+    {
+      "name": "디지털 노마드",
+      "aliases": ["Digital Nomad"],
+      "type": "현상",
+      "definition": "원격으로 일하며 세계를 이동하는 지식 노동자로, 방콕·치앙마이·푸켓의 핵심 유입 인구이자 태국 비자 정책의 주요 대상.",
+      "chapter": "ch10",
+      "bookPages": [10, 14, 148, 149, 150, 151, 152],
+      "rank": 8
+    },
+    {
+      "name": "데스티네이션 타일랜드 비자",
+      "aliases": ["Destination Thailand Visa", "DTV", "데스티네이션 태국 비자"],
+      "type": "정책",
+      "definition": "2024년 도입된 디지털 노마드·장기 여행자용 5년 유효 복수 입국 비자로, 180일 체류 후 180일 연장이 가능하다.",
+      "chapter": "ch10",
+      "bookPages": [131, 150],
+      "rank": 9
+    },
+    {
+      "name": "태국투자청",
+      "aliases": ["BOI", "Board of Investment", "태국 투자청"],
+      "type": "기업",
+      "definition": "벤처 매칭 펀드와 외국인 비자 통계를 관리하고 틱톡의 38억 달러 데이터 호스팅 투자를 승인한 태국의 투자 촉진 정부 기관.",
+      "chapter": "ch09",
+      "bookPages": [130, 131, 182, 184],
+      "rank": 10
+    },
+    {
+      "name": "동부경제회랑",
+      "aliases": ["EEC", "Eastern Economic Corridor"],
+      "type": "정책",
+      "definition": "촌부리 등 태국 동부의 첨단 산업 경제 특구로, 디지털 밸리가 위치하고 화웨이가 클라우드 데이터센터를 구축한 지역.",
+      "chapter": "ch10",
+      "bookPages": [153, 178],
+      "rank": 11
+    },
+    {
+      "name": "AIS",
+      "aliases": ["Advanced Info Service"],
+      "type": "기업",
+      "definition": "2019년 화웨이를 5G 코어 네트워크 구축 사업자로 선정하고 디지털 밸리에 대규모 투자한 태국 주요 통신사.",
+      "chapter": "ch12",
+      "bookPages": [153, 154, 177],
+      "rank": 12
+    },
+    {
+      "name": "틱톡 태국 투자",
+      "aliases": ["TikTok", "ByteDance"],
+      "type": "현상",
+      "definition": "2025년 1월 태국투자청이 승인한 틱톡의 38억 달러 규모 데이터 호스팅 서비스 투자.",
+      "chapter": "ch12",
+      "bookPages": [184],
+      "rank": 13
+    },
+    {
+      "name": "치앙마이",
+      "aliases": ["Chiang Mai"],
+      "type": "현상",
+      "definition": "약 5,000명의 디지털 노마드가 활동하는 태국 북부 문화 중심지이자 세계 10대 디지털 노마드 도시.",
+      "chapter": "ch10",
+      "bookPages": [148, 149, 150, 152],
+      "rank": 14
+    },
+    {
+      "name": "푸켓",
+      "aliases": ["Phuket"],
+      "type": "현상",
+      "definition": "30개 해변을 가진 태국 최대 섬으로, 블루 존 프로젝트와 스마트 시티 예산으로 디지털 노마드를 끌어들이는 남부 거점.",
+      "chapter": "ch10",
+      "bookPages": [148, 151, 152],
+      "rank": 15
+    },
+    {
+      "name": "스마트 비자",
+      "aliases": ["SMART Visa"],
+      "type": "정책",
+      "definition": "2018년 시행되어 과학기술 전문가·투자자·창업가에게 최대 4년 체류와 취업 허가 면제를 주는 태국 비자.",
+      "chapter": "ch09",
+      "bookPages": [131],
+      "rank": 16
+    },
+    {
+      "name": "장기 거주 비자",
+      "aliases": ["LTR Visa", "Long Term Resident Program"],
+      "type": "정책",
+      "definition": "2022년 도입되어 고잠재력 외국인에게 최대 10년 체류와 세금 혜택을 주는 태국 비자.",
+      "chapter": "ch09",
+      "bookPages": [131],
+      "rank": 17
+    },
+    {
+      "name": "이노베이션 원 펀드",
+      "aliases": ["Innovation One Fund"],
+      "type": "정책",
+      "definition": "2023년 출범한 10억 바트 규모의 펀드로, 기술 스타트업과 중소기업을 연결하며 스타트업당 최대 3,000만 바트를 투자한다.",
+      "chapter": "ch09",
+      "bookPages": [130],
+      "rank": 18
+    },
+    {
+      "name": "국가혁신청",
+      "aliases": ["NIA"],
+      "type": "기업",
+      "definition": "15년간 3,133개 이상의 혁신 프로젝트에 35억 8천만 바트를 지원하고 기업 공동 투자 제도를 운영하는 태국 정부 기관.",
+      "chapter": "ch09",
+      "bookPages": [130],
+      "rank": 19
+    },
+    {
+      "name": "태국 증권거래소",
+      "aliases": ["SET", "The Stock Exchange of Thailand"],
+      "type": "기업",
+      "definition": "아세안 대비 높은 주가수익비율과 거래량을 보이는 태국 주식 시장으로, 스타트업 IPO 엑시트의 통로.",
+      "chapter": "ch09",
+      "bookPages": [137, 140, 141],
+      "rank": 20
+    },
+    {
+      "name": "MAI",
+      "aliases": ["Market for Alternative Investment"],
+      "type": "기업",
+      "definition": "한국 코스닥과 유사한, 중소기업·스타트업 대상 태국 대체 투자 시장.",
+      "chapter": "ch09",
+      "bookPages": [141, 142],
+      "rank": 21
+    },
+    {
+      "name": "기업형 벤처 캐피탈",
+      "aliases": ["CVC", "Corporate Venture Capital"],
+      "type": "용어",
+      "definition": "태국 대기업이 운영하는 스타트업 투자 조직으로, 2021년 기준 태국에서 17개가 활동 중이다.",
+      "chapter": "ch09",
+      "bookPages": [135, 136],
+      "rank": 22
+    },
+    {
+      "name": "프롬프트페이",
+      "aliases": ["PromptPay"],
+      "type": "기술",
+      "definition": "태국 중앙은행이 도입해 현금 사용을 줄이고 디지털 결제 확산을 촉진한 결제 수단.",
+      "chapter": "ch11",
+      "bookPages": [158],
+      "rank": 23
+    },
+    {
+      "name": "디지털 가상 은행",
+      "aliases": ["Virtual Bank"],
+      "type": "정책",
+      "definition": "태국 정부가 2024년 라이센스 신청을 받아 2026년 공식 런칭을 목표로 추진하는 비대면 은행 제도.",
+      "chapter": "ch11",
+      "bookPages": [159],
+      "rank": 24
+    },
+    {
+      "name": "라인맨",
+      "aliases": ["LINE MAN", "라인", "LINE"],
+      "type": "기업",
+      "definition": "웡나이 합병 등 인수합병으로 배달 서비스와 레스토랑 리뷰를 통합하며 성장한 라인 계열 플랫폼.",
+      "chapter": "ch09",
+      "bookPages": [137, 138],
+      "rank": 25
+    },
+    {
+      "name": "플래시 익스프레스",
+      "aliases": ["Flash Express"],
+      "type": "기업",
+      "definition": "매일 백만 개 이상의 소포를 처리하며 유니콘으로 도약한 태국 물류 스타트업.",
+      "chapter": "ch11",
+      "bookPages": [161, 163],
+      "rank": 26
+    },
+    {
+      "name": "기즈틱스",
+      "aliases": ["Giztix"],
+      "type": "기업",
+      "definition": "1,000개 이상의 기업 고객을 확보하고 물류 비용을 20% 이상 절감하는 AI 기반 물류 플랫폼 스타트업.",
+      "chapter": "ch11",
+      "bookPages": [134, 161, 162, 163],
+      "rank": 27
+    },
+    {
+      "name": "리컬트",
+      "aliases": ["Ricult", "Rikult"],
+      "type": "기업",
+      "definition": "AI와 위성 이미지로 농작물 상태 모니터링과 수확량 예측을 제공하는 태국 스마트팜 스타트업으로, 10만 명 이상의 농부가 이용한다.",
+      "chapter": "ch11",
+      "bookPages": [133, 171, 172],
+      "rank": 28
+    },
+    {
+      "name": "닥터 락사",
+      "aliases": ["Doctor Raksa"],
+      "type": "기업",
+      "definition": "태국의 온라인 원격 진료 플랫폼 스타트업으로, 2021년 싱가포르의 닥터 애니웨어에 인수되었다.",
+      "chapter": "ch11",
+      "bookPages": [134, 168, 169, 170],
+      "rank": 29
+    },
+    {
+      "name": "아바쿠스 디지털",
+      "aliases": ["Abacus Digital"],
+      "type": "기업",
+      "definition": "태국 시암커머셜은행(SCB)의 스핀오프로 2017년 설립되어 AI 기반 맞춤형 대출 서비스를 제공하는 핀테크 스타트업.",
+      "chapter": "ch11",
+      "bookPages": [159, 160],
+      "rank": 30
+    },
+    {
+      "name": "래빗 케어",
+      "aliases": ["Rabbit Care"],
+      "type": "기업",
+      "definition": "보험 및 금융 상품 비교 플랫폼으로, 삼성생명이 전략적 투자한 태국 인슈어테크 스타트업.",
+      "chapter": "ch11",
+      "bookPages": [159, 160],
+      "rank": 31
+    },
+    {
+      "name": "피노메나",
+      "aliases": ["Finnomena"],
+      "type": "기업",
+      "definition": "25개 은행의 뮤추얼 펀드 수익률 비교 등 맞춤형 포트폴리오와 디지털 자산 관리를 제공하는 태국 핀테크.",
+      "chapter": "ch11",
+      "bookPages": [159, 160],
+      "rank": 32
+    },
+    {
+      "name": "프레시켓",
+      "aliases": ["Freshket"],
+      "type": "기업",
+      "definition": "태국의 농부, 식품 공급업체, 레스토랑을 연결하는 식자재 B2B 마켓플레이스 스타트업.",
+      "chapter": "ch11",
+      "bookPages": [164, 165],
+      "rank": 33
+    },
+    {
+      "name": "빌크",
+      "aliases": ["Builk"],
+      "type": "기업",
+      "definition": "아세안 3만 개 이상의 건설회사가 이용하는 건설 비용 관리 소프트웨어 플랫폼.",
+      "chapter": "ch11",
+      "bookPages": [164, 165],
+      "rank": 34
+    },
+    {
+      "name": "에이치디",
+      "aliases": ["HD"],
+      "type": "기업",
+      "definition": "시장가 대비 15~20% 저렴한 수술 서비스를 제공하는 병원·수술 예약 중개 마켓플레이스로, 500개 이상의 병원·클리닉과 협력한다.",
+      "chapter": "ch11",
+      "bookPages": [167, 168, 169],
+      "rank": 35
+    },
+    {
+      "name": "아미티",
+      "aliases": ["Amity"],
+      "type": "기업",
+      "definition": "AI 챗봇 등 기업형 협업 솔루션을 제공하며 일본, 미국, 유럽 등으로 진출 중인 태국 딥테크 스타트업.",
+      "chapter": "ch11",
+      "bookPages": [171, 172],
+      "rank": 36
+    },
+    {
+      "name": "이트란",
+      "aliases": ["ETRAN"],
+      "type": "기업",
+      "definition": "태국 최초의 전기 오토바이 마이라를 개발하고 방콕시와 소형 전기 쓰레기 수거 트럭을 만든 친환경 모빌리티 스타트업.",
+      "chapter": "ch11",
+      "bookPages": [171, 172, 173],
+      "rank": 37
+    },
+    {
+      "name": "시-라이언",
+      "aliases": ["SEA-LION", "Southeast Asian Languages In One Network"],
+      "type": "기술",
+      "definition": "AI 싱가포르가 개발한, 훈련 데이터의 13%가 아세안 언어로 구성된 대형 언어 모델.",
+      "chapter": "ch12",
+      "bookPages": [181],
+      "rank": 38
+    },
+    {
+      "name": "클라우드 퍼스트 정책",
+      "aliases": ["Cloud First Policy"],
+      "type": "정책",
+      "definition": "태국 정부가 화웨이와의 MOU 체결과 함께 발표한 클라우드 우선 국가 정책.",
+      "chapter": "ch12",
+      "bookPages": [177],
+      "rank": 39
+    },
+    {
+      "name": "딜리버리",
+      "aliases": ["Deliveree"],
+      "type": "기업",
+      "definition": "태국·인도네시아·필리핀에서 3,000대 이상의 화물 트럭을 운영하며 연간 1억 건 이상의 배송을 처리하는 물류 스타트업.",
+      "chapter": "ch11",
+      "bookPages": [161, 162, 163],
+      "rank": 40
+    }
+  ]
+}

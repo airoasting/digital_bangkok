@@ -1,0 +1,258 @@
+{
+  "galaxy": 6,
+  "intro": "부록에서는 2024년 8월 출범한 패통탄 친나왓 신정부의 디지털지갑 정책과 산업별 지원 정책, 태국 진출 기업을 위한 법인 설립·세금·고용 실무 가이드를 정리합니다. 이어 방콕 스타트업을 위한 엑셀러레이터·펀딩·비자 정보와 2025년 1월 기준 태국 스타트업 120개사 목록을 담았습니다.",
+  "candidates": [
+    {
+      "name": "태국투자청",
+      "aliases": ["BOI", "Board of Investment"],
+      "type": "기업",
+      "definition": "외국인 투자 승인과 최대 13년 법인세 면제 등 세제·비세제 혜택, 매칭 펀드, 스마트 비자를 관장하는 태국 투자 진흥 기관",
+      "chapter": "a2",
+      "bookPages": [316, 320, 322, 325, 335, 336, 338, 340],
+      "rank": 1
+    },
+    {
+      "name": "디지털지갑 정책",
+      "aliases": ["디지털 지갑", "10,000바트 정책", "Digital Wallet"],
+      "type": "정책",
+      "definition": "16세 이상 태국 국민 약 4,500만 명에게 1인당 10,000바트를 디지털 화폐로 지급하는 총 4,500억 바트(GDP의 2.7%) 규모의 경제 활성화 정책",
+      "chapter": "a1",
+      "bookPages": [307, 308, 309, 310, 312],
+      "rank": 2
+    },
+    {
+      "name": "외국인사업법",
+      "aliases": ["Foreign Business Act", "FBA"],
+      "type": "정책",
+      "definition": "외국인의 태국 내 사업 참여를 목록 1~3으로 나눠 지분 소유를 원칙적으로 49%까지 제한하는 법률",
+      "chapter": "a2",
+      "bookPages": [318, 319, 320, 321],
+      "rank": 3
+    },
+    {
+      "name": "외국인 사업 허가",
+      "aliases": ["Foreign Business License", "FBL"],
+      "type": "정책",
+      "definition": "제한 업종에서 외국인이 100% 투자하기 위해 외국인사업위원회 승인을 거쳐 상무부로부터 취득해야 하는 허가",
+      "chapter": "a2",
+      "bookPages": [319, 320, 322, 339],
+      "rank": 4
+    },
+    {
+      "name": "태국 4.0",
+      "aliases": ["Thailand 4.0"],
+      "type": "정책",
+      "definition": "First S-curve와 New S-curve를 합쳐 12대 미래 산업을 육성하는 태국의 국가 산업 전략",
+      "chapter": "a2",
+      "bookPages": [312, 317],
+      "rank": 5
+    },
+    {
+      "name": "패통탄 친나왓",
+      "aliases": ["Phaetongtarn Shinawatra", "패통탄"],
+      "type": "인물",
+      "definition": "2024년 8월 선출된 태국 역대 최연소이자 두 번째 여성 총리로, 탁신 친나왓 전 총리의 막내딸",
+      "chapter": "a1",
+      "bookPages": [308],
+      "rank": 6
+    },
+    {
+      "name": "동부경제회랑",
+      "aliases": ["EEC", "Eastern Economic Corridor"],
+      "type": "정책",
+      "definition": "10년간 1조 3,400억 바트 투자 유치를 목표로 하며 투자 시 최대 15년 법인세 면제 혜택이 주어지는 태국 동부의 특별 경제구역",
+      "chapter": "a2",
+      "bookPages": [312, 316, 325],
+      "rank": 7
+    },
+    {
+      "name": "EV 3.5 프로그램",
+      "aliases": ["EV 3.5 이니셔티브"],
+      "type": "정책",
+      "definition": "2027년까지 전기차 생산 비중 30% 달성을 목표로 보조금과 세금 감면을 제공하는 태국 전기차 보급·생산 촉진 정책",
+      "chapter": "a1",
+      "bookPages": [312, 313],
+      "rank": 8
+    },
+    {
+      "name": "SMART 비자",
+      "aliases": ["SMART Visa", "SMART S/E/I/T"],
+      "type": "정책",
+      "definition": "기술 스타트업 창업자, 투자자, 임원, 고급 인력에게 최대 4년 체류를 허용하는 태국의 특별 비자 제도",
+      "chapter": "a3",
+      "bookPages": [338, 340],
+      "rank": 9
+    },
+    {
+      "name": "국가혁신청",
+      "aliases": ["NIA", "National Innovation Agency"],
+      "type": "기업",
+      "definition": "Corporate Co-funding, Recoverable Fund 등 스타트업 펀딩 프로그램과 Startup Thailand 행사를 운영하는 태국 정부기관",
+      "chapter": "a3",
+      "bookPages": [335, 343],
+      "rank": 10
+    },
+    {
+      "name": "부가가치세",
+      "aliases": ["VAT"],
+      "type": "용어",
+      "definition": "기본 세율 10%이나 2024년 9월 30일까지 7%가 적용되며 연간 매출 180만 바트 초과 시 등록 의무가 있는 태국의 소비세",
+      "chapter": "a2",
+      "bookPages": [323, 324],
+      "rank": 11
+    },
+    {
+      "name": "테크소스",
+      "aliases": ["Techsauce", "Techsauce Global Summit", "Techsauce Startup Directory"],
+      "type": "기업",
+      "definition": "태국 최대 테크·스타트업 미디어 플랫폼으로, 동남아시아 최대 테크 이벤트 Techsauce Global Summit과 태국 스타트업 120 목록의 출처인 Startup Directory를 운영",
+      "chapter": "a3",
+      "bookPages": [343, 344, 349],
+      "rank": 12
+    },
+    {
+      "name": "CVC",
+      "aliases": ["Corporate Venture Capital", "기업형 벤처캐피털"],
+      "type": "용어",
+      "definition": "AIS, SCB 등 태국 대기업이 스타트업에 투자하기 위해 운영하는 기업형 벤처캐피털",
+      "chapter": "a3",
+      "bookPages": [334, 337],
+      "rank": 13
+    },
+    {
+      "name": "디지털경제진흥국",
+      "aliases": ["DEPA", "Digital Economy Promotion Agency"],
+      "type": "기업",
+      "definition": "DEPA Digital Startup Fund와 Smart City Accelerator를 운영하는 태국 디지털 경제 진흥 기관",
+      "chapter": "a3",
+      "bookPages": [334, 335],
+      "rank": 14
+    },
+    {
+      "name": "국가과학기술개발청",
+      "aliases": ["NSTDA"],
+      "type": "기업",
+      "definition": "R&D 비용의 300% 세액 공제와 태국 혁신 목록을 운영하는 태국 과학기술 개발 기관",
+      "chapter": "a3",
+      "bookPages": [336],
+      "rank": 15
+    },
+    {
+      "name": "외국인 노동 허가증",
+      "aliases": ["Work Permit", "WP.3"],
+      "type": "정책",
+      "definition": "외국인이 태국에서 취업하기 위해 노동부로부터 발급받는 최대 1년 유효 허가증으로, 외국인 1명당 태국인 4명 고용이 요구됨",
+      "chapter": "a2",
+      "bookPages": [328],
+      "rank": 16
+    },
+    {
+      "name": "프아타이당",
+      "aliases": ["Pheu Thai Party"],
+      "type": "기업",
+      "definition": "패통탄 친나왓 총리가 대표를 맡은 태국 집권당으로 디지털 지갑 등 10대 경제 정책을 추진",
+      "chapter": "a1",
+      "bookPages": [308],
+      "rank": 17
+    },
+    {
+      "name": "Cloud First 정책",
+      "aliases": ["클라우드 퍼스트"],
+      "type": "정책",
+      "definition": "태국을 동남아시아의 클라우드 허브로 육성하기 위해 2024년부터 220개 정부 부처에 클라우드 서비스를 제공하는 정책",
+      "chapter": "a1",
+      "bookPages": [311],
+      "rank": 18
+    },
+    {
+      "name": "Thai LLM",
+      "aliases": [],
+      "type": "기술",
+      "definition": "태국 국가 AI 전략(2022~2027)의 일환으로 개발되는 태국어 대규모 언어모델",
+      "chapter": "a1",
+      "bookPages": [311],
+      "rank": 19
+    },
+    {
+      "name": "LTR 비자",
+      "aliases": ["Long-Term Resident Visa"],
+      "type": "정책",
+      "definition": "연간 소득 8만 달러 이상의 고소득 전문가, 투자자, 은퇴자에게 10년 체류를 허용하는 태국 장기 거주 비자",
+      "chapter": "a3",
+      "bookPages": [338],
+      "rank": 20
+    },
+    {
+      "name": "Destination Thailand Visa",
+      "aliases": ["DTV"],
+      "type": "정책",
+      "definition": "원격 근무자, 프리랜서, 장기 관광객을 대상으로 5년(180일 체류, 180일 연장 가능) 체류를 허용하는 태국 비자",
+      "chapter": "a3",
+      "bookPages": [338],
+      "rank": 21
+    },
+    {
+      "name": "SCB 10X",
+      "aliases": ["Siam Commercial Bank CVC"],
+      "type": "기업",
+      "definition": "시암상업은행이 2016년 설립한 CVC로 핀테크·블록체인·Web 3.0에 집중하며 글로벌 CVC 랭킹 8위",
+      "chapter": "a3",
+      "bookPages": [337],
+      "rank": 22
+    },
+    {
+      "name": "True Digital Park",
+      "aliases": [],
+      "type": "기업",
+      "definition": "BTS Punnawithi 근처에 위치해 대기업, 스타트업, 투자자, 정부 기관이 집결하는 태국 최대 규모의 스타트업 허브",
+      "chapter": "a3",
+      "bookPages": [341],
+      "rank": 23
+    },
+    {
+      "name": "BCG 육성 정책",
+      "aliases": ["Bio-Circular-Green"],
+      "type": "정책",
+      "definition": "바이오(Bio), 순환(Circular), 녹색경제(Green) 세 축으로 구성된 태국의 경제 육성 정책",
+      "chapter": "a2",
+      "bookPages": [317],
+      "rank": 24
+    },
+    {
+      "name": "국제비즈니스센터",
+      "aliases": ["IBC", "International Business Center"],
+      "type": "정책",
+      "definition": "15년간 법인세 감면과 관계사 배당금 비과세 등 혜택을 받는 태국의 지역본부형 법인 제도",
+      "chapter": "a2",
+      "bookPages": [316, 325],
+      "rank": 25
+    },
+    {
+      "name": "태국 스타트업 120",
+      "aliases": ["Thai Startups 120"],
+      "type": "용어",
+      "definition": "태국 스타트업 120개사를 12개 섹터와 투자 단계별로 정리한 부록 목록으로, 2025년 1월 기준 Techsauce Startup Directory가 출처",
+      "chapter": "a4",
+      "bookPages": [347, 348, 349],
+      "rank": 26
+    },
+    {
+      "name": "크랭짜이",
+      "aliases": ["เกรงใจ", "Kreng Jai"],
+      "type": "현상",
+      "definition": "상대를 배려해 폐를 끼치지 않으려는 태국의 체면 문화로, 진출 기업이 이해해야 할 문화 리스크 요인",
+      "chapter": "a2",
+      "bookPages": [331],
+      "rank": 27
+    },
+    {
+      "name": "코워킹 스페이스",
+      "aliases": ["Coworking Space"],
+      "type": "현상",
+      "definition": "WeWork, Hubba, True Digital Park 등 방콕 스타트업이 활용하는 공유 업무 공간",
+      "chapter": "a3",
+      "bookPages": [341, 342],
+      "rank": 28
+    }
+  ]
+}
