@@ -78,8 +78,7 @@ export function createPanel({ el, body, closeBtn, grip, data, onPick, onClose, o
         <p>이 은하는 책 <strong>디지털 방콕 인사이트</strong>의 개념 지도입니다. 태양을 중심으로 다섯 개의 나선팔이 책의 1부부터 5부까지를, 바깥 소행성대가 부록을 담고 있습니다.</p>
         <p>별의 크기는 책에서 차지하는 비중, 색은 소속된 부를 뜻합니다. 별을 클릭하면 그 개념의 문서가 열리고, 문서 속 유관 개념을 따라 은하를 여행할 수 있습니다.</p>
         <p>상단의 <strong>투어</strong>는 책의 목차 순서로 대표 개념들을 안내하는 길입니다.</p>
-      </div>
-      <div class="doc-foot"><span class="pageref">저자의 서명 자리</span></div>`;
+      </div>`;
     body.querySelector('#doc-title')?.focus({ preventScroll: true });
   }
 
