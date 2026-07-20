@@ -13,6 +13,10 @@ const SRC = join(ROOT, 'data', 'concepts.json');
 const OUT_DIR = join(ROOT, 'docs', 'data');
 const STUB_DIR = join(ROOT, 'docs', 'c');
 
+// OG 태그의 이미지 주소는 절대 경로여야 한다. SNS 크롤러는 상대 경로를 풀지 못한다.
+// 배포 주소가 바뀌면 여기만 고치고 다시 빌드한다. 환경변수로도 덮을 수 있다.
+const BASE_URL = (process.env.BASE_URL || 'https://airoasting-bangkok.vercel.app').replace(/\/$/, '');
+
 const stripMd = (s) => (s || '')
   .replace(/[#>*_`~\[\]()]/g, ' ')
   .replace(/\s+/g, ' ')
@@ -92,7 +96,8 @@ export function build() {
 <title>${esc(c.name)} — 디지털 방콕 인사이트</title>
 <meta property="og:title" content="${esc(c.name)}">
 <meta property="og:description" content="${esc(c.summary)}">
-<meta property="og:image" content="__BASE_URL__/assets/og-image.png">
+<meta property="og:image" content="${BASE_URL}/assets/og-image.png">
+<meta property="og:url" content="${BASE_URL}/c/${c.id}.html">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary">
 <meta http-equiv="refresh" content="0; url=../#${c.id}">

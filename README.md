@@ -64,12 +64,20 @@ node tools/build.mjs && node tools/gate.mjs
 3. `node tools/merge.mjs && node tools/build.mjs && node tools/gate.mjs`.
 4. `docs/index.html`의 제목/OG 문구를 바꾼다. 끝.
 
-## 배포 시 한 가지
+## 배포
 
-OG 태그의 절대 URL은 플레이스홀더로 되어 있다. 배포 주소가 정해지면 1회 치환한다.
+Vercel에 붙어 있다. https://airoasting-bangkok.vercel.app
+
+저장소 루트가 아니라 `docs/`를 서빙한다. Vercel 프로젝트 설정의 Root Directory가 `docs`, 프레임워크는 Other(빌드 명령 없음)다. GitHub Pages도 저장소 설정에서 `/docs` 폴더 서빙만 켜면 된다.
+
+OG 태그의 이미지 주소는 절대 URL이어야 한다. SNS 크롤러는 상대 경로를 풀지 못한다. 주소는 `tools/build.mjs`의 `BASE_URL` 상수에 있고, 개념 스텁 200개는 빌드가 그 값으로 찍는다. 대표 태그는 `docs/index.html`에 직접 적혀 있다.
+
+주소가 바뀌면 두 곳을 고치고 다시 빌드한다.
 
 ```bash
-grep -rl "__BASE_URL__" docs | xargs sed -i '' 's|__BASE_URL__|https://<계정>.github.io/<저장소>|g'
+# 1. tools/build.mjs의 BASE_URL, 또는 환경변수로 덮어쓰기
+BASE_URL=https://새주소 node tools/build.mjs
+# 2. docs/index.html의 og:image, og:url, canonical
 ```
 
 ## Vendor (버전 고정)
