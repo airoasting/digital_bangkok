@@ -41,6 +41,7 @@ tools/layout.mjs        ← 결정론적 은하 좌표 (시드 고정)
 tools/build.mjs         ← 검증 + 좌표 + searchText + edges 파생 + OG 스텁 → docs/
 tools/gate.mjs          ← 데이터 게이트 자동 검사 (형식)
 tools/verify-assignment.mjs ← 부·장 배정 재검증 + 중복 엔티티 탐지 (내용)
+tools/make-og.py        ← SNS 미리보기 이미지 생성 (정본 좌표를 그대로 투영)
 docs/                   ← 배포 폴더 (정적 사이트 전체)
 ```
 
@@ -79,8 +80,18 @@ Three.js r170 (0.170.0, unpkg에서 확보). 파일 해시(SHA-256):
 - addons/controls/OrbitControls.js `80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e`
 - addons/renderers/CSS2DRenderer.js `7de0bb70e3c1d6da58416353ed7140a7a7743ece99d73b56eb62bc2dd79bfed5`
 
-웹폰트(Noto Serif KR)는 Google Fonts에서 로드하며, 오프라인에서는 시스템 세리프로 대체된다(기능에는 영향 없음).
+웹폰트는 둘이다. 우주(어둠)의 고딕은 Pretendard(jsDelivr), 종이(패널) 본문의 명조는 Hahmlet(Google Fonts)이다. 한국 책이 표지와 제목은 고딕, 본문은 명조로 짜는 문법을 그대로 옮긴 것이다. 오프라인에서는 각각 시스템 고딕과 세리프로 대체된다(기능에는 영향 없음).
 
 ## 품질 기록
 
 검증 결과와 알려진 한계는 `QUALITY.md`에 있다. 설계 전문과 결정 근거는 `Plan.md`에 있다.
+
+## SNS 미리보기 이미지
+
+`docs/assets/og-image.png`(1200×630)는 손으로 그린 그림이 아니라 정본에서 만든다. `docs/data/concepts.json`의 실제 좌표를 3/4 각도로 투영하고, 별 색은 각 부의 벤자롱 색을 그대로 쓴다. 가운데 금색은 태양, 곧 책이다.
+
+```bash
+python3 tools/make-og.py
+```
+
+개념이 늘거나 줄면, 또는 좌표 시드가 바뀌면 다시 돌린다. 그림 속 별 개수가 실제 개념 수와 어긋나지 않게 하려는 것이다. 제목 활자는 사용자 폰트 폴더의 `Pretendard-Black.ttf`를 쓴다.
