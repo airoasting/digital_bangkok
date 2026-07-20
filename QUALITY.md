@@ -17,6 +17,12 @@
 
 **20개 항목 전 항목 PASS.** 주요 수치: 개념 202, related 평균 5.15(상한 8, 고아 0, 깨진 id 0), importance 5등급 9개·4등급 이상 24개, 투어 17개(부별 균형 충족), OG 스텁 202개, edges 520개(related 파생 일치).
 
+## 2-1. 배정 게이트 (tools/verify-assignment.mjs, 2026-07-20 추가)
+
+gate.mjs는 형식만 본다. 배정이 내용상 맞는지는 `tools/verify-assignment.mjs`와 멀티 에이전트 재검증으로 따로 확인했다. 결과는 `VERIFICATION.md`에 있다.
+
+요약: galaxy↔chapter 매핑 202개 전수 일치, quote 페이지 이탈 0건. 확정 오배정 3건(`fintech`, `bumrungrad-international`, `seekster`), 부를 넘는 중복 엔티티 10쌍, 별칭 오염 5쌍. **미수정 상태다.**
+
 ## 3. 콘텐츠 게이트 (RED 원본 재대조)
 
 - 방법: PDF 원본 페이지 재열람 대조. 대상 52개 = importance 4~5 전수(24) + 무작위 표본(28). 6그룹 병렬, 페이지 단위 묶음 재열람.
