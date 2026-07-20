@@ -131,10 +131,10 @@ export function createGalaxy({ canvas, data, onSelect }) {
         vec3 hot  = vec3(1.00, 0.95, 0.83);
         vec3 col = mix(cool, warm, smoothstep(0.16, 0.62, lum));
         col = mix(col, hot, smoothstep(0.74, 1.02, lum));
-        col *= (0.50 + 0.60 * lum) * (1.0 + 0.9 * uGlare);
+        col *= (0.44 + 0.52 * lum) * (1.0 + 0.40 * uGlare);
 
         // 채층: 원반 가장자리에 얇게 걸리는 붉은 테
-        col += vec3(1.0, 0.30, 0.10) * smoothstep(0.26, 0.02, mu) * 0.42;
+        col += vec3(1.0, 0.30, 0.10) * smoothstep(0.26, 0.02, mu) * 0.32;
 
         float a = smoothstep(0.0, 0.20, mu);
         gl_FragColor = vec4(col * a, a);
@@ -201,16 +201,16 @@ export function createGalaxy({ canvas, data, onSelect }) {
         float rays = 0.55 + 0.9 * n;
 
         // 림에서 시작해 한 번에 사그라드는 감쇠. 항을 나누면 원반 밖에 고리가 뜬다.
-        float halo = 0.011 / (r * r + 0.008) * f * (0.88 + 0.24 * n);
-        float reach = pow(f, 3.0) * 0.13 * rays;
+        float halo = 0.0072 / (r * r + 0.008) * f * (0.88 + 0.24 * n);
+        float reach = pow(f, 3.0) * 0.085 * rays;
         // 광구가 차지한 안쪽에서는 코로나를 죽인다. 겹치면 원반이 하얗게 날아간다.
         float occl = smoothstep(0.08, 0.17, r);
-        float e = (halo + reach) * occl * (1.0 + 0.45 * uGlare) * (1.0 + 0.05 * sin(uTime * 0.6));
+        float e = (halo + reach) * occl * (1.0 + 0.22 * uGlare) * (1.0 + 0.05 * sin(uTime * 0.6));
 
         vec3 hot = vec3(1.00, 0.87, 0.62);
         vec3 cool = vec3(0.85, 0.40, 0.12);
         vec3 tint = mix(cool, hot, smoothstep(0.02, 0.5, e));
-        vec3 col = vec3(1.0) - exp(-tint * e * 3.0);
+        vec3 col = vec3(1.0) - exp(-tint * e * 2.4);
         gl_FragColor = vec4(col, max(col.r, max(col.g, col.b)));
       }`,
   });
