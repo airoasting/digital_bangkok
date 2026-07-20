@@ -87,8 +87,30 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 }
 .topbar > * { pointer-events: auto; }
 
-.brand { display: flex; align-items: center; gap: 8px; }
-.brand-logo { width: 22px; height: 22px; flex: none; }
+/* 브랜드는 누를 것이 없다. 링이 커지면 그 아래 별을 가리므로 클릭을 통과시킨다 */
+.brand { display: flex; align-items: center; gap: 8px; pointer-events: none; }
+
+/* 로고 뒤에서 고리가 퍼진다. 별의 펄스와 같은 문법이라, 브랜드도 하나의 광원으로 읽힌다 */
+.brand-mark {
+  position: relative;
+  display: inline-flex;
+  flex: none;
+  width: 22px; height: 22px;
+}
+.brand-logo { width: 100%; height: 100%; position: relative; z-index: 1; }
+.brand-pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.5px solid rgba(242, 236, 221, 0.7);
+  animation: brandpulse 3.4s cubic-bezier(0.2, 0.7, 0.3, 1) infinite;
+}
+.brand-pulse:nth-child(2) { animation-delay: 1.7s; }
+@keyframes brandpulse {
+  0%   { transform: scale(1);    opacity: 0.5; }
+  70%  { opacity: 0; }
+  100% { transform: scale(2.7);  opacity: 0; }
+}
 .brand-name {
   font-size: 11.5px;
   font-weight: 800;
@@ -593,7 +615,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   /* 컨트롤이 두 줄로 접혀도 브랜드는 첫 줄에 붙어 있게 한다 */
   .topbar { align-items: flex-start; }
   .brand { padding-top: 5px; }
-  .brand-logo { width: 20px; height: 20px; }
+  .brand-mark { width: 20px; height: 20px; }
   .brand-name { font-size: 10.5px; letter-spacing: 0.14em; }
 
   /* 레일은 화면 폭을 다 쓰되, 헤더와 겹치지 않게 위를 비운다 */
@@ -636,6 +658,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 
 @media (prefers-reduced-motion: reduce) {
   .pulse-ring { animation: none; opacity: 0.6; }
+  .brand-pulse { animation: none; opacity: 0.28; }
   #panel { transition: none; }
 }
 
