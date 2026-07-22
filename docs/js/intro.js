@@ -284,6 +284,8 @@ export function createIntro({ onProgress, onDone }) {
   addEventListener('pointerdown', () => { if (finished) armed = false; });
 
   return {
+    // 헤더 로고를 누르면 표지로 되돌아간다. 스크롤 되감기와 같은 타임라인이다.
+    reopen,
     // 은하가 준비되면 표지에 손잡이를 준다
     async open(total) {
       try { await img.decode(); } catch { /* 이미지가 없어도 인트로는 진행된다 */ }

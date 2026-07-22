@@ -87,8 +87,10 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 }
 .topbar > * { pointer-events: auto; }
 
-/* 브랜드는 누를 것이 없다. 링이 커지면 그 아래 별을 가리므로 클릭을 통과시킨다 */
-.brand { display: flex; align-items: center; gap: 8px; pointer-events: none; }
+/* 로고를 누르면 표지로 돌아간다. 퍼지는 링은 transform이라 클릭 상자를 키우지 않으므로
+   히트 영역은 로고와 이름 글자에만 걸린다. 그 아래 별은 링 바깥에서 그대로 눌린다. */
+.brand { display: flex; align-items: center; gap: 8px; padding: 0; cursor: pointer; }
+.brand:focus-visible { outline: 2px solid rgba(242, 236, 221, 0.7); outline-offset: 4px; border-radius: 4px; }
 
 /* 로고 뒤에서 고리가 퍼진다. 별의 펄스와 같은 문법이라, 브랜드도 하나의 광원으로 읽힌다 */
 .brand-mark {

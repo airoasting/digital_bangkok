@@ -34,6 +34,7 @@ async function boot() {
   const data = await res.json();
   const byId = new Map(data.concepts.map(c => [c.id, c]));
   const total = data.concepts.length;
+  let introApi = null;   // 인트로(표지) 인스턴스. 딥링크 부팅이면 null로 남는다
 
   const galaxy = createGalaxy({
     canvas: $('#stage'),
@@ -146,6 +147,23 @@ async function boot() {
     toast(state.motion ? '움직임을 켰습니다' : '움직임을 정지했습니다');
   });
 
+  // ── 로고 → 표지 ───────────────────
+  // 헤더 로고를 누르면 처음 화면(책 표지)으로 돌아간다. 열려 있던 것들을 먼저 접고,
+  // 인트로가 살아 있으면 스크롤 되감기와 같은 타임라인으로 표지를 다시 세운다.
+  // 딥링크로 들어와 인트로 DOM이 제거된 경우에는 해시를 떼고 새로 열어 표지를 재생한다.
+  function goToCover() {
+    if (panel.isOpen()) panel.close();
+    if (list.isOpen()) { list.close(); $('#btn-list').setAttribute('aria-pressed', 'false'); }
+    if (tour.isRunning()) tour.stop();
+    galaxy.showEdgesFor(null);
+    galaxy.setSelected(null);
+    galaxy.pauseRotation(false);
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+    if (introApi) introApi.reopen();
+    else location.assign(location.pathname + location.search);
+  }
+  $('#brand').addEventListener('click', goToCover);
+
   // 시작 안내 펄스는 걷어냈다. 헤더 로고 뒤에서 퍼지는 고리가 그 역할을 하고,
   // 별 위의 링은 헤더와 겹쳐 흰 원반처럼 보였다.
 
@@ -185,14 +203,14 @@ async function boot() {
   } else {
     galaxy.setIntroProgress(0);
     stageEl.style.opacity = '0';
-    const intro = createIntro({
+    introApi = createIntro({
       onProgress: (p) => {
         stageEl.style.opacity = String(Math.min(Math.max((p - 0.10) / 0.30, 0), 1));
         galaxy.setIntroProgress(Math.min(Math.max((p - 0.30) / 0.70, 0), 1));
       },
       onDone: () => { stageEl.style.opacity = '1'; finishBoot(); },
     });
-    intro.open(total);
+    introApi.open(total);
   }
 
   addEventListener('hashchange', () => {
