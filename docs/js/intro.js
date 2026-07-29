@@ -113,6 +113,7 @@ export function createIntro({ onProgress, onDone }) {
   let lastP = 0;
   let armed = false, doneAt = 0, upDelta = 0;
   let raf = 0, pending = false, finished = false;
+  let rewinding = false;   // 표지로 되감는 중. p가 아직 1인 첫 프레임을 완주로 세지 않는다
 
   function resize() {
     const r = img.getBoundingClientRect();
@@ -195,7 +196,10 @@ export function createIntro({ onProgress, onDone }) {
     onProgress(p);
 
     // 완주 판정은 스크롤에서만 한다. 화면 크기가 바뀌며 튄 값으로 끝내지 않는다.
-    if (fromScroll && p > 0.995) finish();
+    // 표지로 되감는 중이면 첫 프레임의 p는 아직 1이다. 그걸로 완주를 선언하면
+    // 되감기 시작과 동시에 다시 끝나 버려, 표지는 돌아오는데 상태만 '끝남'으로 남는다.
+    if (fromScroll && p > 0.995) { if (!rewinding) finish(); }
+    else rewinding = false;
   }
 
   function onScroll() {
@@ -249,6 +253,7 @@ export function createIntro({ onProgress, onDone }) {
     if (!finished) return;
     finished = false;
     armed = false;
+    rewinding = true;
     root.classList.remove('done');
     document.body.classList.add('intro-on');
     scroller.addEventListener('scroll', onScroll, { passive: true });
