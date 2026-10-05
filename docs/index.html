@@ -112,9 +112,16 @@
       <p class="intro-cue" id="intro-cue" hidden>아래로 스크롤</p>
     </div>
   </div>
+  <div class="intro-film" id="intro-film" hidden>
+    <video id="intro-video" src="./assets/promo.mp4" playsinline preload="auto" aria-label="책 소개 영상"></video>
+    <canvas id="film-canvas" aria-hidden="true"></canvas>
+  </div>
   <canvas id="cover-dots" aria-hidden="true"></canvas>
-  <div class="intro-scroll" id="intro-scroll" tabindex="-1" aria-hidden="true"><div class="intro-track"></div></div>
   <button class="intro-skip" id="intro-skip" hidden>바로 들어가기</button>
+  <div class="film-bar" id="film-bar" hidden>
+    <button class="film-btn" id="film-sound" aria-pressed="false">소리 켜기</button>
+    <button class="film-btn" id="film-skip">건너뛰기</button>
+  </div>
 </div>
 
 <div id="toast" role="status" aria-live="polite" hidden></div>

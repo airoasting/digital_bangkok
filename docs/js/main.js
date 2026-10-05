@@ -204,6 +204,7 @@ async function boot() {
     galaxy.setIntroProgress(0);
     stageEl.style.opacity = '0';
     introApi = createIntro({
+      onSleep: (v) => galaxy.setSleep(v),
       onProgress: (p) => {
         stageEl.style.opacity = String(Math.min(Math.max((p - 0.10) / 0.30, 0), 1));
         galaxy.setIntroProgress(Math.min(Math.max((p - 0.30) / 0.70, 0), 1));

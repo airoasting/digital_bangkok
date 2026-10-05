@@ -671,7 +671,6 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 }
 /* 끝나도 지우지 않는다. p=1이면 지면도 표지도 이미 없고, 되돌아올 수 있어야 한다. */
 #intro.done { pointer-events: none; }
-#intro.done .intro-scroll { pointer-events: none; }
 
 .intro-stage {
   position: absolute;
@@ -702,7 +701,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 #cover-dots {
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 3;
   pointer-events: none;
 }
 /* 종이가 바닥에서 살짝 떠 있다. 지워지기 시작하면 그림자도 함께 걷힌다. */
@@ -755,17 +754,55 @@ button:focus-visible, input:focus-visible, a:focus-visible {
   50% { transform: translateY(6px); opacity: 1; }
 }
 
-/* 스크롤을 받는 층. 무대 위에 덮여 휠·터치·키보드를 모두 받는다 */
-.intro-scroll {
+/* 책 소개 영상. 표지 위에 검은 판으로 덮이고, 끝나면 판은 투명해지고 마지막 프레임만 남아 흩어진다 */
+.intro-film {
   position: absolute;
   inset: 0;
-  z-index: 3;
-  overflow-y: scroll;
-  overscroll-behavior: contain;
-  scrollbar-width: none;
+  z-index: 2;
+  background: #0A0A0A;
+  opacity: 0;
+  transition: opacity 0.45s ease;
 }
-.intro-scroll::-webkit-scrollbar { display: none; }
-.intro-track { height: 280vh; }
+.intro-film.on { opacity: 1; }
+.intro-film.warp { background: transparent; }
+/* 영상은 캔버스에 옮겨 그린다. 일부 임베디드 브라우저는 video 층을 화면에 합성하지 못해
+   소리만 나고 화면은 검게 남는다. video는 디코딩만 맡고 투명하게 뒤에 둔다. */
+.intro-film video,
+#film-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+.intro-film video { opacity: 0; }
+#intro { touch-action: none; }
+#intro:not(.done) { cursor: pointer; }
+
+.film-bar {
+  position: absolute;
+  z-index: 4;
+  right: 22px; bottom: 22px;
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+.film-bar.on { opacity: 1; pointer-events: auto; }
+.film-btn {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: rgba(250, 250, 247, 0.72);
+  border: 1px solid rgba(250, 250, 247, 0.22);
+  border-radius: 999px;
+  padding: 8px 16px;
+  background: rgba(10, 10, 10, 0.55);
+  transition: color 0.15s, border-color 0.15s;
+}
+.film-btn:hover { color: #FAFAF7; border-color: rgba(250, 250, 247, 0.5); }
+.film-btn[aria-pressed="false"]#film-sound { color: #FAFAF7; border-color: rgba(110, 155, 238, 0.7); }
 
 .intro-skip {
   position: absolute;

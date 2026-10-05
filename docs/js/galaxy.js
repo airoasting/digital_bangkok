@@ -565,8 +565,11 @@ export function createGalaxy({ canvas, data, onSelect }) {
   const deltas = [];
   let last = performance.now();
   let introPlaying = false;
+  // 표지와 영상이 화면을 덮는 동안에는 그리지 않는다. 보이지 않는 3D가 영상 재생과 GPU를 다툰다.
+  let sleeping = false;
 
   function frame(now) {
+    if (sleeping) { last = now; requestAnimationFrame(frame); return; }
     const dt = Math.min((now - last) / 1000, 0.1);
     deltas.push(now - last);
     if (deltas.length > 120) deltas.shift();
@@ -654,6 +657,7 @@ export function createGalaxy({ canvas, data, onSelect }) {
     playIntro, skipIntro, setIntroProgress,
     setMotion(v) { motion = v; starUniforms.uTwinkle.value = v ? 1 : 0; },
     pauseRotation(v) { rotationPaused = v; },
+    setSleep(v) { sleeping = v; },
     avgFrame() { return deltas.length ? deltas.reduce((a, b) => a + b, 0) / deltas.length : 0; },
     isIntro() { return introPlaying; },
     degrade(step) {
