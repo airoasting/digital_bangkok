@@ -71,7 +71,7 @@ node tools/build.mjs && node tools/gate.mjs
 
 ## 배포
 
-Vercel에 붙어 있다. https://airoasting-bangkok.vercel.app
+Vercel에 붙어 있다. https://bangkok.airoasting.com
 
 저장소 루트가 아니라 `docs/`를 서빙한다. Vercel 프로젝트 설정의 Root Directory가 `docs`, 프레임워크는 Other(빌드 명령 없음)다. GitHub Pages도 저장소 설정에서 `/docs` 폴더 서빙만 켜면 된다.
 

@@ -15,7 +15,7 @@ const STUB_DIR = join(ROOT, 'docs', 'c');
 
 // OG 태그의 이미지 주소는 절대 경로여야 한다. SNS 크롤러는 상대 경로를 풀지 못한다.
 // 배포 주소가 바뀌면 여기만 고치고 다시 빌드한다. 환경변수로도 덮을 수 있다.
-const BASE_URL = (process.env.BASE_URL || 'https://airoasting-bangkok.vercel.app').replace(/\/$/, '');
+const BASE_URL = (process.env.BASE_URL || 'https://bangkok.airoasting.com').replace(/\/$/, '');
 
 const stripMd = (s) => (s || '')
   .replace(/[#>*_`~\[\]()]/g, ' ')
